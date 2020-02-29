@@ -29,6 +29,10 @@
         overflow-x: hidden;
         width: 100%;
       }
+
+      .hero-logo {
+        width: 50%;
+      }
       #nav-logo{
         max-width: 5em;
         margin-top: 1em;
@@ -93,29 +97,31 @@
       <div class="site-navbar site-navbar-target js-sticky-header">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-2">
+            <!-- <div class="col-2">
               <h1 class="my-0 site-logo"><a href="index.html">
                 <img id="nav-logo" src="images/ieee_logo_white.png">
               </a></h1>
-            </div>
-            <div class="col-10">
+            </div> -->
+            <div class="col-12">
               <nav class="site-navigation text-right" role="navigation">
                 <div class="container">
                   <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+                  <center>
+                    <ul class="site-menu pl-0 main-menu js-clone-nav d-none d-lg-block">
+                      <li>
+                        <a href="#home-section" class="nav-link">Home</a>
+                      </li>
+                      <li>
+                        <a href="#about-section" class="nav-link">About Us</a>
+                      </li>
+                      <li>
+                        <a href="#techloop-section" class="nav-link">Techloop</a>
+                      </li>
+                      <li><a href="#events-section" class="nav-link">Events</a></li>
+                      <li><a href="#membership-section" class="nav-link">Membership</a></li>
+                    </ul>
+                  </center>
 
-                  <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
-                    <li>
-                      <a href="#home-section" class="nav-link">Home</a>
-                    </li>
-                    <li>
-                      <a href="#about-section" class="nav-link">About Us</a>
-                    </li>
-                    <li>
-                      <a href="#techloop-section" class="nav-link">Techloop</a>
-                    </li>
-                    <li><a href="#events-section" class="nav-link">Events</a></li>
-                    <li><a href="#membership-section" class="nav-link">Membership</a></li>
-                  </ul>
                 </div>
               </nav>
             </div>
@@ -128,8 +134,8 @@
       <div class="container">
         <div class="row align-items-center text-center justify-content-center">
           <div class="col-md-8">
-            <h1 class="text-uppercase">IEEE VIT</h1>
-            <span style="color: white" class="sub-text mb-3 d-block"><em><strong>Stay in the Loop.</strong></em></span>
+            <img class="mb-5 hero-logo" src="images/ieee_logo_big.png"/>
+            <h1 style="font-size: 1.4em;" class="text-uppercase"><em>Ideate. Innovate. Inspire.</em></h1>
           </div>
         </div>
       </div>
