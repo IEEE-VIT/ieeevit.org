@@ -1,0 +1,99 @@
+.chatbot-button {
+  background-color: #121212;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: none;
+  position: fixed;
+  bottom: 10px;
+  right: 12px;
+}
+button:focus.chatbot-button {
+  outline: none;
+}
+
+.chatbot-wrap {
+  height: 540px;
+  width: 350px;
+  background: #ffffff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  position: fixed;
+  bottom: 80px;
+  right: 12px;
+  z-index: 3000;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.chatbot-nav {
+  background-color: #121212;
+  color: #ffffff;
+  height: 65px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.chatbot-nav-ieee-logo {
+  height: 45px;
+  margin-top: 10px;
+}
+.chatbot-nav-cross {
+  padding-top: 20.5px;
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+}
+
+.chatbot-body {
+  padding: 12px;
+  height: 475px;
+  overflow-y: auto;
+}
+
+.chatbot-chat {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 12px;
+  max-width: 217px;
+  margin-bottom: 6px;
+}
+
+.chatbot-chat-ieee-vit-logo-img {
+  height: 20px;
+}
+
+.chatbot-chat-ieee-vit-text {
+  padding-left: 7px;
+  margin-bottom: 6px;
+}
+.chatbot-chat-ieee-vit {
+  background-color: #f8f9f9;
+  color: #121212;
+  margin-left: 20px;
+}
+
+.chatbot-chat-user {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+@media (max-width: 576px) and (max-height: 650px){
+    .chatbot-wrap{
+      height: 100vh;
+      width: 100vw;
+      right: 0;
+      bottom: 0;
+      border-radius: 0px;
+    }
+
+    .chatbot-nav {
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+    }
+
+    .chatbot-body {
+      height: calc(100vh-65px);
+    }
+}
