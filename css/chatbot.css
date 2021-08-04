@@ -36,13 +36,14 @@ button:focus.chatbot-button {
 }
 
 .chatbot-nav-ieee-logo {
-  height: 55px;
-  padding-top: 5px;
+  height: 45px;
+  margin-top: 10px;
 }
 .chatbot-nav-cross {
   padding-top: 20.5px;
   position: absolute;
   right: 12px;
+  cursor: pointer;
 }
 
 .chatbot-body {
