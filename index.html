@@ -789,34 +789,8 @@
         <div class="d-flex chatbot-chat-ieee-vit-wrap">
           <img class="chatbot-chat-ieee-vit-logo-img" src="images/favicon.png">
           <div class="chatbot-chat-ieee-vit-text">IEEE VIT · Bot</div>
-
         </div>
         <div class="chatbot-chat chatbot-chat-ieee-vit">Hey! Welcome to IEEE-VIT</div>
-        <div class="text-right">
-          <div class="chatbot-chat chatbot-chat-user">Hi! Tell me more about IEEE-VIT</div>
-        </div>
-        <div class="d-flex chatbot-chat-ieee-vit-wrap">
-          <img class="chatbot-chat-ieee-vit-logo-img" src="images/favicon.png">
-          <div class="chatbot-chat-ieee-vit-text">IEEE VIT · Bot</div>
-
-        </div>
-
-        <div>
-          <div class="chatbot-chat chatbot-chat-ieee-vit">IEEE VIT is one of the most active student chapters inside
-            Region 10 of IEEE International. We're a diverse group of tech enthusiasts, developers and designers who
-            live
-            with the motto "Advancing Technology for Humanity".</div>
-        </div>
-        <div>
-        <div class="chatbot-chat chatbot-chat-ieee-vit">IEEE VIT is one of the most active student chapters inside
-          Region 10 of IEEE International. We're a diverse group of tech enthusiasts, developers and designers who live
-          with the motto "Advancing Technology for Humanity".</div>
-      </div>
-      <div>
-        <div class="chatbot-chat chatbot-chat-ieee-vit">IEEE VIT is one of the most active student chapters inside
-          Region 10 of IEEE International. We're a diverse group of tech enthusiasts, developers and designers who live
-          with the motto "Advancing Technology for Humanity".</div>
-      </div>
       </div>
       <div class="chatbot-footer">
         <div class="chatbot-footer-menu-section d-flex justify-content-between">
@@ -830,15 +804,17 @@
 
         <div class="chatbot-menu" style="display: none;">
           <ul>
-            <li>😀About Us</li>
-            <li>😀About IEEE</li>
-            <li>😀Event</li>
-            <li>😀Contact</li>
+            <a href="#about-section" class="about-us"><li>😀About Us</li></a>
+            <a href="https://www.instagram.com/ieeevitvellore/" target="_blank"><li>😀Find Us On Instagram</li></a>
+            <a href="https://twitter.com/ieeevitvellore" target="_blank"><li>😀Find Us On Twitter</li></a>
+            <a href="mailto:contact@ieeevit.org" target="_blank">
+              <li>😀Contact</li>
+            </a>
           </ul>
         </div>
         <div class="d-flex chatbot-input">
-          <div class="flex-grow-1"><textarea onkeypress="send(event)" class="chatbot-input-textarea" placeholder="Type your question here"
-              id="chatbot-input-text" rows="1"></textarea></div>
+          <div class="flex-grow-1"><textarea onkeypress="send(event)" class="chatbot-input-textarea"
+              placeholder="Type your question here" id="chatbot-input-text" rows="1"></textarea></div>
           <div class="chatbot-send"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -863,7 +839,10 @@
 
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/chatbot.js"></script>
+
   </div>
   <!-- Cloudflare Web Analytics -->
   <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
