@@ -161,6 +161,10 @@ button:focus.chatbot-button {
   text-align: start;
 }
 
+#dot01{
+  width: 500px;
+}
+
 @media (max-width: 992px) and (max-height: 992px) {
   .chatbot-wrap {
     height: 100%;
@@ -190,4 +194,43 @@ button:focus.chatbot-button {
     cursor: pointer;
     display: block;
   }
+}
+
+@keyframes dot-keyframes {
+	0% {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+
+	50% {
+		opacity: 1;
+		transform: scale(1.2, 1.2);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+}
+
+.loading-dots {
+	text-align: center;
+	width: 100%;
+}
+
+.loading-dots--dot {
+	animation: dot-keyframes 1.5s infinite ease-in-out;
+	background-color: #000;
+	border-radius: 6px;
+	display: inline-block;
+	height: 6px;
+	width: 6px;
+}
+
+.loading-dots--dot:nth-child(2) {
+	animation-delay: .5s;
+}
+
+.loading-dots--dot:nth-child(3) {
+	animation-delay: 1s;
 }
