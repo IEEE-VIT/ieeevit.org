@@ -69,17 +69,27 @@ document.addEventListener("keydown", (event) => {
 
 async function getData(user_query) {
 
-    var send = await axios.post(`${url}`,
-        {
-            user_input: user_query,
-            model_selection: 1
-        })
+    document.querySelector("#chatbot-body").innerHTML += "<div class='d-flex chatbot-chat-ieee-vit-wrap'><img class='chatbot-chat-ieee-vit-logo-img' src='images/favicon.png'><div class='chatbot-chat-ieee-vit-text'>IEEE VIT · Bot</div></div><div><div class='loading-dots-wrapper chatbot-chat chatbot-chat-ieee-vit'><div class='loading-dots'>  <div class='loading-dots--dot'></div>  <div class='loading-dots--dot'></div> <div class='loading-dots--dot'></div></div></div>"
 
-    var reply = await send.data["output to user"]
+    try {
+        var send = await axios.post(`${url}`,
+            {
+                user_input: user_query,
+                model_selection: 1
+            })
 
-    document.querySelector("#chatbot-body").innerHTML += "<div class='d-flex chatbot-chat-ieee-vit-wrap'><img class='chatbot-chat-ieee-vit-logo-img' src='images/favicon.png'><div class='chatbot-chat-ieee-vit-text'>IEEE VIT · Bot</div></div><div><div class='chatbot-chat chatbot-chat-ieee-vit'>"+ reply +"</div></div>"
-    document.querySelector("#chatbot-body").scrollTo(0, (document.querySelector("#chatbot-body").scrollHeight))
-    console.log(reply)
+        var reply = await send.data["output to user"]
+        console.log(reply)
+
+        document.querySelector(".loading-dots-wrapper").remove()
+        document.querySelector("#chatbot-body").innerHTML += "<div class='chatbot-chat chatbot-chat-ieee-vit'>" + reply + "</div></div>"
+    }
+    catch(error){
+        console.error("Error: ", error)
+        document.querySelector(".loading-dots-wrapper").remove()
+        document.querySelector("#chatbot-body").innerHTML += "<div class='chatbot-chat chatbot-chat-ieee-vit'>The server didn't respond. Could you please try again?</div></div>"
+
+    }
 }
 
 document.querySelector(".about-us").addEventListener("click", () => {
