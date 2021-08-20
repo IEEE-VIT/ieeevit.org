@@ -1,4 +1,4 @@
-const url = "https://ieee-faq-chatbot.azurewebsites.net/chatbot"
+const url = "https://ieee-faq-chatbot.ieeevit.org/chatbot "
 
 document.querySelector(".chatbot-button").addEventListener("click", () => {
     if (document.querySelector(".chatbot-wrap").classList.value == "chatbot-wrap") {
@@ -108,7 +108,6 @@ async function getData(user_query) {
             })
 
         var reply = await send.data["output to user"]
-        console.log(reply)
 
         document.querySelector(".loading-dots-wrapper").remove()
         document.querySelector("#chatbot-body").innerHTML += "<div class='chatbot-chat chatbot-chat-ieee-vit'>" + reply + "</div></div>"
