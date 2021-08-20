@@ -781,13 +781,13 @@
 
     <button class="chatbot-button"><img src="images/chat.svg"></button>
 
-    <div class="chatbot-wrap" style="display: none;">
+    <div class="chatbot-wrap">
       <div class="chatbot-nav text-center"><img class="chatbot-nav-ieee-logo" src="images/main_logo_ieee.png"> <img
           class="chatbot-nav-cross" src="images/cross.svg">
       </div>
       <div id="chatbot-body" class="chatbot-body-full">
         <div class="d-flex chatbot-chat-ieee-vit-wrap">
-          <img class="chatbot-chat-ieee-vit-logo-img" src="images/favicon.png">
+          <img class="chatbot-chat-ieee-vit-logo-img" src="images/chatbot_ieee_logo.svg">
           <div class="chatbot-chat-ieee-vit-text">IEEE VIT · Bot</div>
         </div>
         <div class="chatbot-chat chatbot-chat-ieee-vit">Hey! Welcome to IEEE-VIT</div> <br>
@@ -802,25 +802,43 @@
           </div>
         </div>
 
-        <div class="chatbot-menu" style="display: none;">
-          <ul>
-            <a href="#about-section" class="about-us"><li>😀About Us</li></a>
-            <a href="https://www.instagram.com/ieeevitvellore/" target="_blank"><li>😀Find Us On Instagram</li></a>
-            <a href="https://twitter.com/ieeevitvellore" target="_blank"><li>😀Find Us On Twitter</li></a>
-            <a href="mailto:contact@ieeevit.org" target="_blank">
-              <li>😀Contact</li>
-            </a>
-          </ul>
+        <div class="flex-column chatbot-menu">
+          <a class="chatbot-menu-li about-us d-flex align-items-center" href="#about-section"><img class="chatbot-menu-img"
+              src="images/chatbot_ieee_logo.svg">About Us</a>
+          <a class="chatbot-menu-li d-flex align-items-center" href="https://www.instagram.com/ieeevitvellore/" target="_blank"><svg class="chatbot-menu-img"
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg> Find Us On
+            Instagram</a>
+          <a class="chatbot-menu-li d-flex align-items-center" href="https://twitter.com/ieeevitvellore" target="_blank"><svg class="chatbot-menu-img"
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter"
+              viewBox="0 0 16 16">
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+            </svg> Find Us On Twitter</a>
+          <a class="chatbot-menu-li d-flex align-items-center" href="mailto:contact@ieeevit.org" target="_blank"><svg class="chatbot-menu-img"
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+            </svg> Contact</a>
+
         </div>
+      </div>
+
+      <div class="chatbot-input-wrap">
         <div class="d-flex chatbot-input">
           <div class="flex-grow-1"><textarea onkeypress="send(event)" class="chatbot-input-textarea"
               placeholder="Type your question here" id="chatbot-input-text" rows="1"></textarea></div>
-          <div class="chatbot-send"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+          <div class="chatbot-send" style="opacity: 0.5;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M1.724 1.053C1.6403 1.01113 1.54653 0.993602 1.45336 1.0024C1.36019 1.01119 1.27135 1.04595 1.19696 1.10274C1.12257 1.15952 1.06561 1.23604 1.03256 1.32359C0.999506 1.41115 0.991689 1.50622 1.01 1.598L2.413 6.448C2.43916 6.53838 2.49029 6.61955 2.56052 6.68217C2.63075 6.74479 2.71722 6.78632 2.81 6.802L8.5 7.755C8.768 7.808 8.768 8.192 8.5 8.245L2.81 9.198C2.71722 9.21367 2.63075 9.25521 2.56052 9.31783C2.49029 9.38045 2.43916 9.46161 2.413 9.552L1.01 14.402C0.991689 14.4938 0.999506 14.5888 1.03256 14.6764C1.06561 14.764 1.12257 14.8405 1.19696 14.8973C1.27135 14.954 1.36019 14.9888 1.45336 14.9976C1.54653 15.0064 1.6403 14.9889 1.724 14.947L14.724 8.447C14.8069 8.40543 14.8767 8.3416 14.9254 8.26266C14.9741 8.18372 15 8.09277 15 8C15 7.90722 14.9741 7.81628 14.9254 7.73733C14.8767 7.65839 14.8069 7.59457 14.724 7.553L1.724 1.053Z"
-                fill="#808080" />
-            </svg></div>
+                d="M1.72391 1.05306C1.64021 1.0112 1.54644 0.993663 1.45327 1.00246C1.36009 1.01125 1.27126 1.04601 1.19687 1.1028C1.12248 1.15958 1.06552 1.2361 1.03247 1.32365C0.999414 1.41121 0.991597 1.50628 1.00991 1.59806L2.41291 6.44806C2.43907 6.53844 2.4902 6.61961 2.56043 6.68223C2.63065 6.74485 2.71713 6.78638 2.80991 6.80206L8.49991 7.75506C8.76791 7.80806 8.76791 8.19206 8.49991 8.24506L2.80991 9.19806C2.71713 9.21373 2.63065 9.25527 2.56043 9.31789C2.4902 9.38051 2.43907 9.46168 2.41291 9.55206L1.00991 14.4021C0.991597 14.4938 0.999414 14.5889 1.03247 14.6765C1.06552 14.764 1.12248 14.8405 1.19687 14.8973C1.27126 14.9541 1.36009 14.9889 1.45327 14.9977C1.54644 15.0065 1.64021 14.9889 1.72391 14.9471L14.7239 8.44706C14.8068 8.40549 14.8766 8.34166 14.9253 8.26272C14.9741 8.18378 14.9999 8.09283 14.9999 8.00006C14.9999 7.90728 14.9741 7.81634 14.9253 7.7374C14.8766 7.65845 14.8068 7.59463 14.7239 7.55306L1.72391 1.05306Z"
+                fill="#121212" />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
