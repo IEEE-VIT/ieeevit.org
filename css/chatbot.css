@@ -12,6 +12,9 @@ html {
   bottom: 18px;
   right: 18px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 button:focus.chatbot-button {
   outline: none;

@@ -60,22 +60,35 @@ document.querySelector(".chatbot-footer-menu-section").addEventListener("click",
     }
 })
 
-document.querySelector(".chatbot-send").addEventListener("click", () => {
+document.querySelector(".chatbot-send").addEventListener("click", chatbot_send)
+document.querySelector(".chatbot-input-textarea").addEventListener("keydown", send)
+
+async function chatbot_send() {
     if (document.querySelector("#chatbot-input-text").value.trim() != "") {
         document.querySelector("#chatbot-body").innerHTML += "<div class='text-right'><div class='chatbot-chat chatbot-chat-user'>" + document.querySelector("#chatbot-input-text").value.trim() + "</div></div>"
-        getData(document.querySelector('#chatbot-input-text').value.trim())
+        document.querySelector("#chatbot-body").scrollTo(0, (document.querySelector("#chatbot-body").scrollHeight))
         document.querySelector("#chatbot-input-text").value = ""
+        document.querySelector(".chatbot-send").removeEventListener("click", chatbot_send)
+        document.querySelector(".chatbot-input-textarea").removeEventListener("keydown", send)
+        await getData(document.querySelector('#chatbot-input-text').value.trim())
+        document.querySelector(".chatbot-send").addEventListener("click", chatbot_send)
+        document.querySelector(".chatbot-input-textarea").addEventListener("keydown", send)
     }
-})
+}
 
-function send(event) {
+async function send(event) {
     if (event.key == "Enter") {
         event.preventDefault();
         if (document.querySelector("#chatbot-input-text").value.trim() != "") {
             document.querySelector("#chatbot-body").innerHTML += "<div class='text-right'><div class='chatbot-chat chatbot-chat-user'>" + document.querySelector("#chatbot-input-text").value.trim() + "</div></div>"
             document.querySelector("#chatbot-body").scrollTo(0, (document.querySelector("#chatbot-body").scrollHeight))
-            getData(document.querySelector('#chatbot-input-text').value.trim())
             document.querySelector("#chatbot-input-text").value = "";
+            document.querySelector(".chatbot-send").removeEventListener("click", chatbot_send)
+            document.querySelector(".chatbot-input-textarea").removeEventListener("keydown", send)
+            await getData(document.querySelector('#chatbot-input-text').value.trim())
+            document.querySelector(".chatbot-send").addEventListener("click", chatbot_send)
+            document.querySelector(".chatbot-input-textarea").addEventListener("keydown", send)
+
         }
     }
 }
@@ -97,7 +110,6 @@ document.addEventListener("keydown", (event) => {
 })
 
 async function getData(user_query) {
-
     document.querySelector("#chatbot-body").innerHTML += "<div class='d-flex chatbot-chat-ieee-vit-wrap'><img class='chatbot-chat-ieee-vit-logo-img' src='images/chatbot_ieee_logo.svg'><div class='chatbot-chat-ieee-vit-text'>IEEE VIT · Bot</div></div><div><div class='loading-dots-wrapper chatbot-chat chatbot-chat-ieee-vit'><div class='loading-dots'>  <div class='loading-dots--dot'></div>  <div class='loading-dots--dot'></div> <div class='loading-dots--dot'></div></div></div>"
     document.querySelector("#chatbot-body").scrollTo(0, (document.querySelector("#chatbot-body").scrollHeight))
     try {
