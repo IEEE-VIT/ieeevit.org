@@ -1,4 +1,4 @@
-const url = "https://ieee-faq-chatbot.ieeevit.org/chatbot "
+const url = "https://ieee-faq-chatbot.ieeevit.org/chatbot"
 
 document.querySelector(".chatbot-button").addEventListener("click", () => {
     if (document.querySelector(".chatbot-wrap").classList.value == "chatbot-wrap") {
@@ -67,10 +67,10 @@ async function chatbot_send() {
     if (document.querySelector("#chatbot-input-text").value.trim() != "") {
         document.querySelector("#chatbot-body").innerHTML += "<div class='text-right'><div class='chatbot-chat chatbot-chat-user'>" + document.querySelector("#chatbot-input-text").value.trim() + "</div></div>"
         document.querySelector("#chatbot-body").scrollTo(0, (document.querySelector("#chatbot-body").scrollHeight))
-        document.querySelector("#chatbot-input-text").value = ""
         document.querySelector(".chatbot-send").removeEventListener("click", chatbot_send)
         document.querySelector(".chatbot-input-textarea").removeEventListener("keydown", send)
         await getData(document.querySelector('#chatbot-input-text').value.trim())
+        document.querySelector("#chatbot-input-text").value = ""
         document.querySelector(".chatbot-send").addEventListener("click", chatbot_send)
         document.querySelector(".chatbot-input-textarea").addEventListener("keydown", send)
     }
@@ -82,10 +82,10 @@ async function send(event) {
         if (document.querySelector("#chatbot-input-text").value.trim() != "") {
             document.querySelector("#chatbot-body").innerHTML += "<div class='text-right'><div class='chatbot-chat chatbot-chat-user'>" + document.querySelector("#chatbot-input-text").value.trim() + "</div></div>"
             document.querySelector("#chatbot-body").scrollTo(0, (document.querySelector("#chatbot-body").scrollHeight))
-            document.querySelector("#chatbot-input-text").value = "";
             document.querySelector(".chatbot-send").removeEventListener("click", chatbot_send)
             document.querySelector(".chatbot-input-textarea").removeEventListener("keydown", send)
             await getData(document.querySelector('#chatbot-input-text').value.trim())
+            document.querySelector("#chatbot-input-text").value = "";
             document.querySelector(".chatbot-send").addEventListener("click", chatbot_send)
             document.querySelector(".chatbot-input-textarea").addEventListener("keydown", send)
 
