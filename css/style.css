@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: "Manrope", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Manrope", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

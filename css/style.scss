@@ -1,0 +1,28 @@
+@import "variables";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: $font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
