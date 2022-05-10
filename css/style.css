@@ -12,7 +12,11 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   font-family: "Manrope", sans-serif;
+}
+
+body.dark {
   background-color: #222222;
+  color: white;
 }
 
 h1,

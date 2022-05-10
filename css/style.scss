@@ -12,7 +12,11 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     font-family: $font;
-    background-color: #222222;
+    
+    &.dark {
+        background-color: #222222;
+        color: white;
+    }
 }
 
 h1,
