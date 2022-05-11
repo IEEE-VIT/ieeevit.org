@@ -15,7 +15,15 @@ document.getElementById("change-theme").addEventListener("click", () => {
   changeTheme(theme);
 });
 
+const removeLoader = () => {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("main-content").style.display = "block";
+};
+
 window.onload = () => {
   let theme = localStorage.getItem("theme");
   changeTheme(theme);
+  setTimeout(() => {
+    removeLoader();
+  }, 3535); // simulating load time
 };

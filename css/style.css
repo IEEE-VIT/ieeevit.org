@@ -1,3 +1,94 @@
+body.dark #loader div {
+  background-color: white;
+}
+
+#loader {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  right: 1rem;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+#loader div {
+  width: 1rem;
+  height: 1rem;
+  background-color: #222222;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+#loader div:nth-child(1) {
+  position: relative;
+  left: 2rem;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: appear 0.65s infinite;
+          animation: appear 0.65s infinite;
+}
+
+#loader div:nth-child(2), #loader div:nth-child(3) {
+  -webkit-animation: move 0.65s infinite;
+          animation: move 0.65s infinite;
+}
+
+#loader div:nth-child(4) {
+  -webkit-animation: fade 0.65s infinite;
+          animation: fade 0.65s infinite;
+}
+
+@-webkit-keyframes appear {
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes appear {
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fade {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes fade {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes move {
+  to {
+    -webkit-transform: translateX(2rem);
+            transform: translateX(2rem);
+  }
+}
+
+@keyframes move {
+  to {
+    -webkit-transform: translateX(2rem);
+            transform: translateX(2rem);
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -34,5 +125,9 @@ a {
 
 button {
   cursor: pointer;
+}
+
+#main-content {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

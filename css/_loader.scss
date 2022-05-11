@@ -1,0 +1,54 @@
+#loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 1rem;
+  transform: translateZ(
+    0
+  ); // to turn on hardware acceleration - improve animation smoothness
+
+  div {
+    width: 1rem;
+    height: 1rem;
+    background-color: #222222;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+
+    &:nth-child(1) {
+      position: relative;
+      left: 2rem;
+      transform: scale(0);
+      animation: appear $loader-animation-duration infinite;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      animation: move $loader-animation-duration infinite;
+    }
+
+    &:nth-child(4) {
+      animation: fade $loader-animation-duration infinite;
+    }
+  }
+}
+
+@keyframes appear {
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade {
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes move {
+  to {
+    transform: translateX(2rem);
+  }
+}
