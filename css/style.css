@@ -1,3 +1,17 @@
+body.dark {
+  background-color: #222222;
+  color: white;
+}
+
+body.dark .about h1 {
+  border-color: white;
+}
+
+body.dark .about .domains {
+  -webkit-box-shadow: -10px -10px 20px #2e2e2e, 10px 10px 20px #1b1b1b;
+          box-shadow: -10px -10px 20px #2e2e2e, 10px 10px 20px #1b1b1b;
+}
+
 body.dark #loader div {
   background-color: white;
 }
@@ -89,6 +103,71 @@ body.dark #loader div {
   }
 }
 
+.about {
+  margin: Min(10%, 7.5rem);
+}
+
+.about h1 {
+  font-size: 33px;
+  font-weight: normal;
+  color: #2f93eb;
+  border-bottom: 2px solid #141414;
+  padding-bottom: 0.15rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.about p {
+  line-height: 24px;
+  margin: 2rem 0;
+}
+
+.about .domains {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px #ededed;
+          box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px #ededed;
+  border-radius: 0.5rem;
+}
+
+.about .domains .domain {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: Max(15rem, 30%);
+  margin: 1rem 0;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.about .domains .domain::-webkit-scrollbar {
+  display: none;
+}
+
+.about .domains .domain .domain-text {
+  font-size: 20px;
+  color: #2f93eb;
+  padding-left: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -105,11 +184,6 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
-body.dark {
-  background-color: #222222;
-  color: white;
-}
-
 h1,
 h2,
 h3,
@@ -121,6 +195,7 @@ h6 {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 button {
