@@ -1,4 +1,16 @@
 body.dark {
+  background-color: #222222;
+  color: white;
+
+  .about {
+    h1 {
+      border-color: white;
+    }
+    .domains {
+      box-shadow: -10px -10px 20px #2e2e2e, 10px 10px 20px #1b1b1b;
+    }
+  }
+
   #loader div {
     background-color: white;
   }
