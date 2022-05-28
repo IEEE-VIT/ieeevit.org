@@ -2,6 +2,20 @@ body.dark #loader div {
   background-color: white;
 }
 
+body.dark .navbar {
+  background: #0066a1;
+  -webkit-box-shadow: 0px 2px 4px #0066a1;
+          box-shadow: 0px 2px 4px #0066a1;
+}
+
+body.dark .navbar .socials .social_icons .img1 {
+  fill: #fff;
+}
+
+body.dark a {
+  color: white;
+}
+
 #loader {
   width: 100vw;
   height: 100vh;
@@ -86,6 +100,109 @@ body.dark #loader div {
   to {
     -webkit-transform: translateX(2rem);
             transform: translateX(2rem);
+  }
+}
+
+.navbar {
+  position: absolute;
+  background: white;
+  height: 12vh;
+  width: 100vw;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px #0066a1;
+          box-shadow: 0px 2px 4px #0066a1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 514px) {
+  .navbar {
+    margin: 0%;
+    padding: 0%;
+  }
+}
+
+.menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 2rem;
+  padding-left: 3%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media only screen and (max-width: 920px) {
+  .menu {
+    display: none;
+  }
+}
+
+a {
+  color: #0066a1;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 3%;
+}
+
+@media only screen and (max-width: 920px) {
+  .socials {
+    width: 100vw;
+    margin-left: 5%;
+    gap: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 514px) {
+  .socials {
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .socials {
+    gap: 0.5rem;
+  }
+}
+
+.socials li:last-child {
+  padding-left: 1.5rem;
+  border: none;
+  padding-right: 2%;
+}
+
+@media only screen and (max-width: 920px) {
+  .socials li:last-child {
+    margin-left: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 5%;
   }
 }
 

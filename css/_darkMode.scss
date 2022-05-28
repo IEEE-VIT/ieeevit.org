@@ -1,5 +1,20 @@
 body.dark {
-  #loader div {
-    background-color: white;
-  }
+    #loader div {
+        background-color: white;
+    }
+    .navbar {
+        background: $color-dark-blue;
+        box-shadow: 0px 2px 4px $color-dark-blue;
+        .socials {
+            .social_icons {
+                .img1 {
+                    fill: #fff;
+                    ;
+                }
+            }
+        }
+    }
+    a {
+        color: white;
+    }
 }
