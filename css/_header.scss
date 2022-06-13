@@ -1,33 +1,14 @@
-body.dark {
-    #loader div {
-        background-color: white;
-    }
-    .navbar {
-        background: $color-dark-blue;
-        box-shadow: 0px 2px 4px $color-dark-blue;
-        .socials {
-            .social_icons {
-                .img1 {
-                    fill: #fff;
-                    ;
-                }
-            }
-        }
-    }
-    a {
-        color: white;
-    }
     .header-container {
         position: relative;
         top: 12vh;
         height: 80vh;
     }
-    .ieeelogo-white {
+    
+    .ieeelogo-black {
         position: absolute;
         width: 30%;
         top: 22%;
         left: 35%;
-        display: block;
         @media only screen and (max-width: 700px) {
             left: 30%;
             width: 40%;
@@ -37,14 +18,12 @@ body.dark {
             width: 60%;
         }
     }
-    .ieeelogo-black {
+    
+    .ieeelogo-white {
         display: none;
     }
+    
     .left-circle-light {
-        display: none;
-    }
-    .left-circle-dark {
-        display: block;
         position: absolute;
         top: 20%;
         left: -14%;
@@ -67,81 +46,99 @@ body.dark {
             top: 50%;
         }
     }
-    .top-square-light {
+    
+    .left-circle-dark {
         display: none;
     }
-    .top-square-dark {
+    
+    .top-square-light {
         display: block;
         position: absolute;
-        left: 2%;
-        top: -3%;
-        z-index: -1;
+        left: 3%;
+        top: 1%;
     }
-    .top-triangle-light {
+    
+    .top-square-dark {
         display: none;
     }
-    .top-triangle-dark {
+    
+    .top-triangle-light {
         display: block;
         position: absolute;
         left: 13%;
         top: -12%;
         z-index: -1;
     }
-    .top-semicircle-light {
+    
+    .top-triangle-dark {
         display: none;
     }
-    .top-semicircle-dark {
+    
+    .top-semicircle-light {
         display: block;
         position: absolute;
         left: 27%;
         top: -13%;
         z-index: -1;
     }
-    .right-semicircle-light {
+    
+    .top-semicircle-dark {
         display: none;
     }
-    .right-semicircle-dark {
+    
+    .right-semicircle-light {
         display: block;
         position: absolute;
         top: -13%;
         left: 78%;
         z-index: -1;
     }
-    .right-rings-dark {
+    
+    .right-semicircle-dark {
+        display: none;
+    }
+    
+    .right-rings-light {
         display: block;
         position: relative;
         top: -13%;
         z-index: -1;
         float: right;
     }
-    .right-rings-light {
+    
+    .right-rings-dark {
         display: none;
     }
+    
     .center-triangle-light {
-        display: none;
-    }
-    .center-triangle-dark {
         display: block;
         position: absolute;
-        left: 62%;
-        top: 49%;
+        left: 63%;
+        top: 50%;
     }
-    .center-square-light {
+    
+    .center-triangle-dark {
         display: none;
     }
-    .center-square-dark {
+    
+    .center-square-light {
         display: block;
         position: absolute;
         top: 65%;
         left: 70%;
     }
-    .center-bigsquare-light {
+    
+    .center-square-dark {
         display: none;
     }
-    .center-bigsquare-dark {
+    
+    .center-bigsquare-light {
         display: block;
         position: absolute;
         top: 84%;
         left: 60%;
     }
-}
+    
+    .center-bigsquare-dark {
+        display: none;
+    }

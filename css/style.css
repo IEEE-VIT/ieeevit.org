@@ -16,6 +16,175 @@ body.dark a {
   color: white;
 }
 
+body.dark .header-container {
+  position: relative;
+  top: 12vh;
+  height: 80vh;
+}
+
+body.dark .ieeelogo-white {
+  position: absolute;
+  width: 30%;
+  top: 22%;
+  left: 35%;
+  display: block;
+}
+
+@media only screen and (max-width: 700px) {
+  body.dark .ieeelogo-white {
+    left: 30%;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body.dark .ieeelogo-white {
+    left: 20%;
+    width: 60%;
+  }
+}
+
+body.dark .ieeelogo-black {
+  display: none;
+}
+
+body.dark .left-circle-light {
+  display: none;
+}
+
+body.dark .left-circle-dark {
+  display: block;
+  position: absolute;
+  top: 20%;
+  left: -14%;
+}
+
+@media only screen and (max-width: 1380px) {
+  body.dark .left-circle-dark {
+    left: -18%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  body.dark .left-circle-dark {
+    left: -22%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body.dark .left-circle-dark {
+    left: -30%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body.dark .left-circle-dark {
+    left: -20%;
+    width: 50%;
+    top: 30%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body.dark .left-circle-dark {
+    left: -15%;
+    top: 50%;
+  }
+}
+
+body.dark .top-square-light {
+  display: none;
+}
+
+body.dark .top-square-dark {
+  display: block;
+  position: absolute;
+  left: 2%;
+  top: -3%;
+  z-index: -1;
+}
+
+body.dark .top-triangle-light {
+  display: none;
+}
+
+body.dark .top-triangle-dark {
+  display: block;
+  position: absolute;
+  left: 13%;
+  top: -12%;
+  z-index: -1;
+}
+
+body.dark .top-semicircle-light {
+  display: none;
+}
+
+body.dark .top-semicircle-dark {
+  display: block;
+  position: absolute;
+  left: 27%;
+  top: -13%;
+  z-index: -1;
+}
+
+body.dark .right-semicircle-light {
+  display: none;
+}
+
+body.dark .right-semicircle-dark {
+  display: block;
+  position: absolute;
+  top: -13%;
+  left: 78%;
+  z-index: -1;
+}
+
+body.dark .right-rings-dark {
+  display: block;
+  position: relative;
+  top: -13%;
+  z-index: -1;
+  float: right;
+}
+
+body.dark .right-rings-light {
+  display: none;
+}
+
+body.dark .center-triangle-light {
+  display: none;
+}
+
+body.dark .center-triangle-dark {
+  display: block;
+  position: absolute;
+  left: 62%;
+  top: 49%;
+}
+
+body.dark .center-square-light {
+  display: none;
+}
+
+body.dark .center-square-dark {
+  display: block;
+  position: absolute;
+  top: 65%;
+  left: 70%;
+}
+
+body.dark .center-bigsquare-light {
+  display: none;
+}
+
+body.dark .center-bigsquare-dark {
+  display: block;
+  position: absolute;
+  top: 84%;
+  left: 60%;
+}
+
 #loader {
   width: 100vw;
   height: 100vh;
@@ -204,6 +373,172 @@ a {
     width: fit-content;
     margin-right: 5%;
   }
+}
+
+.header-container {
+  position: relative;
+  top: 12vh;
+  height: 80vh;
+}
+
+.ieeelogo-black {
+  position: absolute;
+  width: 30%;
+  top: 22%;
+  left: 35%;
+}
+
+@media only screen and (max-width: 700px) {
+  .ieeelogo-black {
+    left: 30%;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .ieeelogo-black {
+    left: 20%;
+    width: 60%;
+  }
+}
+
+.ieeelogo-white {
+  display: none;
+}
+
+.left-circle-light {
+  position: absolute;
+  top: 20%;
+  left: -14%;
+}
+
+@media only screen and (max-width: 1380px) {
+  .left-circle-light {
+    left: -18%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .left-circle-light {
+    left: -22%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .left-circle-light {
+    left: -30%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .left-circle-light {
+    left: -20%;
+    width: 50%;
+    top: 30%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .left-circle-light {
+    left: -15%;
+    top: 50%;
+  }
+}
+
+.left-circle-dark {
+  display: none;
+}
+
+.top-square-light {
+  display: block;
+  position: absolute;
+  left: 3%;
+  top: 1%;
+}
+
+.top-square-dark {
+  display: none;
+}
+
+.top-triangle-light {
+  display: block;
+  position: absolute;
+  left: 13%;
+  top: -12%;
+  z-index: -1;
+}
+
+.top-triangle-dark {
+  display: none;
+}
+
+.top-semicircle-light {
+  display: block;
+  position: absolute;
+  left: 27%;
+  top: -13%;
+  z-index: -1;
+}
+
+.top-semicircle-dark {
+  display: none;
+}
+
+.right-semicircle-light {
+  display: block;
+  position: absolute;
+  top: -13%;
+  left: 78%;
+  z-index: -1;
+}
+
+.right-semicircle-dark {
+  display: none;
+}
+
+.right-rings-light {
+  display: block;
+  position: relative;
+  top: -13%;
+  z-index: -1;
+  float: right;
+}
+
+.right-rings-dark {
+  display: none;
+}
+
+.center-triangle-light {
+  display: block;
+  position: absolute;
+  left: 63%;
+  top: 50%;
+}
+
+.center-triangle-dark {
+  display: none;
+}
+
+.center-square-light {
+  display: block;
+  position: absolute;
+  top: 65%;
+  left: 70%;
+}
+
+.center-square-dark {
+  display: none;
+}
+
+.center-bigsquare-light {
+  display: block;
+  position: absolute;
+  top: 84%;
+  left: 60%;
+}
+
+.center-bigsquare-dark {
+  display: none;
 }
 
 * {
