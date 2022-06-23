@@ -1,4 +1,14 @@
 body.dark {
+  background-color: #222222;
+  color: white;
+
+  .techloop,
+  .events {
+    h1 {
+      border-color: white;
+    }
+  }
+
   #loader div {
     background-color: white;
   }

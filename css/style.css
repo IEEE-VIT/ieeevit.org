@@ -1,3 +1,13 @@
+body.dark {
+  background-color: #222222;
+  color: white;
+}
+
+body.dark .techloop h1,
+body.dark .events h1 {
+  border-color: white;
+}
+
 body.dark #loader div {
   background-color: white;
 }
@@ -89,6 +99,206 @@ body.dark #loader div {
   }
 }
 
+.techloop,
+.events {
+  margin: Min(10%, 7.5rem);
+  position: relative;
+}
+
+.techloop h1,
+.events h1 {
+  font-size: 33px;
+  font-weight: normal;
+  color: #4285f4;
+  border-bottom: 2px solid #141414;
+  padding-bottom: 0.15rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.techloop p,
+.events p {
+  line-height: 24px;
+  margin: 2rem 0;
+}
+
+.techloop .carousel,
+.events .carousel {
+  background: linear-gradient(160.01deg, rgba(0, 102, 161, 0.2) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(0, 102, 161, 0.2) 100%);
+  padding: 2rem;
+  height: 23.85rem;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.techloop .carousel::before,
+.events .carousel::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: calc(100% - 1px * 2);
+  height: calc(100% - 1px * 2);
+  background-color: white;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+.techloop .carousel::after,
+.events .carousel::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: calc(100% - 1px * 2);
+  height: calc(100% - 1px * 2);
+  background: linear-gradient(141.25deg, rgba(218, 238, 255, 0.12) 0%, rgba(201, 230, 255, 0) 49.48%, rgba(201, 230, 255, 0.09) 99.48%);
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.techloop .carousel .previous,
+.techloop .carousel .next,
+.events .carousel .previous,
+.events .carousel .next {
+  position: absolute;
+  top: calc(50% - 3.5rem);
+  font-size: 4.5rem;
+  color: #141414;
+  cursor: pointer;
+}
+
+.techloop .carousel .previous,
+.events .carousel .previous {
+  left: -3rem;
+}
+
+.techloop .carousel .next,
+.events .carousel .next {
+  right: -3rem;
+}
+
+.techloop .carousel .container,
+.events .carousel .container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.techloop .carousel .container::-webkit-scrollbar,
+.events .carousel .container::-webkit-scrollbar {
+  display: none;
+}
+
+.techloop .carousel .container .slide,
+.events .carousel .container .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  min-width: 100%;
+  scroll-snap-align: start;
+  z-index: 15;
+}
+
+.techloop .carousel .container .slide .content,
+.events .carousel .container .slide .content {
+  width: 45%;
+}
+
+.techloop .carousel .container .slide .content h2,
+.events .carousel .container .slide .content h2 {
+  font-size: 33px;
+  font-weight: normal;
+  color: #54afff;
+}
+
+.techloop .carousel .container .slide img,
+.events .carousel .container .slide img {
+  width: 45%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 1205px) {
+  body .techloop .carousel,
+  body .events .carousel {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1rem;
+  }
+  body .techloop .carousel .container .slide,
+  body .events .carousel .container .slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .techloop .carousel .container .slide .content,
+  body .events .carousel .container .slide .content {
+    width: 100%;
+  }
+  body .techloop .carousel .container .slide img,
+  body .events .carousel .container .slide img {
+    width: 100%;
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body .techloop h1,
+  .events h1 {
+    font-size: 24px;
+  }
+  body .techloop p,
+  .events p {
+    font-size: 14px;
+    margin: 1rem 0;
+  }
+  body .techloop .carousel .previous,
+  body .techloop .carousel .next,
+  .events .carousel .previous,
+  .events .carousel .next {
+    top: 1rem;
+    font-size: 2.5rem;
+  }
+  body .techloop .carousel .previous,
+  .events .carousel .previous {
+    left: -1.5rem;
+  }
+  body .techloop .carousel .next,
+  .events .carousel .next {
+    right: -1.5rem;
+  }
+  body .techloop .carousel .container .slide .content h2,
+  .events .carousel .container .slide .content h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -105,11 +315,6 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
-body.dark {
-  background-color: #222222;
-  color: white;
-}
-
 h1,
 h2,
 h3,
@@ -121,6 +326,7 @@ h6 {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 button {

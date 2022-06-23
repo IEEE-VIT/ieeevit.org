@@ -25,5 +25,5 @@ window.onload = () => {
   changeTheme(theme);
   setTimeout(() => {
     removeLoader();
-  }, 3535); // simulating load time
+  }, 2355); // simulating load time
 };

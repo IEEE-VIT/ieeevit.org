@@ -1,6 +1,7 @@
 @import "variables";
 @import "darkMode";
 @import "loader";
+@import "carousel";
 
 * {
   padding: 0;
@@ -15,11 +16,6 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   font-family: $font;
-
-  &.dark {
-    background-color: #222222;
-    color: white;
-  }
 }
 
 h1,
@@ -33,6 +29,7 @@ h6 {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 button {

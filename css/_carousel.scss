@@ -1,0 +1,179 @@
+.techloop,
+.events {
+  margin: Min(10%, 7.5rem);
+  position: relative;
+
+  h1 {
+    font-size: $heading-font-size;
+    font-weight: normal;
+    color: $color-light-blue;
+    border-bottom: 2px solid $color-black;
+    padding-bottom: 0.15rem;
+    width: fit-content;
+  }
+
+  p {
+    line-height: 24px;
+    margin: 2rem 0;
+  }
+
+  .carousel {
+    // carousel border color (linear gradient)
+
+    background: linear-gradient(
+      160.01deg,
+      rgba(0, 102, 161, 0.2) 0%,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(0, 102, 161, 0.2) 100%
+    );
+
+    padding: 2rem;
+    height: 23.85rem;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      width: calc(100% - 1px * 2);
+      height: calc(100% - 1px * 2);
+
+      // added layer (because carousel body background color [linear gradient] should be based on white)
+
+      background-color: white;
+      border-radius: 10px;
+      z-index: 5;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      width: calc(100% - 1px * 2);
+      height: calc(100% - 1px * 2);
+
+      // carousel body background color (linear gradient)
+
+      background: linear-gradient(
+        141.25deg,
+        rgba(218, 238, 255, 0.12) 0%,
+        rgba(201, 230, 255, 0) 49.48%,
+        rgba(201, 230, 255, 0.09) 99.48%
+      );
+
+      border-radius: 10px;
+      z-index: 10;
+    }
+
+    .previous,
+    .next {
+      position: absolute;
+      top: calc(50% - 3.5rem);
+      font-size: 4.5rem;
+      color: $color-black;
+      cursor: pointer;
+    }
+    .previous {
+      left: -3rem;
+    }
+
+    .next {
+      right: -3rem;
+    }
+
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      overflow: scroll;
+      scroll-snap-type: x mandatory;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      .slide {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100%;
+        min-width: 100%;
+        scroll-snap-align: start; // won't make any difference if we use start or center
+        z-index: 15;
+
+        .content {
+          width: 45%;
+          h2 {
+            font-size: $heading-font-size;
+            font-weight: normal;
+            color: #54afff;
+          }
+        }
+        img {
+          width: 45%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+body .techloop .carousel,
+body .events .carousel {
+  @media screen and (max-width: 1205px) {
+    height: fit-content;
+    padding: 1rem;
+
+    .container .slide {
+      flex-direction: column;
+      .content {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        height: 15rem;
+      }
+    }
+  }
+}
+
+body .techloop,
+.events {
+  @media screen and (max-width: 850px) {
+    h1 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 14px;
+      margin: 1rem 0;
+    }
+    .carousel {
+      .previous,
+      .next {
+        top: 1rem;
+        font-size: 2.5rem;
+      }
+      .previous {
+        left: -1.5rem;
+      }
+
+      .next {
+        right: -1.5rem;
+      }
+      .container .slide .content h2 {
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+}
