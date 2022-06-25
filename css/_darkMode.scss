@@ -2,4 +2,20 @@ body.dark {
   #loader div {
     background-color: white;
   }
+
+  section {
+    h1 {
+      border-color: white;
+    }
+    .carousel {
+      .previous,
+      .next {
+        color: white;
+      }
+    }
+  }
+
+  .blogs::after {
+    background: url(../images/dark_shape.svg) no-repeat center center/cover;
+  }
 }

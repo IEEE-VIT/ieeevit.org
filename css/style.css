@@ -2,6 +2,19 @@ body.dark #loader div {
   background-color: white;
 }
 
+body.dark section h1 {
+  border-color: white;
+}
+
+body.dark section .carousel .previous,
+body.dark section .carousel .next {
+  color: white;
+}
+
+body.dark .blogs::after {
+  background: url(../images/dark_shape.svg) no-repeat center center/cover;
+}
+
 #loader {
   width: 100vw;
   height: 100vh;
@@ -87,6 +100,213 @@ body.dark #loader div {
     -webkit-transform: translateX(2rem);
             transform: translateX(2rem);
   }
+}
+
+.blogs,
+.podcast {
+  margin: Min(10%, 7.5rem);
+}
+
+.blogs h1,
+.podcast h1 {
+  font-size: 33px;
+  font-weight: normal;
+  color: #4285f4;
+  border-bottom: 2px solid #141414;
+  padding-bottom: 0.15rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.blogs > p,
+.podcast > p {
+  line-height: 24px;
+  margin: 2rem 0;
+}
+
+.blogs .carousel,
+.podcast .carousel {
+  height: 23.85rem;
+  overflow-x: visible;
+  width: calc(100vw - Min(10vw, 7.5rem));
+  position: relative;
+}
+
+.blogs .carousel .previous,
+.blogs .carousel .next,
+.podcast .carousel .previous,
+.podcast .carousel .next {
+  position: absolute;
+  top: 35%;
+  font-size: 3.5rem;
+  color: #141414;
+}
+
+.blogs .carousel .previous,
+.podcast .carousel .previous {
+  left: -2rem;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  cursor: default;
+}
+
+.blogs .carousel .next,
+.podcast .carousel .next {
+  right: 1.5rem;
+  cursor: pointer;
+}
+
+.blogs .carousel .container,
+.podcast .carousel .container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: relative;
+}
+
+.blogs .carousel .container::-webkit-scrollbar,
+.podcast .carousel .container::-webkit-scrollbar {
+  display: none;
+}
+
+.blogs .carousel .container .slide,
+.podcast .carousel .container .slide {
+  background-color: gray;
+  height: 100%;
+  width: 45%;
+  min-width: 32.5rem;
+  margin-right: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 5fr 2fr 1fr;
+      grid-template-rows: 5fr 2fr 1fr;
+  scroll-snap-align: start;
+}
+
+.blogs .carousel .container .slide:first-child::after,
+.podcast .carousel .container .slide:first-child::after {
+  content: "latest";
+  text-transform: uppercase;
+  letter-spacing: 0.15px;
+  font-size: 20px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1rem;
+  width: 5.5rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  height: 9%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #0066a1;
+}
+
+.blogs .carousel .container .slide:last-child,
+.podcast .carousel .container .slide:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 41rem) {
+  .blogs .carousel .container .slide,
+  .podcast .carousel .container .slide {
+    min-width: 100%;
+  }
+}
+
+.blogs .carousel .container .slide img,
+.blogs .carousel .container .slide .content,
+.blogs .carousel .container .slide .read-more,
+.podcast .carousel .container .slide img,
+.podcast .carousel .container .slide .content,
+.podcast .carousel .container .slide .read-more {
+  min-height: 0;
+  overflow-y: hidden;
+}
+
+.blogs .carousel .container .slide img,
+.podcast .carousel .container .slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogs .carousel .container .slide .content,
+.podcast .carousel .container .slide .content {
+  margin: 1rem;
+  color: black;
+}
+
+.blogs .carousel .container .slide .content h2,
+.podcast .carousel .container .slide .content h2 {
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding-bottom: 0.15rem;
+}
+
+.blogs .carousel .container .slide .content p,
+.podcast .carousel .container .slide .content p {
+  font-size: 12px;
+  width: 100%;
+}
+
+.blogs .carousel .container .slide .read-more,
+.podcast .carousel .container .slide .read-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 1rem;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #0066a1;
+}
+
+.podcast .carousel .container .slide:first-child::after {
+  content: "recent";
+}
+
+.blogs {
+  position: relative;
+}
+
+.blogs::after {
+  content: "";
+  width: 32.5rem;
+  height: 32.5rem;
+  position: absolute;
+  bottom: -17.5rem;
+  left: -17.5rem;
+  background: url(../images/light_shape.svg) no-repeat center center/cover;
+  z-index: -1;
 }
 
 * {
