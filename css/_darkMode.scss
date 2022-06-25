@@ -2,10 +2,35 @@ body.dark {
   background-color: #222222;
   color: white;
 
-  .techloop,
-  .events {
+  section {
     h1 {
       border-color: white;
+    }
+    .carousel {
+      .previous,
+      .next {
+        color: white;
+      }
+    }
+  }
+
+  .techloop,
+  .events {
+    .carousel {
+      background: linear-gradient(
+        141.25deg,
+        rgba(255, 255, 255, 0.06) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+
+      &::after {
+        background: linear-gradient(
+          160.01deg,
+          rgba(0, 102, 161, 0.14) 0%,
+          rgba(255, 255, 255, 0.1) 50%,
+          rgba(0, 102, 161, 0.07) 100%
+        );
+      }
     }
   }
 

@@ -7,6 +7,7 @@ const changeTheme = (theme) => {
   theme === "dark"
     ? document.body.classList.add(theme)
     : document.body.classList.remove("dark");
+  changeImages(theme);
 };
 
 document.getElementById("change-theme").addEventListener("click", () => {
@@ -25,5 +26,14 @@ window.onload = () => {
   changeTheme(theme);
   setTimeout(() => {
     removeLoader();
-  }, 2355); // simulating load time
+  }, 1); // simulating load time
+};
+
+const changeImages = (theme) => {
+  const shapes = document.getElementsByClassName("shape");
+  const to_replace = theme == "dark" ? "light" : "dark";
+
+  Array.from(shapes).forEach((shape) => {
+    shape.src = shape.src.replace(to_replace, theme);
+  });
 };

@@ -39,3 +39,8 @@ button {
 #main-content {
   display: none;
 }
+
+.shape {
+  position: absolute;
+  z-index: -1;
+}
