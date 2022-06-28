@@ -22,6 +22,40 @@ body.dark .header-container {
   height: 80vh;
 }
 
+body.dark .coming-up {
+  position: absolute;
+  top: 65%;
+  left: 47%;
+  color: #54AFFF;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 1380px) {
+  body.dark .coming-up {
+    top: 63%;
+  }
+}
+
+body.dark .event-name {
+  position: absolute;
+  font-weight: 500;
+  top: 70%;
+  left: 35%;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding-left: 20px;
+}
+
+body.dark .cta-button {
+  display: block;
+  background-color: #2F93EB;
+  position: absolute;
+  padding: 1rem;
+  top: 80%;
+  left: 45%;
+  border-radius: 2px;
+}
+
 body.dark .ieeelogo-white {
   position: absolute;
   width: 30%;
@@ -183,6 +217,17 @@ body.dark .center-bigsquare-dark {
   position: absolute;
   top: 84%;
   left: 60%;
+}
+
+body.dark .center-bottomtriangle-light {
+  display: none;
+}
+
+body.dark .center-bottomtriangle-dark {
+  display: block;
+  position: absolute;
+  top: 80%;
+  left: 25%;
 }
 
 #loader {
@@ -381,6 +426,44 @@ a {
   height: 80vh;
 }
 
+.coming-up {
+  position: absolute;
+  top: 65%;
+  left: 47%;
+  color: #2F93EB;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 1380px) {
+  .coming-up {
+    top: 63%;
+  }
+}
+
+.event-name {
+  position: absolute;
+  font-weight: 500;
+  top: 70%;
+  left: 35%;
+  color: #141414;
+  font-size: 1.5rem;
+  padding-left: 20px;
+}
+
+.cta-button {
+  display: block;
+  background-color: #2F93EB;
+  position: absolute;
+  padding: 1rem;
+  top: 80%;
+  left: 45%;
+  border-radius: 2px;
+}
+
+.btn--header {
+  color: #141414;
+}
+
 .ieeelogo-black {
   position: absolute;
   width: 30%;
@@ -539,6 +622,17 @@ a {
 
 .center-bigsquare-dark {
   display: none;
+}
+
+.center-bottomtriangle-dark {
+  display: none;
+}
+
+.center-bottomtriangle-light {
+  display: block;
+  position: absolute;
+  top: 80%;
+  left: 25%;
 }
 
 * {
