@@ -197,6 +197,12 @@ body.dark .center-triangle-dark {
   top: 49%;
 }
 
+@media only screen and (max-width: 1380px) {
+  body.dark .center-triangle-dark {
+    top: 45%;
+  }
+}
+
 body.dark .center-square-light {
   display: none;
 }
@@ -217,6 +223,12 @@ body.dark .center-bigsquare-dark {
   position: absolute;
   top: 84%;
   left: 60%;
+}
+
+@media only screen and (max-width: 1380px) {
+  body.dark .center-bigsquare-dark {
+    top: 88%;
+  }
 }
 
 body.dark .center-bottomtriangle-light {
