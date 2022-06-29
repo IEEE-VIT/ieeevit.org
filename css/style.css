@@ -1,18 +1,23 @@
+body.dark {
+  background-color: #222222;
+  color: white;
+}
+
 body.dark #loader div {
   background-color: white;
 }
 
 body.dark .navbar {
-  background: #0066a1;
-  -webkit-box-shadow: 0px 2px 4px #0066a1;
-          box-shadow: 0px 2px 4px #0066a1;
+  background-color: #0066a1;
+  -webkit-box-shadow: 5.65625px 5.65625px 11.3125px #000000;
+          box-shadow: 5.65625px 5.65625px 11.3125px #000000;
 }
 
-body.dark .navbar .socials .social_icons .img1 {
-  fill: #fff;
+body.dark .navbar .menu.open::after {
+  background-color: #0e0e0e;
 }
 
-body.dark a {
+body.dark .navbar .menu_options a {
   color: white;
 }
 
@@ -104,29 +109,26 @@ body.dark a {
 }
 
 .navbar {
-  position: absolute;
-  background: white;
-  height: 12vh;
-  width: 100vw;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 2px 4px #0066a1;
-          box-shadow: 0px 2px 4px #0066a1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 4px 0px #0066a1;
+          box-shadow: 0px 2px 4px 0px #0066a1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 3%;
+  position: relative;
 }
 
-@media only screen and (max-width: 514px) {
-  .navbar {
-    margin: 0%;
-    padding: 0%;
-  }
+.navbar .hamburger-menu {
+  display: none;
+  cursor: pointer;
 }
 
-.menu {
+.navbar .menu {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,27 +139,20 @@ body.dark a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  gap: 2rem;
-  padding-left: 3%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
-@media only screen and (max-width: 920px) {
-  .menu {
-    display: none;
-  }
+.navbar .menu .cross {
+  display: none;
+  cursor: pointer;
 }
 
-a {
+.navbar .menu .menu_options {
   color: #0066a1;
   font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  padding: 0 1rem;
 }
 
-.socials {
+.navbar .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,42 +162,78 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 3%;
 }
 
-@media only screen and (max-width: 920px) {
-  .socials {
-    width: 100vw;
-    margin-left: 5%;
-    gap: 1.5rem;
+@media only screen and (max-width: 945px) {
+  .navbar .socials {
+    width: 100%;
   }
 }
 
-@media only screen and (max-width: 514px) {
-  .socials {
-    gap: 1rem;
-  }
-}
-
-@media only screen and (max-width: 290px) {
-  .socials {
-    gap: 0.5rem;
-  }
-}
-
-.socials li:last-child {
+.navbar .socials #change-theme {
   padding-left: 1.5rem;
-  border: none;
   padding-right: 2%;
+  cursor: pointer;
 }
 
-@media only screen and (max-width: 920px) {
-  .socials li:last-child {
+@media only screen and (max-width: 945px) {
+  .navbar .socials #change-theme {
     margin-left: auto;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 945px) {
+  .navbar .hamburger-menu {
+    display: block;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    margin: 2rem 1.5rem;
+  }
+  .navbar .menu.close {
+    display: none;
+  }
+  .navbar .menu.open {
+    position: fixed;
+    top: 0;
+    right: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 100vh;
+    width: 65%;
+    padding-top: 25vh;
+    padding-left: 12.5%;
+    background-color: #2d8de0;
+    opacity: 0.85;
+  }
+  .navbar .menu.open::after {
+    content: "";
+    width: 35vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -35vw;
+    background-color: #7a7a7a;
+    opacity: 0.4;
+  }
+  .navbar .menu.open .cross {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 3rem 2rem;
+  }
+  .navbar .menu.open .menu_options {
+    padding: 0.5rem 0;
+  }
+  .navbar .menu.open .menu_options a {
+    font-size: 24px;
+    color: white;
   }
 }
 
