@@ -1,5 +1,5 @@
 .about {
-  margin: Min(8.5%, 7.5rem);
+  margin: Min(15%, 7.5rem);
 
   h1 {
     font-size: $heading-font-size;
@@ -24,7 +24,7 @@
     border-radius: 0.5rem;
 
     .domain {
-      flex-basis: Max(15rem, 25%);
+      flex-basis: 16.5rem;
       display: grid;
       grid-template-columns: 1fr 3fr;
       margin: 0.5rem 0;
