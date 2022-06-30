@@ -115,7 +115,7 @@ body.dark #loader div {
 
 .techloop,
 .events {
-  margin: Min(10%, 7.5rem);
+  margin: Min(15%, 7.5rem);
   position: relative;
 }
 
@@ -243,7 +243,7 @@ body.dark #loader div {
      object-fit: cover;
 }
 
-@media screen and (max-width: 1205px) {
+@media only screen and (max-width: 1205px) {
   body .techloop .carousel,
   body .events .carousel {
     height: -webkit-fit-content;
@@ -269,7 +269,7 @@ body.dark #loader div {
   }
 }
 
-@media screen and (max-width: 850px) {
+@media only screen and (max-width: 850px) {
   body .techloop h1,
   .events h1 {
     font-size: 24px;
@@ -283,16 +283,15 @@ body.dark #loader div {
   body .techloop .carousel .next,
   .events .carousel .previous,
   .events .carousel .next {
-    top: 1rem;
     font-size: 2.5rem;
   }
   body .techloop .carousel .previous,
   .events .carousel .previous {
-    left: -1.5rem;
+    left: -2rem;
   }
   body .techloop .carousel .next,
   .events .carousel .next {
-    right: -1.5rem;
+    right: -2rem;
   }
   body .techloop .carousel .container .slide .content h2,
   .events .carousel .container .slide .content h2 {
@@ -301,17 +300,57 @@ body.dark #loader div {
   }
 }
 
-.techloop-circle {
-  top: -3.5rem;
-  left: calc(-1 * Min(10%, 7.5rem));
+.techloop-top-circle,
+.techloop-bottom-circle,
+.techloop-triangle {
+  display: block;
 }
 
-.techloop-circle-large {
+.techloop-top-circle-mobile,
+.techloop-bottom-circle-mobile,
+.techloop-triangle-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 850px) {
+  .techloop-top-circle,
+  .techloop-bottom-circle,
+  .techloop-triangle {
+    display: none;
+  }
+  .techloop-top-circle-mobile,
+  .techloop-bottom-circle-mobile,
+  .techloop-triangle-mobile {
+    display: none;
+  }
+}
+
+.techloop-top-circle {
+  top: -3.5rem;
+  left: calc(-1 * Min(10vw, 7.5rem));
+}
+
+.techloop-bottom-circle {
   bottom: -3.5rem;
-  right: calc(-1 * Min(10%, 7.5rem));
+  right: calc(-1 * Min(10vw, 7.5rem));
 }
 
 .techloop-triangle {
+  left: 7.5rem;
+  bottom: -15rem;
+}
+
+.techloop-top-circle-mobile {
+  top: -3.5rem;
+  left: calc(-1 * Min(10vw, 7.5rem));
+}
+
+.techloop-bottom-circle-mobile {
+  bottom: -3.5rem;
+  right: calc(-1 * Min(10vw, 7.5rem));
+}
+
+.techloop-triangle-mobile {
   left: 7.5rem;
   bottom: -15rem;
 }

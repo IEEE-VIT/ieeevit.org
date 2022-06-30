@@ -1,6 +1,6 @@
 .techloop,
 .events {
-  margin: Min(10%, 7.5rem);
+  margin: Min(15%, 7.5rem);
   position: relative;
 
   h1 {
@@ -105,7 +105,7 @@
         flex-wrap: wrap;
         height: 100%;
         min-width: 100%;
-        scroll-snap-align: start; // won't make any difference if we use start or center
+        scroll-snap-align: start;
 
         .content {
           width: 45%;
@@ -127,7 +127,7 @@
 
 body .techloop .carousel,
 body .events .carousel {
-  @media screen and (max-width: 1205px) {
+  @media only screen and (max-width: 1205px) {
     height: fit-content;
     padding: 1rem;
 
@@ -146,7 +146,7 @@ body .events .carousel {
 
 body .techloop,
 .events {
-  @media screen and (max-width: 850px) {
+  @media only screen and (max-width: 850px) {
     h1 {
       font-size: 24px;
     }
@@ -157,15 +157,14 @@ body .techloop,
     .carousel {
       .previous,
       .next {
-        top: 1rem;
         font-size: 2.5rem;
       }
       .previous {
-        left: -1.5rem;
+        left: -2rem;
       }
 
       .next {
-        right: -1.5rem;
+        right: -2rem;
       }
       .container .slide .content h2 {
         font-size: 20px;
@@ -175,16 +174,60 @@ body .techloop,
   }
 }
 
-.techloop-circle {
-  top: -3.5rem;
-  left: calc(-1 * Min(10%, 7.5rem));
+// shapes
+
+.techloop-top-circle,
+.techloop-bottom-circle,
+.techloop-triangle {
+  display: block;
 }
 
-.techloop-circle-large {
-  bottom: -3.5rem;
-  right: calc(-1 * Min(10%, 7.5rem));
+.techloop-top-circle-mobile,
+.techloop-bottom-circle-mobile,
+.techloop-triangle-mobile {
+  display: none;
 }
+
+@media only screen and (max-width: 850px) {
+  .techloop-top-circle,
+  .techloop-bottom-circle,
+  .techloop-triangle {
+    display: none;
+  }
+
+  .techloop-top-circle-mobile,
+  .techloop-bottom-circle-mobile,
+  .techloop-triangle-mobile {
+    display: none;
+  }
+}
+
+.techloop-top-circle {
+  top: -3.5rem;
+  left: calc(-1 * Min(10vw, 7.5rem));
+}
+
+.techloop-bottom-circle {
+  bottom: -3.5rem;
+  right: calc(-1 * Min(10vw, 7.5rem));
+}
+
 .techloop-triangle {
+  left: 7.5rem;
+  bottom: -15rem;
+}
+
+.techloop-top-circle-mobile {
+  top: -3.5rem;
+  left: calc(-1 * Min(10vw, 7.5rem));
+}
+
+.techloop-bottom-circle-mobile {
+  bottom: -3.5rem;
+  right: calc(-1 * Min(10vw, 7.5rem));
+}
+
+.techloop-triangle-mobile {
   left: 7.5rem;
   bottom: -15rem;
 }
