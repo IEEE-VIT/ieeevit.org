@@ -17,9 +17,10 @@
   }
 
   .carousel {
-    height: 23.85rem;
+    height: 21.25rem;
     overflow-x: visible;
     width: calc(100vw - Min(10vw, 7.5rem));
+
     position: relative;
 
     .previous,
@@ -69,13 +70,15 @@
             justify-content: flex-start;
             align-items: center;
             padding-left: 1rem;
+
             width: 5.5rem;
             min-width: fit-content;
             height: 9%;
             position: absolute;
-            bottom: 0;
+            top: 0;
             left: 0;
             background-color: #0066a1;
+            z-index: 5;
           }
         }
 
@@ -89,34 +92,48 @@
         min-width: 32.5rem;
         margin-right: 2rem;
         display: grid;
-        grid-template-rows: 5fr 2fr 1fr;
+        grid-template-rows: 4fr 2fr 1fr;
         scroll-snap-align: start;
+        overflow: hidden;
+        position: relative;
 
-        @media screen and (max-width: 41rem) {
-          min-width: 100%;
-        }
         img,
         .content,
         .read-more {
           min-height: 0;
-          overflow-y: hidden;
         }
 
         img {
           width: 100%;
-          height: 100%;
+          height: 175%; // 7/4 * 100% (because the template rows ratio = 5:2:1). Thus, the image occupies 5/8 of the total grid
           object-fit: cover;
         }
 
         .content {
-          margin: 1rem;
-          color: black;
+          padding: 1rem;
+          z-index: 5;
+
+          &::after {
+            content: "";
+            width: 125%;
+            height: 75%;
+            position: absolute;
+            bottom: -35%;
+            left: -12.5%;
+            background: linear-gradient(
+              93.55deg,
+              #000000 -8.11%,
+              rgba(0, 0, 0, 0.76) 136.59%
+            );
+            filter: blur(25px);
+            z-index: -1;
+          }
 
           h2 {
             font-size: 20px;
-            font-weight: normal;
+            font-weight: 600;
             text-transform: uppercase;
-            padding-bottom: 0.15rem;
+            padding-bottom: 0.5rem;
           }
           p {
             font-size: 12px;
@@ -130,10 +147,34 @@
           align-items: center;
           padding-right: 1rem;
           font-size: 10px;
+          font-weight: bold;
           text-transform: uppercase;
-          color: $color-dark-blue;
+          color: white;
+          z-index: 5;
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 41rem) {
+  .blogs,
+  .podcast {
+    .carousel {
+      width: 100%;
+
+      .previous {
+        left: -2rem;
+        opacity: 1;
+        cursor: pointer;
+      }
+
+      .next {
+        right: -2rem;
+      }
+    }
+    .slide {
+      min-width: 100%;
     }
   }
 }
@@ -152,7 +193,17 @@
     position: absolute;
     bottom: -17.5rem;
     left: -17.5rem;
-    background: url(../images/light_shape.svg) no-repeat center center/cover;
-    z-index: -1;
+    background: url(../images/blogs_circle_light.svg) no-repeat center
+      center/cover;
+    z-index: -5;
+
+    @media only screen and (max-width: 41rem) {
+      width: 21.5rem;
+      height: 21.5rem;
+      bottom: -12.5rem;
+      left: -12.5rem;
+      background: url(../images/blogs_circle_light_mobile.svg) no-repeat center
+        center/cover;
+    }
   }
 }

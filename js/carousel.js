@@ -56,8 +56,6 @@ const parseData = async () => {
   const response = await fetch("../data.json");
   const data = await response.json();
 
-  // fillCarousel(data, "techloop");
-  // fillCarousel(data, "events");
   fillCarousel(data, "blogs");
   fillCarousel(data, "podcast");
 };
@@ -73,21 +71,22 @@ Array.from(previous).forEach((previous_button) => {
   });
 });
 
-Array.from(document.querySelectorAll(".blogs, .poscasts")).forEach(
-  (section) => {
-    const container = section.querySelector(".carousel .container");
-    container.addEventListener("scroll", () => {
-      const previous_button = container.previousElementSibling;
-      if (container.scrollLeft == 0) {
-        previous_button.style.opacity = 0;
-        previous_button.style.cursor = "default";
-        return;
-      }
-      previous_button.style.opacity = 1;
-      previous_button.style.cursor = "pointer";
-    });
-  }
-);
+Array.from(document.querySelectorAll(".blogs, .podcast")).forEach((section) => {
+  const container = section.querySelector(".carousel .container");
+  container.addEventListener("scroll", () => {
+    const previous_button = container.previousElementSibling;
+    if (screen.width <= 655) {
+      return;
+    }
+    if (container.scrollLeft == 0) {
+      previous_button.style.opacity = 0;
+      previous_button.style.cursor = "default";
+      return;
+    }
+    previous_button.style.opacity = 1;
+    previous_button.style.cursor = "pointer";
+  });
+});
 
 const next = document.getElementsByClassName("next");
 
