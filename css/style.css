@@ -814,6 +814,39 @@ body .techloop .carousel .next,
   }
 }
 
+.board-members {
+  border: 2px solid red;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min(100%, 15rem));
+  grid-gap: 2rem;
+  justify-content: center;
+}
+.board-members .board-member {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  background-color: black;
+  overflow: hidden;
+}
+.board-members .board-member img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.board-members .board-member .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.board-members .board-member .content .position {
+  text-transform: uppercase;
+}
+
 * {
   padding: 0;
   margin: 0;
