@@ -1,20 +1,16 @@
 body.dark #loader div {
   background-color: white;
 }
-
 body.dark section h1 {
   border-color: white;
 }
-
 body.dark section .carousel .previous,
 body.dark section .carousel .next {
   color: white;
 }
-
 body.dark .blogs::after {
   background: url(../images/blogs_circle_dark.svg) no-repeat center center/cover;
 }
-
 @media only screen and (max-width: 41rem) {
   body.dark .blogs::after {
     background: url(../images/blogs_circle_dark_mobile.svg) no-repeat center center/cover;
@@ -24,21 +20,13 @@ body.dark .blogs::after {
 #loader {
   width: 100vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: relative;
   right: 1rem;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
-
 #loader div {
   width: 1rem;
   height: 1rem;
@@ -46,21 +34,17 @@ body.dark .blogs::after {
   margin: 0.5rem;
   border-radius: 0.5rem;
 }
-
 #loader div:nth-child(1) {
   position: relative;
   left: 2rem;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
   -webkit-animation: appear 0.65s infinite;
           animation: appear 0.65s infinite;
 }
-
 #loader div:nth-child(2), #loader div:nth-child(3) {
   -webkit-animation: move 0.65s infinite;
           animation: move 0.65s infinite;
 }
-
 #loader div:nth-child(4) {
   -webkit-animation: fade 0.65s infinite;
           animation: fade 0.65s infinite;
@@ -68,51 +52,39 @@ body.dark .blogs::after {
 
 @-webkit-keyframes appear {
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes appear {
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
-
 @-webkit-keyframes fade {
   to {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
 }
-
 @keyframes fade {
   to {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
 }
-
 @-webkit-keyframes move {
   to {
-    -webkit-transform: translateX(2rem);
-            transform: translateX(2rem);
+    transform: translateX(2rem);
   }
 }
-
 @keyframes move {
   to {
-    -webkit-transform: translateX(2rem);
-            transform: translateX(2rem);
+    transform: translateX(2rem);
   }
 }
-
 .blogs,
 .podcast {
-  margin: Min(10%, 7.5rem);
+  margin: min(10%, 7.5rem);
 }
-
 .blogs h1,
 .podcast h1 {
   font-size: 33px;
@@ -124,21 +96,18 @@ body.dark .blogs::after {
   width: -moz-fit-content;
   width: fit-content;
 }
-
 .blogs > p,
 .podcast > p {
   line-height: 24px;
   margin: 2rem 0;
 }
-
 .blogs .carousel,
 .podcast .carousel {
   height: 21.25rem;
   overflow-x: visible;
-  width: calc(100vw - Min(10vw, 7.5rem));
+  width: calc(100vw - min(10vw, 7.5rem));
   position: relative;
 }
-
 .blogs .carousel .previous,
 .blogs .carousel .next,
 .podcast .carousel .previous,
@@ -148,32 +117,24 @@ body.dark .blogs::after {
   font-size: 3.5rem;
   color: #141414;
 }
-
 .blogs .carousel .previous,
 .podcast .carousel .previous {
   left: -2rem;
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
   cursor: default;
 }
-
 .blogs .carousel .next,
 .podcast .carousel .next {
   right: 1.5rem;
   cursor: pointer;
 }
-
 .blogs .carousel .container,
 .podcast .carousel .container {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   overflow: scroll;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
@@ -181,12 +142,10 @@ body.dark .blogs::after {
   scrollbar-width: none;
   position: relative;
 }
-
 .blogs .carousel .container::-webkit-scrollbar,
 .podcast .carousel .container::-webkit-scrollbar {
   display: none;
 }
-
 .blogs .carousel .container .slide,
 .podcast .carousel .container .slide {
   background-color: gray;
@@ -194,15 +153,12 @@ body.dark .blogs::after {
   width: 45%;
   min-width: 32.5rem;
   margin-right: 2rem;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 4fr 2fr 1fr;
-      grid-template-rows: 4fr 2fr 1fr;
+  grid-template-rows: 4fr 2fr 1fr;
   scroll-snap-align: start;
   overflow: hidden;
   position: relative;
 }
-
 .blogs .carousel .container .slide:first-child::after,
 .podcast .carousel .container .slide:first-child::after {
   content: "latest";
@@ -210,15 +166,9 @@ body.dark .blogs::after {
   letter-spacing: 0.15px;
   font-size: 20px;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   padding-left: 1rem;
   width: 5.5rem;
   min-width: -webkit-fit-content;
@@ -231,12 +181,10 @@ body.dark .blogs::after {
   background-color: #0066a1;
   z-index: 5;
 }
-
 .blogs .carousel .container .slide:last-child,
 .podcast .carousel .container .slide:last-child {
   margin-right: 0;
 }
-
 .blogs .carousel .container .slide img,
 .blogs .carousel .container .slide .content,
 .blogs .carousel .container .slide .read-more,
@@ -245,7 +193,6 @@ body.dark .blogs::after {
 .podcast .carousel .container .slide .read-more {
   min-height: 0;
 }
-
 .blogs .carousel .container .slide img,
 .podcast .carousel .container .slide img {
   width: 100%;
@@ -253,13 +200,11 @@ body.dark .blogs::after {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .blogs .carousel .container .slide .content,
 .podcast .carousel .container .slide .content {
   padding: 1rem;
   z-index: 5;
 }
-
 .blogs .carousel .container .slide .content::after,
 .podcast .carousel .container .slide .content::after {
   content: "";
@@ -269,11 +214,9 @@ body.dark .blogs::after {
   bottom: -35%;
   left: -12.5%;
   background: linear-gradient(93.55deg, #000000 -8.11%, rgba(0, 0, 0, 0.76) 136.59%);
-  -webkit-filter: blur(25px);
-          filter: blur(25px);
+  filter: blur(25px);
   z-index: -1;
 }
-
 .blogs .carousel .container .slide .content h2,
 .podcast .carousel .container .slide .content h2 {
   font-size: 20px;
@@ -281,24 +224,16 @@ body.dark .blogs::after {
   text-transform: uppercase;
   padding-bottom: 0.5rem;
 }
-
 .blogs .carousel .container .slide .content p,
 .podcast .carousel .container .slide .content p {
   font-size: 12px;
   width: 100%;
 }
-
 .blogs .carousel .container .slide .read-more,
 .podcast .carousel .container .slide .read-more {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
   padding-right: 1rem;
   font-size: 10px;
   font-weight: bold;
@@ -309,25 +244,24 @@ body.dark .blogs::after {
 
 @media only screen and (max-width: 41rem) {
   .blogs .carousel,
-  .podcast .carousel {
+.podcast .carousel {
     width: 100%;
   }
   .blogs .carousel .previous,
-  .podcast .carousel .previous {
+.podcast .carousel .previous {
     left: -2rem;
     opacity: 1;
     cursor: pointer;
   }
   .blogs .carousel .next,
-  .podcast .carousel .next {
+.podcast .carousel .next {
     right: -2rem;
   }
   .blogs .slide,
-  .podcast .slide {
+.podcast .slide {
     min-width: 100%;
   }
 }
-
 .podcast .carousel .container .slide:first-child::after {
   content: "recent";
 }
@@ -335,7 +269,6 @@ body.dark .blogs::after {
 .blogs {
   position: relative;
 }
-
 .blogs::after {
   content: "";
   width: 32.5rem;
@@ -346,7 +279,6 @@ body.dark .blogs::after {
   background: url(../images/blogs_circle_light.svg) no-repeat center center/cover;
   z-index: -5;
 }
-
 @media only screen and (max-width: 41rem) {
   .blogs::after {
     width: 21.5rem;
@@ -360,8 +292,7 @@ body.dark .blogs::after {
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
   outline: none;
@@ -372,7 +303,6 @@ body {
   overflow-y: scroll;
   font-family: "Manrope", sans-serif;
 }
-
 body.dark {
   background-color: #222222;
   color: white;
@@ -397,5 +327,4 @@ button {
 
 #main-content {
   display: none;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
