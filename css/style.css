@@ -41,6 +41,11 @@ body.dark .blogs::after {
     background: url(../images/blogs_circle_dark_mobile.svg) no-repeat center center/cover;
   }
 }
+body.dark .board .board-member {
+  background-color: #222222;
+  box-shadow: inset 0px -3px 4px rgba(0, 0, 0, 0.85);
+  filter: drop-shadow(-10px -10px 20px #151515) drop-shadow(10px 10px 20px #000000);
+}
 
 #loader {
   width: 100vw;
@@ -814,37 +819,82 @@ body .techloop .carousel .next,
   }
 }
 
-.board-members {
-  border: 2px solid red;
-  width: 100%;
+.board {
+  margin: min(10%, 7.5rem);
+  margin-bottom: 10rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, min(100%, 15rem));
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   justify-content: center;
+  position: relative;
 }
-.board-members .board-member {
-  width: 100%;
+.board .board-member {
+  padding-bottom: 1rem;
+  width: 90%;
   height: 100%;
   border-radius: 8px;
   display: grid;
   grid-template-rows: 3fr 1fr;
-  background-color: black;
+  background-color: #FCFCFC;
+  box-shadow: inset 0px -3px 4px rgba(255, 255, 255, 0.85);
+  filter: drop-shadow(-10px -10px 20px #FFFFFF) drop-shadow(10px 10px 20px #EDEDED);
   overflow: hidden;
 }
-.board-members .board-member img {
+.board .board-member img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.board-members .board-member .content {
+.board .board-member .content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-.board-members .board-member .content .position {
+.board .board-member .content .position {
+  color: #7a7a7a;
   text-transform: uppercase;
+}
+
+.shape {
+  position: absolute;
+  z-index: -5;
+}
+
+.board-rings {
+  top: -20rem;
+  right: -10rem;
+}
+
+.board-square1 {
+  top: -9rem;
+  left: -8rem;
+}
+
+.board-square2 {
+  top: 5rem;
+  left: -7rem;
+}
+
+.board-square3 {
+  top: 14rem;
+  left: -7.5rem;
+}
+
+.board-square4 {
+  bottom: -9rem;
+  right: 15rem;
+}
+
+.board-square5 {
+  bottom: -9rem;
+  right: 7rem;
+}
+
+.board-square6 {
+  bottom: -10rem;
+  right: -4rem;
 }
 
 * {
