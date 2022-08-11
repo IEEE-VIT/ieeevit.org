@@ -2,23 +2,21 @@
 @import "darkMode";
 @import "loader";
 @import "navbar";
+@import "about";
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    -webkit-tap-highlight-color: transparent;
-    outline: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 body {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    font-family: $font;
-    &.dark {
-        background-color: #222222;
-        color: white;
-    }
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: $font;
 }
 
 h1,
@@ -27,17 +25,18 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font;
+  font-family: $font;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #main-content {
-    display: none;
+  display: none;
 }

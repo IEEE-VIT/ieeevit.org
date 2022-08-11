@@ -2,21 +2,22 @@ body.dark {
   background-color: #222222;
   color: white;
 }
-
+body.dark .about h1 {
+  border-color: white;
+}
+body.dark .about .domains {
+  box-shadow: -10px -10px 20px #2e2e2e, 10px 10px 20px #1b1b1b;
+}
 body.dark #loader div {
   background-color: white;
 }
-
 body.dark .navbar {
   background-color: #0066a1;
-  -webkit-box-shadow: 5.65625px 5.65625px 11.3125px #000000;
-          box-shadow: 5.65625px 5.65625px 11.3125px #000000;
+  box-shadow: 5.65625px 5.65625px 11.3125px #000000;
 }
-
 body.dark .navbar .menu.open::after {
   background-color: #0e0e0e;
 }
-
 body.dark .navbar .menu_options a {
   color: white;
 }
@@ -24,21 +25,13 @@ body.dark .navbar .menu_options a {
 #loader {
   width: 100vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: relative;
   right: 1rem;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
-
 #loader div {
   width: 1rem;
   height: 1rem;
@@ -46,21 +39,17 @@ body.dark .navbar .menu_options a {
   margin: 0.5rem;
   border-radius: 0.5rem;
 }
-
 #loader div:nth-child(1) {
   position: relative;
   left: 2rem;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
   -webkit-animation: appear 0.65s infinite;
           animation: appear 0.65s infinite;
 }
-
 #loader div:nth-child(2), #loader div:nth-child(3) {
   -webkit-animation: move 0.65s infinite;
           animation: move 0.65s infinite;
 }
-
 #loader div:nth-child(4) {
   -webkit-animation: fade 0.65s infinite;
           animation: fade 0.65s infinite;
@@ -68,114 +57,80 @@ body.dark .navbar .menu_options a {
 
 @-webkit-keyframes appear {
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes appear {
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
-
 @-webkit-keyframes fade {
   to {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
 }
-
 @keyframes fade {
   to {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
 }
-
 @-webkit-keyframes move {
   to {
-    -webkit-transform: translateX(2rem);
-            transform: translateX(2rem);
+    transform: translateX(2rem);
   }
 }
-
 @keyframes move {
   to {
-    -webkit-transform: translateX(2rem);
-            transform: translateX(2rem);
+    transform: translateX(2rem);
   }
 }
-
 .navbar {
   width: 100%;
   background-color: white;
-  -webkit-box-shadow: 0px 2px 4px 0px #0066a1;
-          box-shadow: 0px 2px 4px 0px #0066a1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 0px 2px 4px 0px #0066a1;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 1.5rem 3%;
   position: relative;
 }
-
 .navbar .hamburger-menu {
   display: none;
   cursor: pointer;
 }
-
 .navbar .menu {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
 }
-
 .navbar .menu .cross {
   display: none;
   cursor: pointer;
 }
-
 .navbar .menu .menu_options {
   color: #0066a1;
   font-weight: 600;
   padding: 0 1rem;
 }
-
 .navbar .socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   list-style: none;
   gap: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 @media only screen and (max-width: 945px) {
   .navbar .socials {
     width: 100%;
   }
 }
-
 .navbar .socials #change-theme {
   padding-left: 1.5rem;
   padding-right: 2%;
   cursor: pointer;
 }
-
 @media only screen and (max-width: 945px) {
   .navbar .socials #change-theme {
     margin-left: auto;
@@ -197,13 +152,8 @@ body.dark .navbar .menu_options a {
     position: fixed;
     top: 0;
     right: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
     height: 100vh;
     width: 65%;
     padding-top: 25vh;
@@ -236,12 +186,56 @@ body.dark .navbar .menu_options a {
     color: white;
   }
 }
+.about {
+  margin: min(10%, 7.5rem);
+}
+.about h1 {
+  font-size: 33px;
+  font-weight: normal;
+  color: #2f93eb;
+  border-bottom: 2px solid #141414;
+  padding-bottom: 0.15rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.about p {
+  line-height: 24px;
+  margin: 2rem 0;
+}
+.about .domains {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px #ededed;
+  border-radius: 0.5rem;
+}
+.about .domains .domain {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-self: center;
+  width: max(15rem, 30%);
+  margin: 1rem 0;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.about .domains .domain::-webkit-scrollbar {
+  display: none;
+}
+.about .domains .domain .domain-text {
+  font-size: 20px;
+  color: #2f93eb;
+  padding-left: 1rem;
+  align-self: center;
+}
 
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
   outline: none;
@@ -251,11 +245,6 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   font-family: "Manrope", sans-serif;
-}
-
-body.dark {
-  background-color: #222222;
-  color: white;
 }
 
 h1,
@@ -269,6 +258,7 @@ h6 {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 button {
@@ -277,5 +267,4 @@ button {
 
 #main-content {
   display: none;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
