@@ -27,11 +27,11 @@ const fillDomains = (domains) => {
   });
 };
 
-const parseData = async () => {
+const addDomains = async () => {
   const response = await fetch("../data.json");
   const data = await response.json();
 
   fillDomains(data.domains);
 };
 
-parseData();
+addDomains();

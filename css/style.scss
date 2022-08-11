@@ -4,6 +4,7 @@
 @import "navbar";
 @import "header";
 @import "about";
+@import "carousel";
 
 * {
   padding: 0;
@@ -40,4 +41,9 @@ button {
 
 #main-content {
   display: none;
+}
+
+.shape {
+  position: absolute;
+  z-index: -1;
 }

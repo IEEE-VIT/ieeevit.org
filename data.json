@@ -1,4 +1,28 @@
 {
+    "techloop": [
+        {
+            "heading": "Introduction to Machine Learning",
+            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
+            "img": "https://files.ieeevit.org/odyssey/images/group.png"
+        },
+        {
+            "heading": "Introduction to Machine Learning",
+            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
+            "img": "https://files.ieeevit.org/odyssey/images/group.png"
+        }
+    ],
+    "events": [
+        {
+            "heading": "Enigma",
+            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
+            "img": "https://files.ieeevit.org/odyssey/images/group.png"
+        },
+        {
+            "heading": "Enigma",
+            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
+            "img": "https://files.ieeevit.org/odyssey/images/group.png"
+        }
+    ],
     "domains": [
         {
             "domain_name": "Electronics",
