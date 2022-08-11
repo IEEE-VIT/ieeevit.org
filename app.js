@@ -7,6 +7,7 @@ const changeTheme = (theme) => {
   theme === "dark"
     ? document.body.classList.add(theme)
     : document.body.classList.remove("dark");
+  changeImages(theme);
 };
 
 document.getElementById("change-theme").addEventListener("click", () => {
@@ -25,5 +26,24 @@ window.onload = () => {
   changeTheme(theme);
   setTimeout(() => {
     removeLoader();
-  }, 3535); // simulating load time
+  }, 1); // simulating load time
 };
+
+const changeImages = (theme) => {
+  const shapes = document.querySelectorAll(".shape, .icon");
+  const to_replace = theme == "dark" ? "light" : "dark";
+
+  Array.from(shapes).forEach((shape) => {
+    shape.src = shape.src.replace(to_replace, theme);
+  });
+};
+
+Array.from(document.querySelectorAll(".hamburger-menu, .cross")).forEach(
+  (element) => {
+    element.addEventListener("click", (event) => {
+      const menu = document.querySelector(".menu");
+      menu.classList.toggle("open");
+      menu.classList.toggle("close");
+    });
+  }
+);
