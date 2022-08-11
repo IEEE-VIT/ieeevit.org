@@ -186,99 +186,6 @@ body.dark .navbar .menu_options a {
     color: white;
   }
 }
-.about {
-  margin: min(10%, 7.5rem);
-}
-.about h1 {
-  font-size: 33px;
-  font-weight: normal;
-  color: #2f93eb;
-  border-bottom: 2px solid #141414;
-  padding-bottom: 0.15rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.about p {
-  line-height: 24px;
-  margin: 2rem 0;
-}
-.about .domains {
-  padding: 1rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px #ededed;
-  border-radius: 0.5rem;
-}
-.about .domains .domain {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  justify-self: center;
-  width: max(15rem, 30%);
-  margin: 1rem 0;
-  overflow: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.about .domains .domain::-webkit-scrollbar {
-  display: none;
-}
-.about .domains .domain .domain-text {
-  font-size: 20px;
-  color: #2f93eb;
-  padding-left: 1rem;
-  align-self: center;
-}
-
-a {
-  color: #0066a1;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.socials {
-  display: flex;
-  margin-left: auto;
-  list-style: none;
-  gap: 1rem;
-  align-items: center;
-  padding-right: 3%;
-}
-@media only screen and (max-width: 920px) {
-  .socials {
-    width: 100vw;
-    margin-left: 5%;
-    gap: 1.5rem;
-  }
-}
-@media only screen and (max-width: 514px) {
-  .socials {
-    gap: 1rem;
-  }
-}
-@media only screen and (max-width: 290px) {
-  .socials {
-    gap: 0.5rem;
-  }
-}
-.socials li:last-child {
-  padding-left: 1.5rem;
-  border: none;
-  padding-right: 2%;
-}
-@media only screen and (max-width: 920px) {
-  .socials li:last-child {
-    margin-left: auto;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-right: 5%;
-  }
-}
-
 header {
   display: flex;
   flex-direction: column;
@@ -293,18 +200,18 @@ header .ieee-logo-mobile {
   display: none;
 }
 header .coming-up {
-  color: #2F93EB;
+  color: #2f93eb;
 }
 header .event-name {
   font-size: 1.5rem;
-  border-left: 2px solid #2F93EB;
-  border-right: 2px solid #2F93EB;
+  border-left: 2px solid #2f93eb;
+  border-right: 2px solid #2f93eb;
   padding: 0 1rem;
 }
 header .cta-button {
   font-size: 14px;
   color: white;
-  background-color: #2F93EB;
+  background-color: #2f93eb;
   padding: 0.5rem;
   border-radius: 2px;
 }
@@ -421,6 +328,50 @@ header .bottom-square-mobile {
     left: -8.5rem;
   }
 }
+.about {
+  margin: min(15%, 7.5rem);
+}
+.about h1 {
+  font-size: 33px;
+  font-weight: normal;
+  color: #2f93eb;
+  border-bottom: 2px solid #141414;
+  padding-bottom: 0.15rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.about p {
+  line-height: 24px;
+  margin: 2rem 0;
+}
+.about .domains {
+  padding: 1.5rem min(7.5%, 4rem);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px #ededed;
+  border-radius: 0.5rem;
+}
+.about .domains .domain {
+  flex-basis: 16.5rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 0.5rem 0;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.about .domains .domain::-webkit-scrollbar {
+  display: none;
+}
+.about .domains .domain .domain-text {
+  font-size: 20px;
+  color: #2f93eb;
+  padding-left: 1rem;
+  align-self: center;
+}
+
 * {
   padding: 0;
   margin: 0;

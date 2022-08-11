@@ -1,0 +1,44 @@
+{
+    "domains": [
+        {
+            "domain_name": "Electronics",
+            "domain_icon": "electronics.svg"
+        },
+        {
+            "domain_name": "Machine Learning",
+            "domain_icon": "ml.svg"
+        },
+        {
+            "domain_name": "Design",
+            "domain_icon": "design.svg"
+        },
+        {
+            "domain_name": "Competitive Coding",
+            "domain_icon": "cc.svg"
+        },
+        {
+            "domain_name": "Wev Development",
+            "domain_icon": "web_development.svg"
+        },
+        {
+            "domain_name": "App Development",
+            "domain_icon": "app_development.svg"
+        },
+        {
+            "domain_name": "Blockchain",
+            "domain_icon": "blockchain.svg"
+        },
+        {
+            "domain_name": "Cybersecurity",
+            "domain_icon": "cybersecurity.svg"
+        },
+        {
+            "domain_name": "AR/VR",
+            "domain_icon": "ar_vr.svg"
+        },
+        {
+            "domain_name": "Game Development",
+            "domain_icon": "game_development.svg"
+        }
+    ]
+}
