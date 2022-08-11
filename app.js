@@ -1,3 +1,12 @@
+const changeImages = (theme) => {
+  const shapes = document.querySelectorAll(".shape, .icon");
+  const to_replace = theme == "dark" ? "light" : "dark";
+
+  Array.from(shapes).forEach((shape) => {
+    shape.src = shape.src.replace(to_replace, theme);
+  });
+};
+
 const changeTheme = (theme) => {
   if (!(theme === "dark" || theme === "light")) {
     const dark_theme = window.matchMedia("(prefers-color-scheme: dark)");
@@ -21,30 +30,12 @@ const removeLoader = () => {
   document.getElementById("main-content").style.display = "block";
 };
 
-const changeImages = (theme) => {
-  const shapes = document.querySelectorAll(".shape, .icon");
-  const to_replace = theme == "dark" ? "light" : "dark";
-
-  Array.from(shapes).forEach((shape) => {
-    shape.src = shape.src.replace(to_replace, theme);
-  });
-};
-
 window.onload = () => {
   let theme = localStorage.getItem("theme");
   changeTheme(theme);
   setTimeout(() => {
     removeLoader();
   }, 1); // simulating load time
-};
-
-const changeImages = (theme) => {
-  const shapes = document.querySelectorAll(".shape, .icon");
-  const to_replace = theme == "dark" ? "light" : "dark";
-
-  Array.from(shapes).forEach((shape) => {
-    shape.src = shape.src.replace(to_replace, theme);
-  });
 };
 
 Array.from(document.querySelectorAll(".hamburger-menu, .cross")).forEach(
