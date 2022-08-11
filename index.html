@@ -24,13 +24,16 @@
     <div></div>
     <div></div>
   </div>
-  <div id="main-content">
-    <nav class="navbar">
-      <!-- <div class="hamburger-menu">
-                <img src="images/hamburger icon.svg" alt="Hamburger icon">
-            </div> -->
 
-      <ul class="menu">
+  <div id="main-content" class="dim">
+    <nav class="navbar">
+      <div class="hamburger-menu">
+        <img src="images/hamburger.svg" alt="Hamburger Icon">
+      </div>
+
+      <ul class="menu close">
+        <img src="./images/cross.svg" alt="" class="cross">
+
         <li class="menu_options"><a href="">Home</a></li>
         <li class="menu_options"><a href="">About Us</a></li>
         <li class="menu_options"><a href="">TechLoop</a></li>
@@ -40,17 +43,24 @@
         <li class="menu_options"><a href="">Team</a></li>
       </ul>
       <ul class="socials">
-        <li class="social_icons"><img class="img1" src="images/facebook.svg" alt="Facebook icon"></li>
-        <li class="social_icons"><img src="images/instagram.svg" alt="instagram icon"></li>
-        <li class="social_icons"><img src="images/twitter.svg" alt="twitter icon"></li>
-        <li class="social_icons"><img src="images/github.svg" alt="github icon"></li>
-        <li class="social_icons"><img src="images/linkedin.svg" alt="linkedin icon"></li>
-        <li class="social_icons"><img src="images/email.svg" alt="mail icon"></li>
-        <li class="change_theme" id="change-theme"><img src="images/change theme.svg" alt="change theme">
-        </li>
+
+        <a href="https://www.facebook.com/IEEEVIT/" class="social_icons"><img class="icon"
+            src="images/facebook_light.svg" alt="Facebook Icon"></a>
+        <a href="https://www.instagram.com/ieeevitvellore/" class="social_icons"><img class="icon"
+            src="images/instagram_light.svg" alt="Instagram Icon"></a>
+        <a href="https://twitter.com/ieeevitvellore" class="social_icons"><img class="icon"
+            src="images/twitter_light.svg" alt="Twitter Icon"></a>
+        <a href="https://github.com/ieee-vit" class="social_icons"><img class="icon" src="images/github_light.svg"
+            alt="Github Icon"></a>
+        <a href="https://www.linkedin.com/company/ieee-vit-vellore/" class="social_icons"><img class="icon"
+            src="images/linkedin_light.svg" alt="Linkedin Icon"></a>
+        <a href="mailto:contact@ieeevit.org" class="social_icons"><img class="icon" src="images/email_light.svg"
+            alt="Email Icon"></a>
+        <li id="change-theme"><img class="icon" src="images/change_theme_light.svg" alt="Change Theme"></li>
 
       </ul>
     </nav>
+    
     <header>
       <img class="ieee-logo icon" src="images/ieeelogo-dark.svg" alt="IEEE Logo">
       <img class="ieee-logo-mobile icon" src="images/ieeelogo-dark-mobile.svg" alt="IEEE Logo">
@@ -78,7 +88,57 @@
       <img class="center-square-mobile shape mobile-shape" src="images/header-shapes/center-square-dark-mobile.svg">
       <img class="bottom-square-mobile shape mobile-shape" src="images/header-shapes/bottom-square-dark-mobile.svg">
     </header>
-    <section class="about"></section>
+    <section class="about">
+      <h1>About Us</h1>
+      <p>
+        IEEE VIT is one of the most active student chapters inside Region 10 of
+        IEEE International. We're a diverse group of tech enthusiasts,
+        developers and designers who live with the motto "Advancing Technology
+        for Humanity". Members of IEEE VIT are active participants in national
+        and international level hackathons and involve in multiple projects.
+        IEEE, an association dedicated to advancing innovation and technological
+        excellence for the benefit of humanity, is the world's largest technical
+        professional society. IEEE Region 10 is home to organizational units in
+        Asia and Pacific. IEEE VIT is affiliated to IEEE Madras Section, which
+        is a part of Region 10 of IEEE.
+        <br />
+        <br />
+        We cover a wide range of domains including -
+      </p>
+      <div class="domains">
+        <div class="domain">
+          <img src="./images/domains/electronics.svg" alt="Electronics" class="domain-icon" />
+          <div class="domain-text">Electronics</div>
+        </div>
+
+        <div class="domain">
+          <img src="./images/domains/machine learning.svg" alt="Machine Learning" class="domain-icon" />
+          <div class="domain-text">Machine Learning</div>
+        </div>
+
+        <div class="domain">
+          <img src="./images/domains/design.svg" alt="Design" class="domain-icon" />
+          <div class="domain-text">Design</div>
+        </div>
+
+        <div class="domain">
+          <img src="./images/domains/web development.svg" alt="Web Development" class="domain-icon" />
+          <div class="domain-text">Web Development</div>
+        </div>
+
+        <div class="domain">
+          <img src="./images/domains/app development.svg" alt="App Development" class="domain-icon" />
+          <div class="domain-text">App Development</div>
+        </div>
+
+        <div class="domain">
+          <img src="./images/domains/cyber security.svg" alt="Cyber Security" class="domain-icon" />
+          <div class="domain-text">Cyber Security</div>
+        </div>
+      </div>
+
+    </section>
+
     <section class="techloop"></section>
     <section class="events"></section>
     <section class="blogs"></section>

@@ -7,63 +7,103 @@
   align-items: center;
   padding: 1.5rem 3%;
   position: relative;
-  @media only screen and (max-width: 514px) {
-    margin: 0%;
-    padding: 0%;
-  }
-}
 
-// .hamburger-menu {
-//     top: 13%;
-//     right: 50%;
-// }
-.menu {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 2rem;
-  padding-left: 3%;
-  width: fit-content;
-  @media only screen and (max-width: 920px) {
+  .hamburger-menu {
     display: none;
+    cursor: pointer;
   }
-}
 
-a {
-  color: $color-dark-blue;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
+  .menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .cross {
+      display: none;
+      cursor: pointer;
+    }
 
-.socials {
-  display: flex;
-  margin-left: auto;
-  list-style: none;
-  gap: 1rem;
-  align-items: center;
-  padding-right: 3%;
-  @media only screen and (max-width: 920px) {
-    width: 100vw;
-    margin-left: 5%;
-    gap: 1.5rem;
+    .menu_options {
+      color: $color-dark-blue;
+      font-weight: 600;
+      padding: 0 1rem;
+    }
   }
-  @media only screen and (max-width: 514px) {
+
+  .socials {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
     gap: 1rem;
-  }
-  @media only screen and (max-width: 290px) {
-    gap: 0.5rem;
-  }
-  li {
-    &:last-child {
+    align-items: center;
+
+    @media only screen and (max-width: 945px) {
+      width: 100%;
+    }
+
+    #change-theme {
       padding-left: 1.5rem;
-      border: none;
       padding-right: 2%;
-      @media only screen and (max-width: 920px) {
+      cursor: pointer;
+      @media only screen and (max-width: 945px) {
         margin-left: auto;
-        width: fit-content;
-        margin-right: 5%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 945px) {
+  .navbar {
+    .hamburger-menu {
+      display: block;
+      position: absolute;
+      top: 75px;
+      right: 0;
+      margin: 2rem 1.5rem;
+    }
+
+    .menu.close {
+      display: none;
+    }
+
+    .menu.open {
+      position: fixed;
+      top: 0;
+      right: 0;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 100vh;
+      width: 65%;
+      padding-top: 25vh;
+      padding-left: 12.5%;
+      background-color: #2d8de0;
+      opacity: 0.85;
+
+      &::after {
+        content: "";
+        width: 35vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: -35vw;
+        background-color: #7a7a7a;
+        opacity: 0.4;
+      }
+
+      .cross {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 3rem 2rem;
+      }
+
+      .menu_options {
+        padding: 0.5rem 0;
+        a {
+          font-size: 24px;
+          color: white;
+        }
       }
     }
   }

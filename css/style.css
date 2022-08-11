@@ -1,9 +1,25 @@
+body.dark {
+  background-color: #222222;
+  color: white;
+}
+body.dark .about h1 {
+  border-color: white;
+}
+body.dark .about .domains {
+  box-shadow: -10px -10px 20px #2e2e2e, 10px 10px 20px #1b1b1b;
+}
 body.dark #loader div {
   background-color: white;
 }
 body.dark .navbar {
-  background: #0066a1;
-  box-shadow: 0px 2px 4px #0066a1;
+  background-color: #0066a1;
+  box-shadow: 5.65625px 5.65625px 11.3125px #000000;
+}
+body.dark .navbar .menu.open::after {
+  background-color: #0e0e0e;
+}
+body.dark .navbar .menu_options a {
+  color: white;
 }
 
 #loader {
@@ -79,28 +95,141 @@ body.dark .navbar {
   padding: 1.5rem 3%;
   position: relative;
 }
-@media only screen and (max-width: 514px) {
-  .navbar {
-    margin: 0%;
-    padding: 0%;
-  }
+.navbar .hamburger-menu {
+  display: none;
+  cursor: pointer;
 }
-
-.menu {
+.navbar .menu {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 2rem;
-  padding-left: 3%;
+}
+.navbar .menu .cross {
+  display: none;
+  cursor: pointer;
+}
+.navbar .menu .menu_options {
+  color: #0066a1;
+  font-weight: 600;
+  padding: 0 1rem;
+}
+.navbar .socials {
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+  gap: 1rem;
+  align-items: center;
+}
+@media only screen and (max-width: 945px) {
+  .navbar .socials {
+    width: 100%;
+  }
+}
+.navbar .socials #change-theme {
+  padding-left: 1.5rem;
+  padding-right: 2%;
+  cursor: pointer;
+}
+@media only screen and (max-width: 945px) {
+  .navbar .socials #change-theme {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 945px) {
+  .navbar .hamburger-menu {
+    display: block;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    margin: 2rem 1.5rem;
+  }
+  .navbar .menu.close {
+    display: none;
+  }
+  .navbar .menu.open {
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    width: 65%;
+    padding-top: 25vh;
+    padding-left: 12.5%;
+    background-color: #2d8de0;
+    opacity: 0.85;
+  }
+  .navbar .menu.open::after {
+    content: "";
+    width: 35vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -35vw;
+    background-color: #7a7a7a;
+    opacity: 0.4;
+  }
+  .navbar .menu.open .cross {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 3rem 2rem;
+  }
+  .navbar .menu.open .menu_options {
+    padding: 0.5rem 0;
+  }
+  .navbar .menu.open .menu_options a {
+    font-size: 24px;
+    color: white;
+  }
+}
+.about {
+  margin: min(10%, 7.5rem);
+}
+.about h1 {
+  font-size: 33px;
+  font-weight: normal;
+  color: #2f93eb;
+  border-bottom: 2px solid #141414;
+  padding-bottom: 0.15rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
-@media only screen and (max-width: 920px) {
-  .menu {
-    display: none;
-  }
+.about p {
+  line-height: 24px;
+  margin: 2rem 0;
+}
+.about .domains {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px #ededed;
+  border-radius: 0.5rem;
+}
+.about .domains .domain {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-self: center;
+  width: max(15rem, 30%);
+  margin: 1rem 0;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.about .domains .domain::-webkit-scrollbar {
+  display: none;
+}
+.about .domains .domain .domain-text {
+  font-size: 20px;
+  color: #2f93eb;
+  padding-left: 1rem;
+  align-self: center;
 }
 
 a {
@@ -306,10 +435,6 @@ body {
   overflow-y: scroll;
   font-family: "Manrope", sans-serif;
 }
-body.dark {
-  background-color: #222222;
-  color: white;
-}
 
 h1,
 h2,
@@ -322,6 +447,7 @@ h6 {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 button {
