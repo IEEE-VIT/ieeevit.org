@@ -1,26 +1,120 @@
 {
     "techloop": [
         {
-            "heading": "Introduction to Machine Learning",
+            "title": "Introduction to Machine Learning",
             "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
-            "img": "https://files.ieeevit.org/odyssey/images/group.png"
+            "image": "https://files.ieeevit.org/odyssey/images/group.png"
         },
         {
-            "heading": "Introduction to Machine Learning",
+            "title": "Introduction to Machine Learning",
             "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
-            "img": "https://files.ieeevit.org/odyssey/images/group.png"
+            "image": "https://files.ieeevit.org/odyssey/images/group.png"
+        },
+        {
+            "title": "Introduction to Machine Learning",
+            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
+            "image": "https://files.ieeevit.org/odyssey/images/group.png"
+        },
+        {
+            "title": "Introduction to Machine Learning",
+            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
+            "image": "https://files.ieeevit.org/odyssey/images/group.png"
+        },
+        {
+            "title": "Introduction to Machine Learning",
+            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
+            "image": "https://files.ieeevit.org/odyssey/images/group.png"
         }
     ],
     "events": [
         {
-            "heading": "Enigma",
+            "title": "Enigma",
             "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
-            "img": "https://files.ieeevit.org/odyssey/images/group.png"
+            "image": "https://files.ieeevit.org/odyssey/images/group.png"
         },
         {
-            "heading": "Enigma",
+            "title": "Enigma",
             "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
-            "img": "https://files.ieeevit.org/odyssey/images/group.png"
+            "image": "https://files.ieeevit.org/odyssey/images/group.png"
+        },
+        {
+            "title": "Enigma",
+            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
+            "image": "https://files.ieeevit.org/odyssey/images/group.png"
+        },
+        {
+            "title": "Enigma",
+            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
+            "image": "https://files.ieeevit.org/odyssey/images/group.png"
+        },
+        {
+            "title": "Enigma",
+            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
+            "image": "https://files.ieeevit.org/odyssey/images/group.png"
+        }
+    ],
+    "blogs": [
+        {
+            "title": "Blog Title",
+            "desc": "Description of the blog, not too long but with a basic gist. Essentially the blurb of the blog.",
+            "image": "https://files.ieeevit.org/odyssey/images/group.png",
+            "link": "https://ieeevit.org"
+        },
+        {
+            "title": "Blog Title",
+            "desc": "Description of the blog, not too long but with a basic gist. Essentially the blurb of the blog.",
+            "image": "https://files.ieeevit.org/odyssey/images/group.png",
+            "link": "https://ieeevit.org"
+        },
+        {
+            "title": "Blog Title",
+            "desc": "Description of the blog, not too long but with a basic gist. Essentially the blurb of the blog.",
+            "image": "https://files.ieeevit.org/odyssey/images/group.png",
+            "link": "https://ieeevit.org"
+        },
+        {
+            "title": "Blog Title",
+            "desc": "Description of the blog, not too long but with a basic gist. Essentially the blurb of the blog.",
+            "image": "https://files.ieeevit.org/odyssey/images/group.png",
+            "link": "https://ieeevit.org"
+        },
+        {
+            "title": "Blog Title",
+            "desc": "Description of the blog, not too long but with a basic gist. Essentially the blurb of the blog.",
+            "image": "https://files.ieeevit.org/odyssey/images/group.png",
+            "link": "https://ieeevit.org"
+        }
+    ],
+    "podcast": [
+        {
+            "title": "PODCAST EPISODE: X",
+            "desc": "Description of the podcast, not too long but with a basic gist.  small paragraph on the topic and a brief into to the speaker.",
+            "image": "https://files.ieeevit.org/odyssey/images/group.png",
+            "link": "https://ieeevit.org"
+        },
+        {
+            "title": "PODCAST EPISODE: X",
+            "desc": "Description of the podcast, not too long but with a basic gist.  small paragraph on the topic and a brief into to the speaker.",
+            "image": "https://files.ieeevit.org/odyssey/images/group.png",
+            "link": "https://ieeevit.org"
+        },
+        {
+            "title": "PODCAST EPISODE: X",
+            "desc": "Description of the podcast, not too long but with a basic gist.  small paragraph on the topic and a brief into to the speaker.",
+            "image": "https://files.ieeevit.org/odyssey/images/group.png",
+            "link": "https://ieeevit.org"
+        },
+        {
+            "title": "PODCAST EPISODE: X",
+            "desc": "Description of the podcast, not too long but with a basic gist.  small paragraph on the topic and a brief into to the speaker.",
+            "image": "https://files.ieeevit.org/odyssey/images/group.png",
+            "link": "https://ieeevit.org"
+        },
+        {
+            "title": "PODCAST EPISODE: X",
+            "desc": "Description of the podcast, not too long but with a basic gist.  small paragraph on the topic and a brief into to the speaker.",
+            "image": "https://files.ieeevit.org/odyssey/images/group.png",
+            "link": "https://ieeevit.org"
         }
     ],
     "domains": [

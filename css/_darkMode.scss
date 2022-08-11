@@ -18,6 +18,7 @@ body.dark {
       color: white;
     }
   }
+
   section {
     h1 {
       border-color: white;
@@ -51,6 +52,15 @@ body.dark {
           rgba(0, 102, 161, 0.07) 100%
         );
       }
+    }
+  }
+  .blogs::after {
+    background: url(../images/blogs_circle_dark.svg) no-repeat center
+      center/cover;
+
+    @media only screen and (max-width: 41rem) {
+      background: url(../images/blogs_circle_dark_mobile.svg) no-repeat center
+        center/cover;
     }
   }
 }
