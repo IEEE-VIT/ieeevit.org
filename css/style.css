@@ -232,6 +232,195 @@ body.dark .navbar .menu_options a {
   align-self: center;
 }
 
+a {
+  color: #0066a1;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.socials {
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+  gap: 1rem;
+  align-items: center;
+  padding-right: 3%;
+}
+@media only screen and (max-width: 920px) {
+  .socials {
+    width: 100vw;
+    margin-left: 5%;
+    gap: 1.5rem;
+  }
+}
+@media only screen and (max-width: 514px) {
+  .socials {
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 290px) {
+  .socials {
+    gap: 0.5rem;
+  }
+}
+.socials li:last-child {
+  padding-left: 1.5rem;
+  border: none;
+  padding-right: 2%;
+}
+@media only screen and (max-width: 920px) {
+  .socials li:last-child {
+    margin-left: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 5%;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 4rem);
+}
+header > * {
+  margin: 1rem 0;
+}
+header .ieee-logo-mobile {
+  display: none;
+}
+header .coming-up {
+  color: #2F93EB;
+}
+header .event-name {
+  font-size: 1.5rem;
+  border-left: 2px solid #2F93EB;
+  border-right: 2px solid #2F93EB;
+  padding: 0 1rem;
+}
+header .cta-button {
+  font-size: 14px;
+  color: white;
+  background-color: #2F93EB;
+  padding: 0.5rem;
+  border-radius: 2px;
+}
+header .shape {
+  position: absolute;
+  z-index: -1;
+}
+header .mobile-shape {
+  display: none;
+}
+
+@media screen and (max-width: 1205px) {
+  header .ieee-logo {
+    display: none;
+  }
+  header .ieee-logo-mobile {
+    display: block;
+  }
+  header .event-name {
+    font-size: 14px;
+  }
+  header .cta-button {
+    font-size: 12px;
+  }
+  header .mobile-shape {
+    display: block;
+  }
+  header .desktop-shape {
+    display: none;
+  }
+}
+header .left-circle {
+  top: 20%;
+  left: -12.25rem;
+}
+header .top-square {
+  top: 4rem;
+  left: 5%;
+}
+header .top-triangle {
+  top: 0;
+  left: 18%;
+}
+header .top-semicircle {
+  left: 35%;
+  top: -15px;
+}
+header .right-semicircle {
+  top: -21px;
+  right: 15px;
+}
+header .right-rings {
+  top: -21px;
+  right: 0;
+}
+header .center-triangle {
+  top: 50%;
+  right: 27.5%;
+}
+header .center-square {
+  top: 65%;
+  left: 70%;
+}
+header .center-bigsquare {
+  top: 84%;
+  left: 60%;
+}
+header .center-bottomtriangle {
+  top: 80%;
+  left: 25%;
+}
+
+header .top-square-mobile {
+  top: 3rem;
+  left: 1rem;
+}
+header .top-triangle-mobile {
+  top: 2.5rem;
+  left: 9.5em;
+}
+header .right-semicircle-mobile {
+  top: 4rem;
+  right: 0;
+}
+header .bottom-rings-mobile {
+  bottom: -5.35rem;
+  left: -6.15rem;
+}
+header .center-triangle-mobile {
+  top: 50%;
+  right: 15%;
+}
+header .bottom-triangle-mobile {
+  top: 65%;
+  left: 23.5%;
+}
+header .center-square-mobile {
+  bottom: 7.5rem;
+  right: 0;
+}
+header .bottom-square-mobile {
+  bottom: -1rem;
+  right: 0;
+}
+
+@media screen and (max-width: 400px) {
+  header .top-triangle-mobile {
+    display: none;
+  }
+  header .bottom-triangle-mobile {
+    display: none;
+  }
+  header .bottom-rings-mobile {
+    left: -8.5rem;
+  }
+}
 * {
   padding: 0;
   margin: 0;

@@ -1,3 +1,12 @@
+const changeImages = (theme) => {
+  const shapes = document.querySelectorAll(".shape, .icon");
+  const to_replace = theme == "dark" ? "light" : "dark";
+
+  Array.from(shapes).forEach((shape) => {
+    shape.src = shape.src.replace(to_replace, theme);
+  });
+};
+
 const changeTheme = (theme) => {
   if (!(theme === "dark" || theme === "light")) {
     const dark_theme = window.matchMedia("(prefers-color-scheme: dark)");
@@ -27,15 +36,6 @@ window.onload = () => {
   setTimeout(() => {
     removeLoader();
   }, 1); // simulating load time
-};
-
-const changeImages = (theme) => {
-  const shapes = document.querySelectorAll(".shape, .icon");
-  const to_replace = theme == "dark" ? "light" : "dark";
-
-  Array.from(shapes).forEach((shape) => {
-    shape.src = shape.src.replace(to_replace, theme);
-  });
 };
 
 Array.from(document.querySelectorAll(".hamburger-menu, .cross")).forEach(
