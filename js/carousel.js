@@ -34,7 +34,6 @@ const makeSlide = (title, desc, img_src, link) => {
     read_more.classList.add("read-more");
     slide.appendChild(read_more);
   }
-
   return slide;
 };
 
@@ -58,6 +57,8 @@ const parseData = async () => {
 
   fillCarousel(data, "blogs");
   fillCarousel(data, "podcast");
+  fillCarousel(data, "techloop");
+  fillCarousel(data, "events");
 };
 
 parseData();

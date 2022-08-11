@@ -1,11 +1,31 @@
 body.dark {
+  background-color: #222222;
+  color: white;
+
   #loader div {
     background-color: white;
+  }
+
+  .navbar {
+    background-color: $color-dark-blue;
+    box-shadow: 5.65625px 5.65625px 11.3125px #000000;
+
+    .menu.open::after {
+      background-color: #0e0e0e;
+    }
+
+    .menu_options a {
+      color: white;
+    }
   }
 
   section {
     h1 {
       border-color: white;
+    }
+
+    .domains {
+      box-shadow: -10px -10px 20px #2e2e2e, 10px 10px 20px #1b1b1b;
     }
     .carousel {
       .previous,
@@ -15,6 +35,25 @@ body.dark {
     }
   }
 
+  .techloop,
+  .events {
+    .carousel {
+      background: linear-gradient(
+        141.25deg,
+        rgba(255, 255, 255, 0.06) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+
+      &::after {
+        background: linear-gradient(
+          160.01deg,
+          rgba(0, 102, 161, 0.14) 0%,
+          rgba(255, 255, 255, 0.1) 50%,
+          rgba(0, 102, 161, 0.07) 100%
+        );
+      }
+    }
+  }
   .blogs::after {
     background: url(../images/blogs_circle_dark.svg) no-repeat center
       center/cover;

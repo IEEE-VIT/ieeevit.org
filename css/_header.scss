@@ -1,0 +1,169 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 4rem);
+
+  > * {
+    margin: 1rem 0;
+  }
+
+  .ieee-logo-mobile {
+    display: none;
+  }
+
+  .coming-up {
+    color: $color-light-blue;
+  }
+
+  .event-name {
+    font-size: 1.5rem;
+    border-left: 2px solid $color-light-blue;
+    border-right: 2px solid $color-light-blue;
+    padding: 0 1rem;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    color: white;
+    background-color: $color-light-blue;
+    padding: 0.5rem;
+    border-radius: 2px;
+  }
+
+  .shape {
+    position: absolute;
+    z-index: -1;
+  }
+  .mobile-shape {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  header {
+    .ieee-logo {
+      display: none;
+    }
+    .ieee-logo-mobile {
+      display: block;
+    }
+
+    .event-name {
+      font-size: 14px;
+    }
+
+    .cta-button {
+      font-size: 12px;
+    }
+    .mobile-shape {
+      display: block;
+    }
+
+    .desktop-shape {
+      display: none;
+    }
+  }
+}
+
+header {
+  .left-circle {
+    top: 20%;
+    left: -12.25rem;
+  }
+
+  .top-square {
+    top: 4rem;
+    left: 5%;
+  }
+
+  .top-triangle {
+    top: 0;
+    left: 18%;
+  }
+
+  .top-semicircle {
+    left: 35%;
+    top: -15px;
+  }
+
+  .right-semicircle {
+    top: -21px;
+    right: 15px;
+  }
+
+  .right-rings {
+    top: -21px;
+    right: 0;
+  }
+
+  .center-triangle {
+    top: 50%;
+    right: 27.5%;
+  }
+
+  .center-square {
+    top: 65%;
+    left: 70%;
+  }
+
+  .center-bigsquare {
+    top: 84%;
+    left: 60%;
+  }
+
+  .center-bottomtriangle {
+    top: 80%;
+    left: 25%;
+  }
+}
+
+header {
+  .top-square-mobile {
+    top: 3rem;
+    left: 1rem;
+  }
+  .top-triangle-mobile {
+    top: 2.5rem;
+    left: 9.5em;
+  }
+  .right-semicircle-mobile {
+    top: 4rem;
+    right: 0;
+  }
+  .bottom-rings-mobile {
+    bottom: -5.35rem;
+    left: -6.15rem;
+  }
+  .center-triangle-mobile {
+    top: 50%;
+    right: 15%;
+  }
+  .bottom-triangle-mobile {
+    top: 65%;
+    left: 23.5%;
+  }
+  .center-square-mobile {
+    bottom: 7.5rem;
+    right: 0;
+  }
+  .bottom-square-mobile {
+    bottom: -1rem;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    .top-triangle-mobile {
+      display: none;
+    }
+    .bottom-triangle-mobile {
+      display: none;
+    }
+    .bottom-rings-mobile {
+      left: -8.5rem;
+    }
+  }
+}
