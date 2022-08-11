@@ -1,0 +1,48 @@
+.about {
+  margin: Min(15%, 7.5rem);
+
+  h1 {
+    font-size: $heading-font-size;
+    font-weight: normal;
+    color: $color-light-blue;
+    border-bottom: 2px solid $color-black;
+    padding-bottom: 0.15rem;
+    width: fit-content;
+  }
+
+  p {
+    line-height: 24px;
+    margin: 2rem 0;
+  }
+
+  .domains {
+    padding: 1.5rem Min(7.5%, 4rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px #ededed;
+    border-radius: 0.5rem;
+
+    .domain {
+      flex-basis: 16.5rem;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      margin: 0.5rem 0;
+      overflow: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      .domain-text {
+        font-size: 20px;
+        color: $color-light-blue;
+        padding-left: 1rem;
+        align-self: center;
+      }
+    }
+  }
+}
