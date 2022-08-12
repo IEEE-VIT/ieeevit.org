@@ -1,0 +1,184 @@
+.board {
+  margin: Min(15%, 7.5rem);
+
+  h1 {
+    font-size: $heading-font-size;
+    font-weight: normal;
+    color: $color-light-blue;
+    border-bottom: 2px solid $color-black;
+    padding-bottom: 0.15rem;
+    width: fit-content;
+    margin: 2rem 0;
+  }
+
+  position: relative;
+
+  .board-members {
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    .board-member {
+      justify-self: center;
+      padding-bottom: 1rem;
+      width: 185px;
+      height: 225px;
+      border-radius: 8px;
+      background-color: #fcfcfc;
+      box-shadow: inset 0px -3px 4px rgba(255, 255, 255, 0.85);
+      filter: drop-shadow(-10px -10px 20px #ffffff)
+        drop-shadow(10px 10px 20px #ededed);
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 164px;
+        object-fit: cover;
+      }
+
+      .content {
+        height: calc(100% - 164px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .position {
+          color: #7a7a7a;
+          text-transform: uppercase;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  > a {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto;
+    padding: 0.5rem 1.5rem;
+    background-color: $color-light-blue;
+    color: white;
+
+    span {
+      display: inline;
+      font-size: 1.5rem;
+    }
+
+    &:last-child {
+      background-color: transparent;
+      color: $color-light-blue;
+      border: 1px solid $color-light-blue;
+    }
+  }
+}
+
+.board-rings {
+  top: -19.5rem;
+  right: -7.5rem;
+}
+
+.board-square1 {
+  top: -7.5rem;
+  left: calc(-1 * Min(15%, 7.5rem));
+}
+
+.board-square2 {
+  top: 5rem;
+  left: calc(-1 * Min(15%, 7.5rem));
+}
+
+.board-square3 {
+  top: 15rem;
+  left: calc(-1 * Min(15%, 7.5rem));
+}
+
+.board-square4 {
+  bottom: 0;
+  right: 13rem;
+}
+
+.board-square5 {
+  bottom: 0;
+  right: 5rem;
+}
+
+.board-square6 {
+  bottom: -2rem;
+  right: -7.5rem;
+}
+
+.mobile-shape {
+  display: none;
+}
+
+@media only screen and (max-width: 1025px) {
+  .board {
+    .desktop-shape {
+      display: none;
+    }
+
+    .mobile-shape {
+      display: block;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .board-members .board-member {
+      background-color: white;
+      width: 123px;
+      height: 150px;
+
+      img {
+        height: 6.815rem;
+      }
+
+      .content {
+        height: calc(100% - 6.815rem);
+        font-size: 10px;
+
+        .position {
+          font-size: 7px;
+        }
+      }
+    }
+
+    .board-square1-mobile {
+      top: 1rem;
+      left: calc(-1 * Min(21%, 7.5rem));
+    }
+
+    .board-square2-mobile {
+      top: 6.5rem;
+      left: calc(-1 * Min(21%, 7.5rem));
+    }
+
+    .board-square3-mobile {
+      top: 13rem;
+      left: calc(-1 * Min(21%, 7.5rem));
+    }
+
+    .board-square4-mobile {
+      bottom: calc(-1 * Min(21%, 7.5rem));
+      right: 6.5rem;
+    }
+
+    .board-square5-mobile {
+      bottom: calc(-1 * Min(21%, 7.5rem));
+      right: 1rem;
+    }
+
+    .board-square6-mobile {
+      bottom: calc(-1 * Min(21%, 7.5rem));
+      right: calc(-1 * Min(21.5%, 7.5rem));
+    }
+  }
+}
+
+// issue in events shapes
+
+.events .shape {
+  display: none;
+}

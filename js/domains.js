@@ -21,7 +21,6 @@ const fillDomains = (domains) => {
 
   domains.forEach((domain) => {
     let { domain_name, domain_icon } = domain;
-    console.log(domain_name, domain_icon);
     const domain_element = makeDomain(domain_name, domain_icon);
     container.appendChild(domain_element);
   });

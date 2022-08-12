@@ -63,4 +63,13 @@ body.dark {
         center/cover;
     }
   }
+
+  .board {
+    .board-member {
+      background-color: #222222;
+      box-shadow: inset 0px -3px 4px rgba(0, 0, 0, 0.85);
+      filter: drop-shadow(-10px -10px 20px #151515)
+        drop-shadow(10px 10px 20px #000000);
+    }
+  }
 }
