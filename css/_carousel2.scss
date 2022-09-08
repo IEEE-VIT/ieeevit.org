@@ -100,6 +100,7 @@
         img,
         .content,
         .read-more {
+          width: 100%;
           min-height: 0;
         }
 
@@ -111,6 +112,7 @@
 
         .content {
           padding: 1rem;
+          color: white;
           z-index: 5;
 
           &::after {
@@ -172,9 +174,9 @@
       .next {
         right: -2rem;
       }
-    }
-    .slide {
-      min-width: 100%;
+      .container .slide {
+        min-width: 100%;
+      }
     }
   }
 }
@@ -182,6 +184,8 @@
 .podcast .carousel .container .slide:first-child::after {
   content: "recent";
 }
+
+// shapes
 
 .blogs {
   position: relative;

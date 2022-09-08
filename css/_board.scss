@@ -53,17 +53,15 @@
     }
   }
   > a {
-    display: block;
+    display: flex;
+    align-items: center;
     width: fit-content;
+    gap: 0.5rem;
     margin: 2rem auto;
-    padding: 0.5rem 1.5rem;
+    padding: 0.85rem 1.5rem;
     background-color: $color-light-blue;
+    text-transform: uppercase;
     color: white;
-
-    span {
-      display: inline;
-      font-size: 1.5rem;
-    }
 
     &:last-child {
       background-color: transparent;
