@@ -32,7 +32,7 @@ const removeLoader = () => {
 
 const adjustBoardSection = () => {
   const board_members = document.querySelector(".board-members");
-  let count = parseInt(board_members.clientWidth / 185);
+  let count = parseInt(document.querySelector(".board").clientWidth / 185);
 
   if (board_members.childElementCount % count !== 0) {
     count =
@@ -53,9 +53,7 @@ window.onload = () => {
     adjustBoardSection();
   }, 555);
 
-  setTimeout(() => {
-    removeLoader();
-  }, 1); // simulating load time
+  removeLoader();
 };
 
 Array.from(document.querySelectorAll(".hamburger-menu, .cross")).forEach(

@@ -139,6 +139,9 @@ body.dark .board .board-member {
   font-weight: 600;
   padding: 0 1rem;
 }
+.navbar .menu .menu_options:visited {
+  color: #0066a1;
+}
 .navbar .socials {
   display: flex;
   margin-left: auto;
@@ -721,6 +724,7 @@ body .techloop .carousel .next,
 .podcast .carousel .container .slide img,
 .podcast .carousel .container .slide .content,
 .podcast .carousel .container .slide .read-more {
+  width: 100%;
   min-height: 0;
 }
 .blogs .carousel .container .slide img,
@@ -733,6 +737,7 @@ body .techloop .carousel .next,
 .blogs .carousel .container .slide .content,
 .podcast .carousel .container .slide .content {
   padding: 1rem;
+  color: white;
   z-index: 5;
 }
 .blogs .carousel .container .slide .content::after,
@@ -787,8 +792,8 @@ body .techloop .carousel .next,
 .podcast .carousel .next {
     right: -2rem;
   }
-  .blogs .slide,
-.podcast .slide {
+  .blogs .carousel .container .slide,
+.podcast .carousel .container .slide {
     min-width: 100%;
   }
 }
@@ -870,18 +875,17 @@ body .techloop .carousel .next,
   font-size: 10px;
 }
 .board > a {
-  display: block;
+  display: flex;
+  align-items: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  gap: 0.5rem;
   margin: 2rem auto;
-  padding: 0.5rem 1.5rem;
+  padding: 0.85rem 1.5rem;
   background-color: #2f93eb;
+  text-transform: uppercase;
   color: white;
-}
-.board > a span {
-  display: inline;
-  font-size: 1.5rem;
 }
 .board > a:last-child {
   background-color: transparent;
