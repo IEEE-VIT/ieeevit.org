@@ -15,33 +15,38 @@ body.dark .navbar .menu.open::after {
 body.dark .navbar .menu_options a {
   color: white;
 }
-body.dark section h1 {
+body.dark #about h1, body.dark #techloop h1, body.dark #events h1, body.dark #blogs h1, body.dark #podcast h1, body.dark #board h1 {
   border-color: white;
 }
-body.dark section .domains {
+body.dark #about .domains, body.dark #techloop .domains, body.dark #events .domains, body.dark #blogs .domains, body.dark #podcast .domains, body.dark #board .domains {
   box-shadow: -10px -10px 20px #2e2e2e, 10px 10px 20px #1b1b1b;
 }
-body.dark section .carousel .previous,
-body.dark section .carousel .next {
+body.dark #about .carousel .previous,
+body.dark #about .carousel .next, body.dark #techloop .carousel .previous,
+body.dark #techloop .carousel .next, body.dark #events .carousel .previous,
+body.dark #events .carousel .next, body.dark #blogs .carousel .previous,
+body.dark #blogs .carousel .next, body.dark #podcast .carousel .previous,
+body.dark #podcast .carousel .next, body.dark #board .carousel .previous,
+body.dark #board .carousel .next {
   color: white;
 }
-body.dark .techloop .carousel,
-body.dark .events .carousel {
+body.dark #techloop .carousel,
+body.dark #events .carousel {
   background: linear-gradient(141.25deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
 }
-body.dark .techloop .carousel::after,
-body.dark .events .carousel::after {
+body.dark #techloop .carousel::after,
+body.dark #events .carousel::after {
   background: linear-gradient(160.01deg, rgba(0, 102, 161, 0.14) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(0, 102, 161, 0.07) 100%);
 }
-body.dark .blogs::after {
+body.dark #blogs::after {
   background: url(../images/blogs_circle_dark.svg) no-repeat center center/cover;
 }
 @media only screen and (max-width: 41rem) {
-  body.dark .blogs::after {
+  body.dark #blogs::after {
     background: url(../images/blogs_circle_dark_mobile.svg) no-repeat center center/cover;
   }
 }
-body.dark .board .board-member {
+body.dark #board .board-member {
   background-color: #222222;
   box-shadow: inset 0px -3px 4px rgba(0, 0, 0, 0.85);
   filter: drop-shadow(-10px -10px 20px #151515) drop-shadow(10px 10px 20px #000000);
@@ -356,10 +361,10 @@ header .bottom-square-mobile {
     left: -8.5rem;
   }
 }
-.about {
+#about {
   margin: min(15%, 7.5rem);
 }
-.about h1 {
+#about h1 {
   font-size: 33px;
   font-weight: normal;
   color: #2f93eb;
@@ -369,11 +374,11 @@ header .bottom-square-mobile {
   width: -moz-fit-content;
   width: fit-content;
 }
-.about p {
+#about p {
   line-height: 24px;
   margin: 2rem 0;
 }
-.about .domains {
+#about .domains {
   padding: 1.5rem min(7.5%, 4rem);
   display: flex;
   flex-wrap: wrap;
@@ -381,7 +386,7 @@ header .bottom-square-mobile {
   box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px #ededed;
   border-radius: 0.5rem;
 }
-.about .domains .domain {
+#about .domains .domain {
   flex-basis: 16.5rem;
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -390,23 +395,23 @@ header .bottom-square-mobile {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.about .domains .domain::-webkit-scrollbar {
+#about .domains .domain::-webkit-scrollbar {
   display: none;
 }
-.about .domains .domain .domain-text {
+#about .domains .domain .domain-text {
   font-size: 20px;
   color: #2f93eb;
   padding-left: 1rem;
   align-self: center;
 }
 
-.techloop,
-.events {
+#techloop,
+#events {
   margin: min(15%, 7.5rem);
   position: relative;
 }
-.techloop h1,
-.events h1 {
+#techloop h1,
+#events h1 {
   font-size: 33px;
   font-weight: normal;
   color: #2f93eb;
@@ -416,13 +421,13 @@ header .bottom-square-mobile {
   width: -moz-fit-content;
   width: fit-content;
 }
-.techloop p,
-.events p {
+#techloop p,
+#events p {
   line-height: 24px;
   margin: 2rem 0;
 }
-.techloop .carousel,
-.events .carousel {
+#techloop .carousel,
+#events .carousel {
   padding: 2rem;
   height: 23.85rem;
   position: relative;
@@ -431,8 +436,8 @@ header .bottom-square-mobile {
   -webkit-backdrop-filter: blur(7.5px);
   backdrop-filter: blur(7.5px);
 }
-.techloop .carousel::after,
-.events .carousel::after {
+#techloop .carousel::after,
+#events .carousel::after {
   content: "";
   width: calc(100% + 2px);
   height: calc(100% + 2px);
@@ -444,26 +449,26 @@ header .bottom-square-mobile {
   -webkit-clip-path: polygon(0% 0%, 0% 100%, 1px 100%, 1px 1px, calc(100% - 1px) 1px, calc(100% - 1px) calc(100% - 1px), 1px calc(100% - 1px), 1px 100%, 100% 100%, 100% 0%);
           clip-path: polygon(0% 0%, 0% 100%, 1px 100%, 1px 1px, calc(100% - 1px) 1px, calc(100% - 1px) calc(100% - 1px), 1px calc(100% - 1px), 1px 100%, 100% 100%, 100% 0%);
 }
-.techloop .carousel .previous,
-.techloop .carousel .next,
-.events .carousel .previous,
-.events .carousel .next {
+#techloop .carousel .previous,
+#techloop .carousel .next,
+#events .carousel .previous,
+#events .carousel .next {
   position: absolute;
   top: calc(50% - 3.5rem);
   font-size: 3.5rem;
   color: #141414;
   cursor: pointer;
 }
-.techloop .carousel .previous,
-.events .carousel .previous {
+#techloop .carousel .previous,
+#events .carousel .previous {
   left: -3rem;
 }
-.techloop .carousel .next,
-.events .carousel .next {
+#techloop .carousel .next,
+#events .carousel .next {
   right: -3rem;
 }
-.techloop .carousel .container,
-.events .carousel .container {
+#techloop .carousel .container,
+#events .carousel .container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -474,12 +479,12 @@ header .bottom-square-mobile {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.techloop .carousel .container::-webkit-scrollbar,
-.events .carousel .container::-webkit-scrollbar {
+#techloop .carousel .container::-webkit-scrollbar,
+#events .carousel .container::-webkit-scrollbar {
   display: none;
 }
-.techloop .carousel .container .slide,
-.events .carousel .container .slide {
+#techloop .carousel .container .slide,
+#events .carousel .container .slide {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -488,18 +493,18 @@ header .bottom-square-mobile {
   min-width: 100%;
   scroll-snap-align: start;
 }
-.techloop .carousel .container .slide .content,
-.events .carousel .container .slide .content {
+#techloop .carousel .container .slide .content,
+#events .carousel .container .slide .content {
   width: 45%;
 }
-.techloop .carousel .container .slide .content h2,
-.events .carousel .container .slide .content h2 {
+#techloop .carousel .container .slide .content h2,
+#events .carousel .container .slide .content h2 {
   font-size: 33px;
   font-weight: normal;
   color: #54afff;
 }
-.techloop .carousel .container .slide img,
-.events .carousel .container .slide img {
+#techloop .carousel .container .slide img,
+#events .carousel .container .slide img {
   width: 45%;
   height: 100%;
   -o-object-fit: cover;
@@ -507,54 +512,54 @@ header .bottom-square-mobile {
 }
 
 @media only screen and (max-width: 1205px) {
-  body .techloop .carousel,
-body .events .carousel {
+  #techloop .carousel,
+#events .carousel {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     padding: 1rem;
   }
-  body .techloop .carousel .container .slide,
-body .events .carousel .container .slide {
+  #techloop .carousel .container .slide,
+#events .carousel .container .slide {
     flex-direction: column;
   }
-  body .techloop .carousel .container .slide .content,
-body .events .carousel .container .slide .content {
+  #techloop .carousel .container .slide .content,
+#events .carousel .container .slide .content {
     width: 100%;
   }
-  body .techloop .carousel .container .slide img,
-body .events .carousel .container .slide img {
+  #techloop .carousel .container .slide img,
+#events .carousel .container .slide img {
     width: 100%;
     height: 15rem;
   }
 }
 
 @media only screen and (max-width: 850px) {
-  body .techloop h1,
-.events h1 {
+  #techloop h1,
+#events h1 {
     font-size: 24px;
   }
-  body .techloop p,
-.events p {
+  #techloop p,
+#events p {
     font-size: 14px;
     margin: 1rem 0;
   }
-  body .techloop .carousel .previous,
-body .techloop .carousel .next,
-.events .carousel .previous,
-.events .carousel .next {
+  #techloop .carousel .previous,
+#techloop .carousel .next,
+#events .carousel .previous,
+#events .carousel .next {
     font-size: 2.5rem;
   }
-  body .techloop .carousel .previous,
-.events .carousel .previous {
+  #techloop .carousel .previous,
+#events .carousel .previous {
     left: -2rem;
   }
-  body .techloop .carousel .next,
-.events .carousel .next {
+  #techloop .carousel .next,
+#events .carousel .next {
     right: -2rem;
   }
-  body .techloop .carousel .container .slide .content h2,
-.events .carousel .container .slide .content h2 {
+  #techloop .carousel .container .slide .content h2,
+#events .carousel .container .slide .content h2 {
     font-size: 20px;
     font-weight: 600;
   }
@@ -614,12 +619,12 @@ body .techloop .carousel .next,
   bottom: -15rem;
 }
 
-.blogs,
-.podcast {
+#blogs,
+#podcast {
   margin: min(10%, 7.5rem);
 }
-.blogs h1,
-.podcast h1 {
+#blogs h1,
+#podcast h1 {
   font-size: 33px;
   font-weight: normal;
   color: #2f93eb;
@@ -629,41 +634,41 @@ body .techloop .carousel .next,
   width: -moz-fit-content;
   width: fit-content;
 }
-.blogs > p,
-.podcast > p {
+#blogs > p,
+#podcast > p {
   line-height: 24px;
   margin: 2rem 0;
 }
-.blogs .carousel,
-.podcast .carousel {
+#blogs .carousel,
+#podcast .carousel {
   height: 21.25rem;
   overflow-x: visible;
   width: calc(100vw - min(10vw, 7.5rem));
   position: relative;
 }
-.blogs .carousel .previous,
-.blogs .carousel .next,
-.podcast .carousel .previous,
-.podcast .carousel .next {
+#blogs .carousel .previous,
+#blogs .carousel .next,
+#podcast .carousel .previous,
+#podcast .carousel .next {
   position: absolute;
   top: 35%;
   font-size: 3.5rem;
   color: #141414;
 }
-.blogs .carousel .previous,
-.podcast .carousel .previous {
+#blogs .carousel .previous,
+#podcast .carousel .previous {
   left: -2rem;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   cursor: default;
 }
-.blogs .carousel .next,
-.podcast .carousel .next {
+#blogs .carousel .next,
+#podcast .carousel .next {
   right: 1.5rem;
   cursor: pointer;
 }
-.blogs .carousel .container,
-.podcast .carousel .container {
+#blogs .carousel .container,
+#podcast .carousel .container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -675,12 +680,12 @@ body .techloop .carousel .next,
   scrollbar-width: none;
   position: relative;
 }
-.blogs .carousel .container::-webkit-scrollbar,
-.podcast .carousel .container::-webkit-scrollbar {
+#blogs .carousel .container::-webkit-scrollbar,
+#podcast .carousel .container::-webkit-scrollbar {
   display: none;
 }
-.blogs .carousel .container .slide,
-.podcast .carousel .container .slide {
+#blogs .carousel .container .slide,
+#podcast .carousel .container .slide {
   background-color: gray;
   height: 100%;
   width: 45%;
@@ -692,8 +697,8 @@ body .techloop .carousel .next,
   overflow: hidden;
   position: relative;
 }
-.blogs .carousel .container .slide:first-child::after,
-.podcast .carousel .container .slide:first-child::after {
+#blogs .carousel .container .slide:first-child::after,
+#podcast .carousel .container .slide:first-child::after {
   content: "latest";
   text-transform: uppercase;
   letter-spacing: 0.15px;
@@ -714,34 +719,34 @@ body .techloop .carousel .next,
   background-color: #0066a1;
   z-index: 5;
 }
-.blogs .carousel .container .slide:last-child,
-.podcast .carousel .container .slide:last-child {
+#blogs .carousel .container .slide:last-child,
+#podcast .carousel .container .slide:last-child {
   margin-right: 0;
 }
-.blogs .carousel .container .slide img,
-.blogs .carousel .container .slide .content,
-.blogs .carousel .container .slide .read-more,
-.podcast .carousel .container .slide img,
-.podcast .carousel .container .slide .content,
-.podcast .carousel .container .slide .read-more {
+#blogs .carousel .container .slide img,
+#blogs .carousel .container .slide .content,
+#blogs .carousel .container .slide .read-more,
+#podcast .carousel .container .slide img,
+#podcast .carousel .container .slide .content,
+#podcast .carousel .container .slide .read-more {
   width: 100%;
   min-height: 0;
 }
-.blogs .carousel .container .slide img,
-.podcast .carousel .container .slide img {
+#blogs .carousel .container .slide img,
+#podcast .carousel .container .slide img {
   width: 100%;
   height: 175%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.blogs .carousel .container .slide .content,
-.podcast .carousel .container .slide .content {
+#blogs .carousel .container .slide .content,
+#podcast .carousel .container .slide .content {
   padding: 1rem;
   color: white;
   z-index: 5;
 }
-.blogs .carousel .container .slide .content::after,
-.podcast .carousel .container .slide .content::after {
+#blogs .carousel .container .slide .content::after,
+#podcast .carousel .container .slide .content::after {
   content: "";
   width: 125%;
   height: 75%;
@@ -752,20 +757,20 @@ body .techloop .carousel .next,
   filter: blur(25px);
   z-index: -1;
 }
-.blogs .carousel .container .slide .content h2,
-.podcast .carousel .container .slide .content h2 {
+#blogs .carousel .container .slide .content h2,
+#podcast .carousel .container .slide .content h2 {
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
   padding-bottom: 0.5rem;
 }
-.blogs .carousel .container .slide .content p,
-.podcast .carousel .container .slide .content p {
+#blogs .carousel .container .slide .content p,
+#podcast .carousel .container .slide .content p {
   font-size: 12px;
   width: 100%;
 }
-.blogs .carousel .container .slide .read-more,
-.podcast .carousel .container .slide .read-more {
+#blogs .carousel .container .slide .read-more,
+#podcast .carousel .container .slide .read-more {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -778,33 +783,33 @@ body .techloop .carousel .next,
 }
 
 @media only screen and (max-width: 41rem) {
-  .blogs .carousel,
-.podcast .carousel {
+  #blogs .carousel,
+#podcast .carousel {
     width: 100%;
   }
-  .blogs .carousel .previous,
-.podcast .carousel .previous {
+  #blogs .carousel .previous,
+#podcast .carousel .previous {
     left: -2rem;
     opacity: 1;
     cursor: pointer;
   }
-  .blogs .carousel .next,
-.podcast .carousel .next {
+  #blogs .carousel .next,
+#podcast .carousel .next {
     right: -2rem;
   }
-  .blogs .carousel .container .slide,
-.podcast .carousel .container .slide {
+  #blogs .carousel .container .slide,
+#podcast .carousel .container .slide {
     min-width: 100%;
   }
 }
-.podcast .carousel .container .slide:first-child::after {
+#podcast .carousel .container .slide:first-child::after {
   content: "recent";
 }
 
-.blogs {
+#blogs {
   position: relative;
 }
-.blogs::after {
+#blogs::after {
   content: "";
   width: 32.5rem;
   height: 32.5rem;
@@ -815,7 +820,7 @@ body .techloop .carousel .next,
   z-index: -5;
 }
 @media only screen and (max-width: 41rem) {
-  .blogs::after {
+  #blogs::after {
     width: 21.5rem;
     height: 21.5rem;
     bottom: -12.5rem;
@@ -824,11 +829,11 @@ body .techloop .carousel .next,
   }
 }
 
-.board {
+#board {
   margin: min(15%, 7.5rem);
   position: relative;
 }
-.board h1 {
+#board h1 {
   font-size: 33px;
   font-weight: normal;
   color: #2f93eb;
@@ -839,13 +844,13 @@ body .techloop .carousel .next,
   width: fit-content;
   margin: 2rem 0;
 }
-.board .board-members {
+#board .board-members {
   width: 100%;
   display: grid;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1.5rem;
 }
-.board .board-members .board-member {
+#board .board-members .board-member {
   justify-self: center;
   padding-bottom: 1rem;
   width: 185px;
@@ -856,25 +861,25 @@ body .techloop .carousel .next,
   filter: drop-shadow(-10px -10px 20px #ffffff) drop-shadow(10px 10px 20px #ededed);
   overflow: hidden;
 }
-.board .board-members .board-member img {
+#board .board-members .board-member img {
   width: 100%;
   height: 164px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.board .board-members .board-member .content {
+#board .board-members .board-member .content {
   height: calc(100% - 164px);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-.board .board-members .board-member .content .position {
+#board .board-members .board-member .content .position {
   color: #7a7a7a;
   text-transform: uppercase;
   font-size: 10px;
 }
-.board > a {
+#board > a {
   display: flex;
   align-items: center;
   width: -webkit-fit-content;
@@ -887,7 +892,7 @@ body .techloop .carousel .next,
   text-transform: uppercase;
   color: white;
 }
-.board > a:last-child {
+#board > a:last-child {
   background-color: transparent;
   color: #2f93eb;
   border: 1px solid #2f93eb;
@@ -933,56 +938,56 @@ body .techloop .carousel .next,
 }
 
 @media only screen and (max-width: 1025px) {
-  .board .desktop-shape {
+  #board .desktop-shape {
     display: none;
   }
-  .board .mobile-shape {
+  #board .mobile-shape {
     display: block;
   }
-  .board h1 {
+  #board h1 {
     font-size: 24px;
   }
-  .board .board-members .board-member {
+  #board .board-members .board-member {
     background-color: white;
     width: 123px;
     height: 150px;
   }
-  .board .board-members .board-member img {
+  #board .board-members .board-member img {
     height: 6.815rem;
   }
-  .board .board-members .board-member .content {
+  #board .board-members .board-member .content {
     height: calc(100% - 6.815rem);
     font-size: 10px;
   }
-  .board .board-members .board-member .content .position {
+  #board .board-members .board-member .content .position {
     font-size: 7px;
   }
-  .board .board-square1-mobile {
+  #board .board-square1-mobile {
     top: 1rem;
     left: calc(-1 * min(21%, 7.5rem));
   }
-  .board .board-square2-mobile {
+  #board .board-square2-mobile {
     top: 6.5rem;
     left: calc(-1 * min(21%, 7.5rem));
   }
-  .board .board-square3-mobile {
+  #board .board-square3-mobile {
     top: 13rem;
     left: calc(-1 * min(21%, 7.5rem));
   }
-  .board .board-square4-mobile {
+  #board .board-square4-mobile {
     bottom: calc(-1 * min(21%, 7.5rem));
     right: 6.5rem;
   }
-  .board .board-square5-mobile {
+  #board .board-square5-mobile {
     bottom: calc(-1 * min(21%, 7.5rem));
     right: 1rem;
   }
-  .board .board-square6-mobile {
+  #board .board-square6-mobile {
     bottom: calc(-1 * min(21%, 7.5rem));
     right: calc(-1 * min(21.5%, 7.5rem));
   }
 }
-.events .shape {
+#events .shape {
   display: none;
 }
 

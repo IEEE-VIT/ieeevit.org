@@ -39,7 +39,7 @@ const makeSlide = (title, desc, img_src, link) => {
 
 const fillCarousel = (data, carousel_name) => {
   const container = document.querySelector(
-    `.${carousel_name} .carousel .container`
+    `#${carousel_name} .carousel .container`
   );
 
   const slides = data[carousel_name];
@@ -72,7 +72,7 @@ Array.from(previous).forEach((previous_button) => {
   });
 });
 
-Array.from(document.querySelectorAll(".blogs, .podcast")).forEach((section) => {
+Array.from(document.querySelectorAll("#blogs, #podcast")).forEach((section) => {
   const container = section.querySelector(".carousel .container");
   container.addEventListener("scroll", () => {
     const previous_button = container.previousElementSibling;

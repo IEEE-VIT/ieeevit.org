@@ -1,4 +1,4 @@
-.board {
+#board {
   margin: Min(15%, 7.5rem);
 
   h1 {
@@ -16,7 +16,7 @@
   .board-members {
     width: 100%;
     display: grid;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1.5rem;
 
     .board-member {
@@ -111,7 +111,7 @@
 }
 
 @media only screen and (max-width: 1025px) {
-  .board {
+  #board {
     .desktop-shape {
       display: none;
     }
@@ -177,6 +177,6 @@
 
 // issue in events shapes
 
-.events .shape {
+#events .shape {
   display: none;
 }

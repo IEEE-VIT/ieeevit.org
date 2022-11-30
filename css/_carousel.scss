@@ -1,5 +1,5 @@
-.techloop,
-.events {
+#techloop,
+#events {
   margin: Min(15%, 7.5rem);
   position: relative;
 
@@ -125,8 +125,8 @@
   }
 }
 
-body .techloop .carousel,
-body .events .carousel {
+#techloop .carousel,
+#events .carousel {
   @media only screen and (max-width: 1205px) {
     height: fit-content;
     padding: 1rem;
@@ -144,8 +144,8 @@ body .events .carousel {
   }
 }
 
-body .techloop,
-.events {
+#techloop,
+#events {
   @media only screen and (max-width: 850px) {
     h1 {
       font-size: 24px;
