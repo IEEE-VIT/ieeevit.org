@@ -30,30 +30,6 @@ const removeLoader = () => {
   document.getElementById("main-content").style.display = "block";
 };
 
-const adjustBoardSection = () => {
-  const board_members = document.querySelector(".board-members");
-  let count = parseInt(document.querySelector("#board").clientWidth / 185);
-
-  if (board_members.childElementCount % count !== 0) {
-    count =
-      board_members.childElementCount % (count - 1) === 0 ? count - 1 : count;
-  }
-  count = parseInt(Math.max(1, count));
-
-  board_members.style.gridTemplateColumns = `repeat(${count}, 185px)`;
-};
-
-window.onload = () => {
-  let theme = localStorage.getItem("theme");
-  changeTheme(theme);
-
-  setTimeout(() => {
-    adjustBoardSection();
-  }, 555);
-
-  removeLoader();
-};
-
 Array.from(document.querySelectorAll(".hamburger-menu, .cross")).forEach(
   (element) => {
     element.addEventListener("click", (event) => {
@@ -64,6 +40,13 @@ Array.from(document.querySelectorAll(".hamburger-menu, .cross")).forEach(
   }
 );
 
-window.onresize = () => {
-  adjustBoardSection();
+window.onload = () => {
+  let theme = localStorage.getItem("theme");
+  changeTheme(theme);
+
+  removeLoader();
+
+  setTimeout(() => {
+    adjustBoardSection();
+  }, 555);
 };
