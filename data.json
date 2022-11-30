@@ -158,5 +158,57 @@
             "domain_name": "Game Development",
             "domain_icon": "game_development.svg"
         }
+    ],
+    "board": [
+        {
+            "name": "V Kartik",
+            "pos": "chair",
+            "img": "Kartik"
+        },
+        {
+            "name": "Shriyashish Mishra",
+            "pos": "vice chair",
+            "img": "Shriyashish"
+        },
+        {
+            "name": "Shubham Palriwala",
+            "pos": "executive secretary",
+            "img": "Shubham"
+        },
+        {
+            "name": "Aarush Bhatt",
+            "pos": "technical head",
+            "img": "Aarush"
+        },
+        {
+            "name": "K Shakthi Dhar",
+            "pos": "operations head",
+            "img": "Shakthi"
+        },
+        {
+            "name": "Pracheta Mohanty",
+            "pos": "marketing head",
+            "img": "Pracheta"
+        },
+        {
+            "name": "Malavika Rajesh",
+            "pos": "events head",
+            "img": "Malavika"
+        },
+        {
+            "name": "Aaryan Kothari",
+            "pos": "tech lead",
+            "img": "Aaryan"
+        },
+        {
+            "name": "Ishan Khandelwal",
+            "pos": "tech lead",
+            "img": "Ishan"
+        },
+        {
+            "name": "Harsh Malani",
+            "pos": "tech lead",
+            "img": "Harsh"
+        }
     ]
 }
