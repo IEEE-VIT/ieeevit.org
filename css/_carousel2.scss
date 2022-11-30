@@ -1,5 +1,5 @@
-.blogs,
-.podcast {
+#blogs,
+#podcast {
   margin: Min(10%, 7.5rem);
 
   h1 {
@@ -160,8 +160,8 @@
 }
 
 @media only screen and (max-width: 41rem) {
-  .blogs,
-  .podcast {
+  #blogs,
+  #podcast {
     .carousel {
       width: 100%;
 
@@ -181,13 +181,13 @@
   }
 }
 
-.podcast .carousel .container .slide:first-child::after {
+#podcast .carousel .container .slide:first-child::after {
   content: "recent";
 }
 
 // shapes
 
-.blogs {
+#blogs {
   position: relative;
 
   &::after {

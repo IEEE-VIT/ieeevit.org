@@ -32,16 +32,14 @@ const removeLoader = () => {
 
 const adjustBoardSection = () => {
   const board_members = document.querySelector(".board-members");
-  let count = parseInt(document.querySelector(".board").clientWidth / 185);
+  let count = parseInt(document.querySelector("#board").clientWidth / 185);
 
   if (board_members.childElementCount % count !== 0) {
     count =
       board_members.childElementCount % (count - 1) === 0 ? count - 1 : count;
   }
   count = parseInt(Math.max(1, count));
-  if (count === 1) {
-    board_members.style.justifyContent = "center";
-  }
+
   board_members.style.gridTemplateColumns = `repeat(${count}, 185px)`;
 };
 

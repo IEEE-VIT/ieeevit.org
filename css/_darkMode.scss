@@ -19,7 +19,7 @@ body.dark {
     }
   }
 
-  section {
+  #about, #techloop, #events, #blogs, #podcast, #board {
     h1 {
       border-color: white;
     }
@@ -35,8 +35,8 @@ body.dark {
     }
   }
 
-  .techloop,
-  .events {
+  #techloop,
+  #events {
     .carousel {
       background: linear-gradient(
         141.25deg,
@@ -54,7 +54,7 @@ body.dark {
       }
     }
   }
-  .blogs::after {
+  #blogs::after {
     background: url(../images/blogs_circle_dark.svg) no-repeat center
       center/cover;
 
@@ -64,7 +64,7 @@ body.dark {
     }
   }
 
-  .board {
+  #board {
     .board-member {
       background-color: #222222;
       box-shadow: inset 0px -3px 4px rgba(0, 0, 0, 0.85);
