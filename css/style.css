@@ -123,7 +123,8 @@ body.dark #board .board-member {
   display: flex;
   align-items: center;
   padding: 1.5rem 3%;
-  position: relative;
+  position: fixed;
+  z-index: 30000;
 }
 .navbar .hamburger-menu {
   display: none;
@@ -224,7 +225,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 4rem);
+  height: calc(105vh);
 }
 header > * {
   margin: 1rem 0;
@@ -363,6 +364,7 @@ header .bottom-square-mobile {
 }
 #about {
   margin: min(15%, 7.5rem);
+  padding-top: 7%;
 }
 #about h1 {
   font-size: 33px;
@@ -409,6 +411,7 @@ header .bottom-square-mobile {
 #events {
   margin: min(15%, 7.5rem);
   position: relative;
+  padding-top: 20%;
 }
 #techloop h1,
 #events h1 {
@@ -622,6 +625,7 @@ header .bottom-square-mobile {
 #blogs,
 #podcast {
   margin: min(10%, 7.5rem);
+  padding-top: 15%;
 }
 #blogs h1,
 #podcast h1 {
@@ -708,6 +712,7 @@ header .bottom-square-mobile {
   justify-content: flex-start;
   align-items: center;
   padding-left: 1rem;
+  color: white;
   width: 5.5rem;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
@@ -832,6 +837,7 @@ header .bottom-square-mobile {
 #board {
   margin: min(15%, 7.5rem);
   position: relative;
+  padding-top: 10%;
 }
 #board h1 {
   font-size: 33px;
@@ -993,6 +999,7 @@ header .bottom-square-mobile {
 
 * {
   padding: 0;
+  
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -1018,6 +1025,8 @@ h6 {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: #0066A1;
+
 }
 
 button {
