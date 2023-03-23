@@ -411,7 +411,7 @@ header .bottom-square-mobile {
 #events {
   margin: min(15%, 7.5rem);
   position: relative;
-  padding-top: 20%;
+  padding-top: 10%;
 }
 #techloop h1,
 #events h1 {
@@ -625,7 +625,7 @@ header .bottom-square-mobile {
 #blogs,
 #podcast {
   margin: min(10%, 7.5rem);
-  padding-top: 15%;
+  padding-top: 10%;
 }
 #blogs h1,
 #podcast h1 {
