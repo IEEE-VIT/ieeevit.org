@@ -1,3 +1,4 @@
+
 const changeImages = (theme) => {
   const shapes = document.querySelectorAll(".shape, .icon");
   const to_replace = theme == "dark" ? "light" : "dark";
@@ -41,6 +42,7 @@ Array.from(document.querySelectorAll(".hamburger-menu, .cross")).forEach(
 );
 
 window.onload = () => {
+  
   let theme = localStorage.getItem("theme");
   changeTheme(theme);
 

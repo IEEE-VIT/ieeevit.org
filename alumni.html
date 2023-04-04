@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alumni Board</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src=" ./data.json" defer>  </script>
+  <script src="./js/app.js" defer></script>
+  <script src="js/domains.js" defer></script>
+  <script src="./js/carousel.js" defer></script>
+  <script src="./js/board.js" defer></script>
+  <script src="./js/alumni.js" defer></script>
+</head>
+
+<body class="">
+
+  <div id="loader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div id="main-content">
+    <nav class="navbar">
+      <div class="hamburger-menu">
+        <img src="images/hamburger.svg" alt="Hamburger Icon">
+      </div>
+
+      <ul class="menu close">
+        <img src="./images/cross.svg" alt="" class="cross">
+
+        <li class="menu_options"><a href="index.html">Home</a></li>
+        <li class="menu_options"><a href="#about">About Us</a></li>
+        <li class="menu_options"><a href="#techloop">TechLoop</a></li>
+        <li class="menu_options"><a href="#events">Events</a></li>
+        <li class="menu_options"><a href="#blogs-mid">Blogs</a></li>
+        <li class="menu_options"><a href="#podcast">Podcast</a></li>
+        <li class="menu_options"><a href="#board">Team</a></li>
+      </ul>
+      <ul class="socials">
+
+        <a href="https://www.facebook.com/IEEEVIT/" class="social_icons" target="_blank"><img class="icon"
+            src="images/facebook_light.svg" alt="Facebook Icon"></a>
+        <a href="https://www.instagram.com/ieeevitvellore/" class="social_icons" target="_blank"><img class="icon"
+            src="images/instagram_light.svg" alt="Instagram Icon"></a>
+        <a href="https://twitter.com/ieeevitvellore" class="social_icons" target="_blank"><img class="icon"
+            src="images/twitter_light.svg" alt="Twitter Icon"></a>
+        <a href="https://github.com/ieee-vit" class="social_icons" target="_blank"><img class="icon" src="images/github_light.svg"
+            alt="Github Icon"></a>
+        <a href="https://www.linkedin.com/company/ieee-vit-vellore/" class="social_icons" target="_blank"><img class="icon"
+            src="images/linkedin_light.svg" alt="Linkedin Icon"></a>
+        <a href="mailto:contact@ieeevit.org" class="social_icons" target="_blank"><img class="icon" src="images/email_light.svg"
+            alt="Email Icon"></a>
+        <li id="change-theme"><img class="icon" src="images/change_theme_light.svg" alt="Change Theme"></li>
+
+      </ul>
+    </nav>
+  
+  <section id="alumni-board">
+    <div class="year">
+        Choose a year
+    </div>
+    
+  
+      <form>
+        <label for="dropdown-container"></label>
+        <select name="dropdown-container" id="dropdown-container" onchange="changeImage()">
+          <option value="image-grid3">2021 - 22</option>
+          <option value="image-grid1">2020 - 21</option>
+          
+        </select>
+      </form>
+      <div id="text-container">Executive board 2021 - 22</div>
+      
+      <div class="image-grid image-grid1">
+        <img src="/images/1-1.svg">
+        <img src="/images/1-2.svg">
+        <img src="/images/1-3.svg">
+        <img src="/images/1-4.svg">
+        <img src="/images/1-5.svg">
+        <img src="/images/1-6.svg">
+        <img src="/images/1-7.svg">
+        <img src="/images/1-8.svg">
+        <img src="/images/1-9.svg">
+        <img src="/images/1-10.svg">
+        
+      </div>
+      
+      <!-- <div class="image-grid image-grid2">
+        <img src="image1.jpg">
+        <img src="image2.jpg">
+        <img src="image3.jpg">
+        <img src="image4.jpg">
+        <img src="image5.jpg">
+        <img src="image6.jpg">
+        <img src="image7.jpg">
+        <img src="image8.jpg">
+        <img src="image9.jpg">
+        <img src="image10.jpg">
+      </div>
+       -->
+      <div class="image-grid image-grid3 show">
+        <img src="/images/2-1.svg">
+        <img src="/images/2-2.svg">
+        <img src="/images/2-3.svg">
+        <img src="/images/2-4.svg">
+        <img src="/images/2-5.svg">
+        <img src="/images/2-6.svg">
+        <img src="/images/2-7.svg">
+        <img src="/images/2-8.svg">
+        <img src="/images/2-9.svg">
+        <img src="/images/2-10.svg">
+      </div>
+
+      <div class="image-grid image-grid1-light">
+        <img src="/images/2-1l.svg">
+        <img src="/images/2-2l.svg">
+        <img src="/images/2-3l.svg">
+        <img src="/images/2-4l.svg">
+        <img src="/images/2-5l.svg">
+        <img src="/images/2-6l.svg">
+        <img src="/images/2-7l.svg">
+        <img src="/images/2-8l.svg">
+        <img src="/images/2-9l.svg">
+        <img src="/images/2-10l.svg">
+        
+        
+      </div>
+      
+      <!-- <div class="image-grid image-grid2-light">
+        <img src="image1.jpg">
+        <img src="image2.jpg">
+        <img src="image3.jpg">
+        <img src="image4.jpg">
+        <img src="image5.jpg">
+        <img src="image6.jpg">
+        <img src="image7.jpg">
+        <img src="image8.jpg">
+        <img src="image9.jpg">
+        <img src="image10.jpg">
+      </div> -->
+      
+      <div class="image-grid image-grid3-light">
+        <img src="/images/1-1l.svg">
+        <img src="/images/1-2l.svg">
+        <img src="/images/1-3l.svg">
+        <img src="/images/1-4l.svg">
+        <img src="/images/1-5l.svg">
+        <img src="/images/1-6l.svg">
+        <img src="/images/1-7l.svg">
+        <img src="/images/1-8l.svg">
+        <img src="/images/1-9l.svg">
+        <img src="/images/1-10l.svg">
+      </div>
+      
+    
+  </section>
+</div>
+</body>
+</html>

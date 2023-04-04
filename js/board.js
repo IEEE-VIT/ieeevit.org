@@ -7,8 +7,12 @@ const adjustBoardSection = () => {
       board_members.childElementCount % (count - 1) === 0 ? count - 1 : count;
   }
   count = parseInt(Math.max(1, count));
-
+  if(count>5)
+  {
+    count=5;
+  }
   board_members.style.gridTemplateColumns = `repeat(${count}, 185px)`;
+
 };
 
 window.onresize = () => {
@@ -17,7 +21,7 @@ window.onresize = () => {
 
 const makeBoardCard = ({ name, pos, img }) => {
   const img_el = document.createElement("img");
-  img_el.src = `./images/board-images/${img}.png`;
+  img_el.src = `./images/board-images/${img}.jpg`;
   img_el.alt = name;
 
   const position = document.createElement("div");

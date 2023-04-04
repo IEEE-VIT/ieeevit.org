@@ -51,6 +51,15 @@ body.dark #board .board-member {
   box-shadow: inset 0px -3px 4px rgba(0, 0, 0, 0.85);
   filter: drop-shadow(-10px -10px 20px #151515) drop-shadow(10px 10px 20px #000000);
 }
+body.dark #alumni-board {
+  
+    background: url(../images/alumni-background-dark.svg);
+    width: 100%;
+    padding-top: 7%;
+    height: 100%;
+    padding-bottom: 22vh;
+  }
+
 
 #loader {
   width: 100vw;
@@ -887,6 +896,7 @@ header .bottom-square-mobile {
 }
 #board > a {
   display: flex;
+  margin-top: 10rem;
   align-items: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -1041,3 +1051,133 @@ button {
   position: absolute;
   z-index: -1;
 }/*# sourceMappingURL=style.css.map */
+#dropdown-container {
+  position: relative;
+  font-family: "Manrope", sans-serif;
+  font-size: larger;
+  margin-top: 10vh;
+  max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transition: max-height 0.5s ease-out;
+  color: #0066A1;
+  font-size: x-large;
+  width: 100%;
+  transform: translateX(-50%);
+}
+select#dropdown-container {
+  background-color: transparent;
+  border: 2px solid #0066A1;
+  color: #0066A1;
+}
+select#dropdown-container option {
+  border: 2px solid #0066A1;
+  color: #0066A1;
+  background-color:white;
+}
+select#dropdown-container option:hover{
+  background-color: #0066A1;
+  color: white;
+}
+body.dark select#dropdown-container option {
+  border: 2px solid #0066A1;
+  color: #0066A1;
+  background-color:#222222;
+}
+body.dark select#dropdown-container option:hover{
+  background-color: #0066A1;
+  color: white;
+}
+select#dropdown-container {
+  background-color: transparent;
+  border: 2px solid #0066A1;
+  color: #0066A1;
+  padding-left: 2vh;
+  padding-right: 7vh;
+  font-weight: bold;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  background-size: 20px;
+}
+
+option {
+  appearance: none;
+  background-color: transparent;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.image-container img {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+#alumni-board {
+  background: url(../images/alumni-background-light.svg);
+  width: 100%;
+  padding-top: 7%;
+  height: 100%;
+  padding-bottom: 22vh;
+}
+.year {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  font-size: xx-large;
+  
+
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+}
+.image-grid {
+  display: none;
+  margin-top: 20px;
+}
+.image-grid.show {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5vh;
+  /* margin: 16vh; */
+  margin-top: 2vh;
+}
+#text-container {
+  text-align: center;
+  margin-top: 20vh;
+  font-size:xx-large;
+  color: #0066A1;
+  
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+  text-decoration-color: black;
+}
+.dark #text-container {
+  text-align: center;
+  margin-top: 20vh;
+  font-size:xx-large;
+  color: #0066A1;
+  
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+  text-decoration-color: white;
+}
+
+@media screen and (max-width: 1100px) {
+  .image-grid.show {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5vh;
+    /* margin: 16vh; */
+    margin-top: 2vh;
+  }
+}

@@ -1,120 +1,186 @@
 {
     "techloop": [
         {
-            "title": "Introduction to Machine Learning",
-            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png"
+            "title": "Hack the Hackathon:",
+            "desc": "Conducted in March 2021, this TechLoop was the all-you-need-to-know guide to get started hacking your way through hack season. The event covered a variety of domains ranging from web and app development to design, presentation and branding.",
+            "image": "/images/techloop/hth-t.svg"
         },
         {
-            "title": "Introduction to Machine Learning",
-            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png"
+            "title": "Robotics:",
+            "desc": "Our TechLoop on Robotics was an introductory session to robotics, and its practical applications in a variety of fields.",
+            "image": "/images/techloop/robotics-t.svg"
         },
         {
-            "title": "Introduction to Machine Learning",
-            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png"
+            "title": "Web Development:",
+            "desc": "Our third TechLoop of 2021, delved into Web Development, taking attendees through the basics of developing websites, from pitch-perfect frontend to seamless, efficient code written for the backend. It covered the MERN stack, consisting of MongoDB, Express, React.js and Node.",
+            "image": "/images/techloop/webdev-t.svg"
         },
         {
-            "title": "Introduction to Machine Learning",
-            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png"
+            "title": "App Development:",
+            "desc": "This TechLoop session covered the basics of app development, featuring mini follow-along projects in native Android and iOS with both UIKit and SwiftUI, as well as introductions to cross-platform app frameworks like Flutter and Dart.",
+            "image": "/images/techloop/appdev-t.svg"
         },
         {
-            "title": "Introduction to Machine Learning",
-            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png"
+            "title": "Game Development:",
+            "desc": "Video games blur the line between reality and fiction. This TechLoop delved deep into game development and the manner in which it evolved with the times, after which attendees were taught how to make a game from scratch!",
+            "image": "/images/techloop/gamedev-t.svg"
+        },
+        {
+            "title": "Blockchain:",
+            "desc": "If blockchain has ever intrigued you, but you don’t know where to start, this TechLoop has got you covered! Starting from the basics, we went through the core concepts, the transaction lifestyle of crypto transactions and the difference between Bitcoin and blockchain!",
+            "image": "/images/techloop/blockchain-t.svg"
+        
+        },
+        {
+            "title": "Cybersecurity:",
+            "desc": "Real-life hackers may not be wearing a black hoodie and sitting in a dark room but it sounds so cool. Did you know that it's legal? Ethical hacking, of course! Cybersecurity is integral to protecting your system from harm. This TechLoop covered cybersecurity, cyber-attacks, tools used, how ethical hacking works, and so much more!",
+            "image": "/images/techloop/cybersec-t.svg"
         }
     ],
     "events": [
         {
-            "title": "Enigma",
-            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png"
+            "title": "Enigma 8.0",
+            "desc": "The 8th edition of our annual cryptic hunt, Enigma saw 2400+ participants from over 74 countries come together for 48 hours to solve cryptic riddles that led them from Egyptian mythology to the farthest corners of the Internet, solving puzzles and decoding ciphers along the way. With a prize pool of ₹1,00,000, the event was a massive success. To this date, Enigma remains unsolved.",
+            "image": "/images/enigma.svg"
         },
         {
-            "title": "Enigma",
-            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png"
+            "title": "Fossfiesta",
+            "desc": "FOSSFiesta, commonly known as the free and open source software party, was organised by IEEE-VIT and consisted of two sessions: Open Source Takeover and Git-Set-Go. All questions about open source, Hacktoberfest, GitHub, and Git were addressed and resolved, culminating in a fantastic codesprint competition with fantastic prizes.",
+            "image": "/images/foss.svg"
         },
         {
-            "title": "Enigma",
-            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png"
+            "title": "Palette ‘21",
+            "desc": "Palette 2021 was a 48-hour online design hack that put your creativity to the test! With randomly generated problem statements and a prize pool worth ₹60,000, the pressure was on all teams to wow our expert panel of judges with their product. And with 500+ registrations from over 65 countries, this one-of-a-kind event was nothing short of a success.",
+            "image": "/images/palatte.svg"
         },
         {
-            "title": "Enigma",
-            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png"
+            "title": "Hacktoberfest",
+            "desc": "Palette 2021 was a 48-hour online design hack that put your creativity to the test! With randomly generated problem statements and a prize pool worth ₹60,000, the pressure was on all teams to wow our expert panel of judges with their product. And with 500+ registrations from over 65 countries, this one-of-a-kind event was nothing short of a success.",
+            "image": "/images/hacktoberfest.svg"
         },
         {
-            "title": "Enigma",
-            "desc": "Description Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore. Participants have to solve a series of mind boggling questions to win cash prizes!\n\nDescription Enigma is an online cryptic hunt conducted every year by IEEE VIT Vellore.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png"
+            "title": "Odyssey",
+            "desc": "Palette 2021 was a 48-hour online design hack that put your creativity to the test! With randomly generated problem statements and a prize pool worth ₹60,000, the pressure was on all teams to wow our expert panel of judges with their product. And with 500+ registrations from over 65 countries, this one-of-a-kind event was nothing short of a success.",
+            "image": "/images/odyssey.svg"
+        },
+        {
+            "title": "Hack the Hackathon",
+            "desc": "Palette 2021 was a 48-hour online design hack that put your creativity to the test! With randomly generated problem statements and a prize pool worth ₹60,000, the pressure was on all teams to wow our expert panel of judges with their product. And with 500+ registrations from over 65 countries, this one-of-a-kind event was nothing short of a success.",
+            "image": "/images/HTH.svg"
+        },
+        {
+            "title": "Techloop Alpha",
+            "desc": "Palette 2021 was a 48-hour online design hack that put your creativity to the test! With randomly generated problem statements and a prize pool worth ₹60,000, the pressure was on all teams to wow our expert panel of judges with their product. And with 500+ registrations from over 65 countries, this one-of-a-kind event was nothing short of a success.",
+            "image": "/images/Techloop.svg"
         }
+
     ],
     "blogs": [
         {
-            "title": "Blog Title",
-            "desc": "Description of the blog, not too long but with a basic gist. Essentially the blurb of the blog.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png",
-            "link": "https://ieeevit.org"
+            "title": "Composing CTF Challenges",
+            "desc": "CTF stands for Capture The Flag, it is a competition that tests out your cybersecurity skills in the form of various challenges.",
+            "image": "/images/medium/pod1.svg",
+            "link": "https://medium.com/techloop/composing-ctf-challenge-b5828dba0feb"
         },
         {
-            "title": "Blog Title",
-            "desc": "Description of the blog, not too long but with a basic gist. Essentially the blurb of the blog.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png",
-            "link": "https://ieeevit.org"
+            "title": "Hosting CTF challenges on a Kubernetes cluster",
+            "desc": "In this article, we will be walking through how to host CTF challenges, reachable via HTTP(s) and TCP on a k8s cluster.",
+            "image": "/images/medium/pod2.svg",
+            "link": "https://medium.com/techloop/hosting-ctf-challenges-on-a-kubernetes-cluster-f0f7441c3cd0"
         },
         {
-            "title": "Blog Title",
-            "desc": "Description of the blog, not too long but with a basic gist. Essentially the blurb of the blog.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png",
-            "link": "https://ieeevit.org"
+            "title": "CTF challenges: Dockerizing and Repository structure",
+            "desc": "In this article we’ll be exploring how we can dockerize common CTF challenges and and nice way to structure the repo containing all challenges.",
+            "image": "/images/medium/pod3.svg",
+            "link": "https://medium.com/techloop/ctf-challenges-dockerizing-and-repository-structure-bd3aed9314de"
         },
         {
-            "title": "Blog Title",
-            "desc": "Description of the blog, not too long but with a basic gist. Essentially the blurb of the blog.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png",
-            "link": "https://ieeevit.org"
+            "title": "Infra overview and planning: IEEECTF 2020",
+            "desc": "We at IEEE-VIT conducted a 36 hour CTF from 31st October 2020 to 2nd November 2020, with a variety of different challenges aimed at beginners and enthusiasts. All the experience and learnings from this are going to be reflected in this blog.",
+            "image": "/images/medium/pod4.svg",
+            "link": "https://medium.com/techloop/infra-overview-and-planning-ieeectf-2020-555589505848"
         },
         {
-            "title": "Blog Title",
-            "desc": "Description of the blog, not too long but with a basic gist. Essentially the blurb of the blog.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png",
-            "link": "https://ieeevit.org"
+            "title": "How to make an interactive globe using three.js",
+            "desc": "In this blog we will see how to make a cool looking globe like one shown in banner photo with different flavors and customizations for same.",
+            "image": "/images/medium/pod5.svg",
+            "link": "https://medium.com/techloop/composing-ctf-challenge-b5828dba0feb"
+        },
+        {
+            "title": "Understanding Kyverno Policies",
+            "desc": "Are you looking to write PSPs for your Kubernetes cluster in the easiest way possible without learning a new language? Say Ki to Kyverno.",
+            "image": "/images/medium/pod6.svg",
+            "link": "https://medium.com/techloop/understanding-kyverno-policies-7e2d8651d7b1"
+        },
+        {
+            "title": "How to get started on Design Projects",
+            "desc": "You’ve figured out which domain of design you want to explore, downloaded all the software you need, and watched countless tutorials to get familiar with them. But now what? How do you start with your own projects?At the end of this article, you should have the answers to those questions.",
+            "image": "/images/medium/pod7.svg",
+            "link": "https://medium.com/techloop/how-to-get-started-on-design-projects-cee0104583cc"
         }
     ],
     "podcast": [
         {
-            "title": "PODCAST EPISODE: X",
-            "desc": "Description of the podcast, not too long but with a basic gist.  small paragraph on the topic and a brief into to the speaker.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png",
-            "link": "https://ieeevit.org"
+            "title": "The Techloop Podcast with IEEE",
+            "desc": "Presenting: The techloop podcast with IEEE-VIT.",
+            "image": "/images/medium/techloop-podcast.svg",
+            "link": "https://open.spotify.com/episode/2gnJVNjnYATQFPmf1W1faG?si=f24bff0a71a84078"
         },
         {
-            "title": "PODCAST EPISODE: X",
-            "desc": "Description of the podcast, not too long but with a basic gist.  small paragraph on the topic and a brief into to the speaker.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png",
-            "link": "https://ieeevit.org"
+            "title": "PODCAST EPISODE: 1",
+            "desc": "Join the very first IEEE-VIT podcast with Saptarshi Prakash the current Director of Design at Swiggy India as he discusses his creative process, gives his insight about the industry and advice for all.",
+            "image": "/images/podcasts/podcast1.svg",
+            "link": "https://open.spotify.com/episode/5DhWBioSoMeRfQFdfAI7Vh?si=98401bd7e8c64c0b"
         },
         {
-            "title": "PODCAST EPISODE: X",
-            "desc": "Description of the podcast, not too long but with a basic gist.  small paragraph on the topic and a brief into to the speaker.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png",
-            "link": "https://ieeevit.org"
+            "title": "PODCAST EPISODE: 2",
+            "desc": "Ajeet Singh Raina a Docker Captains shares with us his tech journey, thoughts and opinions about the current and future scenario of cloud related tech.",
+            "image": "/images/podcasts/podcast2.svg",
+            "link": "https://open.spotify.com/episode/4zheYbIWjpBmV8Yewy14Q1?si=f0cd6e3b36ac4f24"
         },
         {
-            "title": "PODCAST EPISODE: X",
-            "desc": "Description of the podcast, not too long but with a basic gist.  small paragraph on the topic and a brief into to the speaker.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png",
-            "link": "https://ieeevit.org"
+            "title": "PODCAST EPISODE: 3",
+            "desc": "Know future of cross platform development with IEEE-VIT and Jeroen Meijer a Flutter Google developer expert.",
+            "image": "/images/podcasts/podcast3.svg",
+            "link": "https://open.spotify.com/episode/5dIFwf3mK7Sab67vH8RVjM?si=a218db1bd3a2424e"
         },
         {
-            "title": "PODCAST EPISODE: X",
-            "desc": "Description of the podcast, not too long but with a basic gist.  small paragraph on the topic and a brief into to the speaker.",
-            "image": "https://files.ieeevit.org/odyssey/images/group.png",
-            "link": "https://ieeevit.org"
+            "title": "PODCAST EPISODE: 4",
+            "desc": "Join in to be enthralled by Geetika Batra and her journey through Opensource ,her expertise in various technologies like Docker, Kubernetes & OpenShift, which will help you get started in no time!",
+            "image": "/images/podcasts/podcast4.svg",
+            "link": "https://open.spotify.com/episode/6abW4kPpOnWTYiw1TsIjgf?si=9f68dfe92840457a"
+        },
+        {
+            "title": "PODCAST EPISODE: 5",
+            "desc": "With a decade-long experience in programming and industrial exposure, Ankit Mahato takes us on his journey through Machine Learning, Open Source, and much more to help you get started.",
+            "image": "/images/podcasts/podcast5.svg",
+            "link": "https://open.spotify.com/episode/5cMm0220cQnyw1RvPkIxqI?si=2ec57fc7a1b942cb"
+        },
+        {
+            "title": "PODCAST EPISODE: 6",
+            "desc": "Join our conversation with Dipanjan Sarkar, a Google Developer Expert in Data Science and Machine Learning, as he discusses the future of data science and how you can participate in it.",
+            "image": "/images/podcasts/podcast6.svg",
+            "link": "https://open.spotify.com/episode/3AF1dmyz7NTxwUrLtJOL0E?si=6dc73458fb894f30"
+        },{
+            "title": "PODCAST EPISODE: 7",
+            "desc": "Join us in our conversation with Vaidheeswaran Archana, an AI engineer at Continental. Find out answers to questions like how much math do you have to know? What kind of projects can we do with ML? and much more.",
+            "image": "/images/podcasts/podcast7.svg",
+            "link": "https://open.spotify.com/episode/6yFuO3mLsWtvYldqF4ZxuO?si=6e7ba4338da3443e"
+        },{
+            "title": "PODCAST EPISODE: 8",
+            "desc": "Join our conversation with Ankit Garg, a Lead Android Developer at Microsoft, as he shares his insights on innovative hacks that can transform your perspective on the world of Android.",
+            "image": "/images/podcasts/podcast8.svg",
+            "link": "https://open.spotify.com/episode/3HXqt5Rb2jLqtmmc9ww77Z?si=156eaa7d17604849"
+        },{
+            "title": "PODCAST EPISODE: 9",
+            "desc": "Tune in to hear Pavan Podila, an accomplished open-source developer, as he shares his inspiring journey from working with Flutter and 3D design to developing an Open Source library.",
+            "image": "/images/podcasts/podcast9.svg",
+            "link": "https://open.spotify.com/episode/3PKrW1XXqhweg5oZn6Qskr?si=0238bb56fabd4b15"
+        },{
+            "title": "PODCAST EPISODE: 10",
+            "desc": "Engage in a conversation with Tanvi Patel as she shares her journey, from exploring web development during her college days to obtaining a Master's degree in the United States, and her current work at Uber.",
+            "image": "/images/podcasts/podcast10.svg",
+            "link": "https://open.spotify.com/episode/1SgXMm8s9gzIQjexIR6clD?si=42e4bf5350f44ad1"
         }
     ],
     "domains": [
@@ -161,54 +227,54 @@
     ],
     "board": [
         {
-            "name": "V Kartik",
-            "pos": "chair",
-            "img": "Kartik"
+            "name": "Kavipriya A",
+            "pos": "Chair",
+            "img": "Kavipriya"
         },
         {
-            "name": "Shriyashish Mishra",
-            "pos": "vice chair",
-            "img": "Shriyashish"
+            "name": "Akshaya Chelliah",
+            "pos": "Vice Chair",
+            "img": "Akshaya"
         },
         {
-            "name": "Shubham Palriwala",
-            "pos": "executive secretary",
-            "img": "Shubham"
+            "name": "Anshita Bala",
+            "pos": "Management Lead",
+            "img": "Anshita"
         },
         {
-            "name": "Aarush Bhatt",
+            "name": "Harsh Gupta",
             "pos": "technical head",
-            "img": "Aarush"
-        },
-        {
-            "name": "K Shakthi Dhar",
-            "pos": "operations head",
-            "img": "Shakthi"
-        },
-        {
-            "name": "Pracheta Mohanty",
-            "pos": "marketing head",
-            "img": "Pracheta"
-        },
-        {
-            "name": "Malavika Rajesh",
-            "pos": "events head",
-            "img": "Malavika"
-        },
-        {
-            "name": "Aaryan Kothari",
-            "pos": "tech lead",
-            "img": "Aaryan"
-        },
-        {
-            "name": "Ishan Khandelwal",
-            "pos": "tech lead",
-            "img": "Ishan"
-        },
-        {
-            "name": "Harsh Malani",
-            "pos": "tech lead",
             "img": "Harsh"
+        },
+        {
+            "name": "Varun Murpani",
+            "pos": "Internal Affairs",
+            "img": "Varun"
+        },
+        {
+            "name": "Vibhuti Arora",
+            "pos": "marketing head",
+            "img": "Vibhuti"
+        },
+        {
+            "name": "Jatin Fulwani",
+            "pos": "Outreach head",
+            "img": "Jatin"
+        },
+        {
+            "name": "Aneesh Panda",
+            "pos": "DevRel Lead",
+            "img": "Aneesh"
+        },
+        {
+            "name": "Mayank Sharma",
+            "pos": "Project Lead",
+            "img": "Mayank"
+        },
+        {
+            "name": "Alok Naushad",
+            "pos": "Open-source Lead",
+            "img": "Alok"
         }
     ]
 }
