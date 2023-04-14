@@ -55,22 +55,22 @@
         },
         {
             "title": "Hacktoberfest",
-            "desc": "Palette 2021 was a 48-hour online design hack that put your creativity to the test! With randomly generated problem statements and a prize pool worth ₹60,000, the pressure was on all teams to wow our expert panel of judges with their product. And with 500+ registrations from over 65 countries, this one-of-a-kind event was nothing short of a success.",
+            "desc": "Hacktoberfest is a month-long celebration of open-source projects, their maintainers, and the entire community of contributors. IEEE-VIT promotes open-sourcing and creates repositories for beginners to contribute.",
             "image": "/images/hacktoberfest.svg"
         },
         {
             "title": "Odyssey",
-            "desc": "Palette 2021 was a 48-hour online design hack that put your creativity to the test! With randomly generated problem statements and a prize pool worth ₹60,000, the pressure was on all teams to wow our expert panel of judges with their product. And with 500+ registrations from over 65 countries, this one-of-a-kind event was nothing short of a success.",
+            "desc": "Odyssey was a 36 hour sci-fi based, beginner friendly, no code hackathon which allowed the participants to unlock their creative spirits and the will to learn and explore!",
             "image": "/images/odyssey.svg"
         },
         {
             "title": "Hack the Hackathon",
-            "desc": "Palette 2021 was a 48-hour online design hack that put your creativity to the test! With randomly generated problem statements and a prize pool worth ₹60,000, the pressure was on all teams to wow our expert panel of judges with their product. And with 500+ registrations from over 65 countries, this one-of-a-kind event was nothing short of a success.",
+            "desc": "Hack the Hackathon was a all-you-need-to-know guide session on hackathons. It was to guide beginners in their hackathon journey while making it smoother.",
             "image": "/images/HTH.svg"
         },
         {
             "title": "Techloop Alpha",
-            "desc": "Palette 2021 was a 48-hour online design hack that put your creativity to the test! With randomly generated problem statements and a prize pool worth ₹60,000, the pressure was on all teams to wow our expert panel of judges with their product. And with 500+ registrations from over 65 countries, this one-of-a-kind event was nothing short of a success.",
+            "desc": "Techloop Alpha was the perfect starting point for anyone stepping into the world of tech. IEEE-VIT curated 10 different domains of tech, from WebDev to Quantum Computing, to help anyone decide which domain excites them the most.",
             "image": "/images/Techloop.svg"
         }
 
