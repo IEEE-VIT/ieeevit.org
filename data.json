@@ -1,38 +1,38 @@
 {
     "techloop": [
         {
-            "title": "Hack the Hackathon:",
+            "title": "Hack the Hackathon",
             "desc": "Conducted in March 2021, this TechLoop was the all-you-need-to-know guide to get started hacking your way through hack season. The event covered a variety of domains ranging from web and app development to design, presentation and branding.",
             "image": "/images/techloop/hth-t.svg"
         },
         {
-            "title": "Robotics:",
+            "title": "Robotics",
             "desc": "Our TechLoop on Robotics was an introductory session to robotics, and its practical applications in a variety of fields.",
             "image": "/images/techloop/robotics-t.svg"
         },
         {
-            "title": "Web Development:",
+            "title": "Web Development",
             "desc": "Our third TechLoop of 2021, delved into Web Development, taking attendees through the basics of developing websites, from pitch-perfect frontend to seamless, efficient code written for the backend. It covered the MERN stack, consisting of MongoDB, Express, React.js and Node.",
             "image": "/images/techloop/webdev-t.svg"
         },
         {
-            "title": "App Development:",
+            "title": "App Development",
             "desc": "This TechLoop session covered the basics of app development, featuring mini follow-along projects in native Android and iOS with both UIKit and SwiftUI, as well as introductions to cross-platform app frameworks like Flutter and Dart.",
             "image": "/images/techloop/appdev-t.svg"
         },
         {
-            "title": "Game Development:",
+            "title": "Game Development",
             "desc": "Video games blur the line between reality and fiction. This TechLoop delved deep into game development and the manner in which it evolved with the times, after which attendees were taught how to make a game from scratch!",
             "image": "/images/techloop/gamedev-t.svg"
         },
         {
-            "title": "Blockchain:",
+            "title": "Blockchain",
             "desc": "If blockchain has ever intrigued you, but you don’t know where to start, this TechLoop has got you covered! Starting from the basics, we went through the core concepts, the transaction lifestyle of crypto transactions and the difference between Bitcoin and blockchain!",
             "image": "/images/techloop/blockchain-t.svg"
         
         },
         {
-            "title": "Cybersecurity:",
+            "title": "Cybersecurity",
             "desc": "Real-life hackers may not be wearing a black hoodie and sitting in a dark room but it sounds so cool. Did you know that it's legal? Ethical hacking, of course! Cybersecurity is integral to protecting your system from harm. This TechLoop covered cybersecurity, cyber-attacks, tools used, how ethical hacking works, and so much more!",
             "image": "/images/techloop/cybersec-t.svg"
         }
@@ -55,22 +55,22 @@
         },
         {
             "title": "Hacktoberfest",
-            "desc": "Palette 2021 was a 48-hour online design hack that put your creativity to the test! With randomly generated problem statements and a prize pool worth ₹60,000, the pressure was on all teams to wow our expert panel of judges with their product. And with 500+ registrations from over 65 countries, this one-of-a-kind event was nothing short of a success.",
+            "desc": "Hacktoberfest is a month-long celebration of open-source projects, their maintainers, and the entire community of contributors. IEEE-VIT promotes open-sourcing and creates repositories for beginners to contribute.",
             "image": "/images/hacktoberfest.svg"
         },
         {
             "title": "Odyssey",
-            "desc": "Palette 2021 was a 48-hour online design hack that put your creativity to the test! With randomly generated problem statements and a prize pool worth ₹60,000, the pressure was on all teams to wow our expert panel of judges with their product. And with 500+ registrations from over 65 countries, this one-of-a-kind event was nothing short of a success.",
+            "desc": "Odyssey was a 36 hour sci-fi based, beginner friendly, no code hackathon which allowed the participants to unlock their creative spirits and the will to learn and explore!",
             "image": "/images/odyssey.svg"
         },
         {
             "title": "Hack the Hackathon",
-            "desc": "Palette 2021 was a 48-hour online design hack that put your creativity to the test! With randomly generated problem statements and a prize pool worth ₹60,000, the pressure was on all teams to wow our expert panel of judges with their product. And with 500+ registrations from over 65 countries, this one-of-a-kind event was nothing short of a success.",
+            "desc": "Hack the Hackathon was a all-you-need-to-know guide session on hackathons. It was to guide beginners in their hackathon journey while making it smoother.",
             "image": "/images/HTH.svg"
         },
         {
             "title": "Techloop Alpha",
-            "desc": "Palette 2021 was a 48-hour online design hack that put your creativity to the test! With randomly generated problem statements and a prize pool worth ₹60,000, the pressure was on all teams to wow our expert panel of judges with their product. And with 500+ registrations from over 65 countries, this one-of-a-kind event was nothing short of a success.",
+            "desc": "Techloop Alpha was the perfect starting point for anyone stepping into the world of tech. IEEE-VIT curated 10 different domains of tech, from WebDev to Quantum Computing, to help anyone decide which domain excites them the most.",
             "image": "/images/Techloop.svg"
         }
 
@@ -228,37 +228,37 @@
     "board": [
         {
             "name": "Kavipriya A",
-            "pos": "Chair",
+            "pos": "Chairperson",
             "img": "Kavipriya"
         },
         {
             "name": "Akshaya Chelliah",
-            "pos": "Vice Chair",
+            "pos": "Vice Chairperson",
             "img": "Akshaya"
         },
         {
             "name": "Anshita Bala",
-            "pos": "Management Lead",
+            "pos": "Management Head",
             "img": "Anshita"
         },
         {
             "name": "Harsh Gupta",
-            "pos": "technical head",
+            "pos": "Technical Head",
             "img": "Harsh"
         },
         {
             "name": "Varun Murpani",
-            "pos": "Internal Affairs",
+            "pos": "Internal Affairs Lead",
             "img": "Varun"
         },
         {
             "name": "Vibhuti Arora",
-            "pos": "marketing head",
+            "pos": "Marketing Lead",
             "img": "Vibhuti"
         },
         {
             "name": "Jatin Fulwani",
-            "pos": "Outreach head",
+            "pos": "Outreach Lead",
             "img": "Jatin"
         },
         {
@@ -268,7 +268,7 @@
         },
         {
             "name": "Mayank Sharma",
-            "pos": "Project Lead",
+            "pos": "Projects Lead",
             "img": "Mayank"
         },
         {

@@ -1122,7 +1122,8 @@ option {
   width: 100%;
   padding-top: 7%;
   height: 100%;
-  padding-bottom: 22vh;
+  padding-bottom: 0;
+  overflow-y: hidden;
 }
 .year {
   display: flex;
@@ -1152,7 +1153,7 @@ option {
 }
 #text-container {
   text-align: center;
-  margin-top: 20vh;
+  margin-top: 13vh;
   font-size:xx-large;
   color: #0066A1;
   
@@ -1162,7 +1163,7 @@ option {
 }
 .dark #text-container {
   text-align: center;
-  margin-top: 20vh;
+  margin-top: 13vh;
   font-size:xx-large;
   color: #0066A1;
   
