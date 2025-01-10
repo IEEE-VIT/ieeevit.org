@@ -12,7 +12,6 @@ const adjustBoardSection = () => {
     count=5;
   }
   board_members.style.gridTemplateColumns = `repeat(${count}, 185px)`;
-
 };
 
 window.onresize = () => {
@@ -53,11 +52,57 @@ const fillBoard = (board_members) => {
   });
 };
 
-const addBoard = async () => {
-  const response = await fetch("../data.json");
-  const data = await response.json();
-
-  fillBoard(data.board);
+const addBoard = async (filePath, year = null) => {
+  try {
+    const response = await fetch(filePath);
+    const data = await response.json();
+    
+    // Clear existing board members
+    const container = document.querySelector(".board-members");
+    container.innerHTML = '';
+    
+    if (window.location.pathname.includes("alumni.html")) {
+      // For alumni page, use the selected year
+      if (year && data[year]) {
+        fillBoard(data[year].board);
+      } else {
+        // Default to the most recent year if no year specified
+        const mostRecentYear = Object.keys(data).sort().reverse()[0];
+        fillBoard(data[mostRecentYear].board);
+      }
+    } else {
+      // For home page, always show current year (2023-24)
+      fillBoard(data["2023-24"].board);
+    }
+    
+    adjustBoardSection();
+  } catch (error) {
+    console.error('Error loading board data:', error);
+  }
 };
 
-addBoard();
+// Update the path handling logic
+if (window.location.pathname.includes("alumni.html")) {
+  addBoard("./alumni_board/board.json");
+} else {
+  // For home page, use the same board.json but only display current year
+  addBoard("./alumni_board/board.json");
+}
+
+// Update the dropdown change handler
+if (window.location.pathname.includes("alumni.html")) {
+  document.getElementById("dropdown-container").addEventListener("change", function() {
+    const selectedValue = this.value;
+    const gridNumber = selectedValue.replace('image-grid', '');
+    
+    // Map the image-grid values to academic years
+    const yearMap = {
+      '5': '2023-24',
+      '4': '2022-23',
+      '3': '2021-22',
+      '2': '2020-21'
+    };
+    
+    addBoard("./alumni_board/board.json", yearMap[gridNumber]);
+  });
+}

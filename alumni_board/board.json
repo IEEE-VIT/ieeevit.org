@@ -1,0 +1,118 @@
+{
+    "2023-24": {
+        "board": [
+            {
+                "name": "Kavipriya A",
+                "pos": "Chairperson",
+                "img": "Vibhuti"
+            },
+            {
+                "name": "Akshaya Chelliah",
+                "pos": "Vice Chairperson",
+                "img": "Akshaya"
+            },
+            {
+                "name": "Harsh Gupta",
+                "pos": "Technical Head",
+                "img": "Aneesh"
+            },
+            {
+                "name": "Varun Murpani",
+                "pos": "Internal Affairs Lead",
+                "img": "Vibhuti"
+            },
+            {
+                "name": "Vibhuti Arora",
+                "pos": "Marketing Lead",
+                "img": "Akshaya"
+            }
+        ]
+    },
+    "2022-23": {
+        "board": [
+            {
+                "name": "John Doe",
+                "pos": "Chairperson",
+                "img": "Aneesh"
+            },
+            {
+                "name": "Jane Smith",
+                "pos": "Vice Chairperson",
+                "img": "Vibhuti"
+            },
+            {
+                "name": "Robert Wilson",
+                "pos": "Technical Head",
+                "img": "Akshaya"
+            },
+            {
+                "name": "Emma Thompson",
+                "pos": "Marketing Lead",
+                "img": "Aneesh"
+            },
+            {
+                "name": "David Clark",
+                "pos": "Projects Lead",
+                "img": "Vibhuti"
+            }
+        ]
+    },
+    "2021-22": {
+        "board": [
+            {
+                "name": "Alex Johnson",
+                "pos": "Chairperson",
+                "img": "Akshaya"
+            },
+            {
+                "name": "Sarah Williams",
+                "pos": "Vice Chairperson",
+                "img": "Aneesh"
+            },
+            {
+                "name": "Michael Brown",
+                "pos": "DevRel Lead",
+                "img": "Vibhuti"
+            },
+            {
+                "name": "Lisa Anderson",
+                "pos": "Outreach Lead",
+                "img": "Akshaya"
+            },
+            {
+                "name": "Chris Martin",
+                "pos": "Technical Head",
+                "img": "Aneesh"
+            }
+        ]
+    },
+    "2020-21": {
+        "board": [
+            {
+                "name": "Mike Brown",
+                "pos": "Chairperson",
+                "img": "Vibhuti"
+            },
+            {
+                "name": "Emily Davis",
+                "pos": "Vice Chairperson",
+                "img": "Akshaya"
+            },
+            {
+                "name": "Tom Wilson",
+                "pos": "Open Source Lead",
+                "img": "Aneesh"
+            },
+            {
+                "name": "Rachel Green",
+                "pos": "Management Head",
+                "img": "Vibhuti"
+            },
+            {
+                "name": "Daniel Lee",
+                "pos": "Technical Head",
+                "img": "Akshaya"
+            }
+        ]
+    }
+}
