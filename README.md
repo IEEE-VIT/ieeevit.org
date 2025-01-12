@@ -8,7 +8,7 @@
 - **Location**: `/images/board-images/`
 - **Format**: JPG
 - **Naming Convention**: `FirstName.jpg` (case-sensitive)
-- **Examples**: `Akshaya.jpg`, `Vibhuti.jpg`, `Aneesh.jpg`
+- **Examples**: `Naruto.jpg`, `Sasuke.jpg`, `Itachi.jpg`
 
 #### 2. Update JSON Data
 1. Open `/alumni_board/board.json`
@@ -22,48 +22,48 @@ Example JSON structure:
   "2023-24": {
     "board": [
       {
-        "name": "John Smith",
+        "name": "Naruto Uzumaki",
         "pos": "Technical Head",
-        "img": "John"
+        "img": "Naruto"
       },
       {
-        "name": "Akshaya Gupta",
+        "name": "Sasuke Uchiha",
         "pos": "Chairperson",
-        "img": "Akshaya"
+        "img": "Sasuke"
       },
       {
-        "name": "Vibhuti Sharma",
+        "name": "Sakura Haruno",
         "pos": "Secretary",
-        "img": "Vibhuti"
+        "img": "Sakura"
       },
       {
-        "name": "Aneesh Patel",
+        "name": "Kakashi Hatake",
         "pos": "Treasurer",
-        "img": "Aneesh"
+        "img": "Kakashi"
       }
     ]
   },
   "2022-23": {
     "board": [
       {
-        "name": "Rajesh Kumar",
+        "name": "Itachi Uchiha",
         "pos": "Technical Head",
-        "img": "Rajesh"
+        "img": "Itachi"
       },
       {
-        "name": "Nisha Mehta",
+        "name": "Minato Namikaze",
         "pos": "Chairperson",
-        "img": "Nisha"
+        "img": "Minato"
       },
       {
-        "name": "Deepak Verma",
+        "name": "Hinata Hyuga",
         "pos": "Secretary",
-        "img": "Deepak"
+        "img": "Hinata"
       },
       {
-        "name": "Pooja Singh",
+        "name": "Obito Uchiha",
         "pos": "Treasurer",
-        "img": "Pooja"
+        "img": "Obito"
       }
     ]
   }
