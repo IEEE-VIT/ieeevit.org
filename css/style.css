@@ -157,6 +157,10 @@ body.dark #alumni-board {
 .navbar .menu .menu_options:visited {
   color: #0066a1;
 }
+
+.board-members{
+  grid-template-columns: auto auto auto auto auto;
+}
 .navbar .socials {
   display: flex;
   margin-left: auto;
@@ -1181,4 +1185,49 @@ option {
     /* margin: 16vh; */
     margin-top: 2vh;
   }
+}
+
+/* Specific styling for alumni page board section */
+#alumni-board #board {
+  margin-top: 20px;
+  padding-top: 0;
+}
+
+#alumni-board .board-members {
+  margin-top: 30px;
+}
+
+#alumni-board #text-container {
+  margin-bottom: 10px;
+}
+
+/* Add shadow effects for light mode */
+#alumni-board .board-member {
+  background-color: #fcfcfc;
+  box-shadow: 
+    -10px -10px 20px rgba(255, 255, 255, 0.8),
+    10px 10px 20px rgba(174, 174, 192, 0.4),
+    inset -5px -5px 10px rgba(255, 255, 255, 0.2),
+    inset 5px 5px 10px rgba(174, 174, 192, 0.1);
+  transition: all 0.3s ease;
+}
+
+#alumni-board .board-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    -15px -15px 30px rgba(255, 255, 255, 0.8),
+    15px 15px 30px rgba(174, 174, 192, 0.4),
+    inset -5px -5px 10px rgba(255, 255, 255, 0.2),
+    inset 5px 5px 10px rgba(174, 174, 192, 0.1);
+}
+
+/* Keep dark mode shadows */
+body.dark #alumni-board .board-member {
+  background-color: #222222;
+  box-shadow: inset 0px -3px 4px rgba(0, 0, 0, 0.85);
+  filter: drop-shadow(-10px -10px 20px #151515) drop-shadow(10px 10px 20px #000000);
+}
+
+body.dark #alumni-board .board-member:hover {
+  transform: translateY(-5px);
 }

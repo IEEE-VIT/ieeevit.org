@@ -224,57 +224,5 @@
             "domain_name": "Game Development",
             "domain_icon": "game_development.svg"
         }
-    ],
-    "board": [
-        {
-            "name": "Kavipriya A",
-            "pos": "Chairperson",
-            "img": "Kavipriya"
-        },
-        {
-            "name": "Akshaya Chelliah",
-            "pos": "Vice Chairperson",
-            "img": "Akshaya"
-        },
-        {
-            "name": "Anshita Bala",
-            "pos": "Management Head",
-            "img": "Anshita"
-        },
-        {
-            "name": "Harsh Gupta",
-            "pos": "Technical Head",
-            "img": "Harsh"
-        },
-        {
-            "name": "Varun Murpani",
-            "pos": "Internal Affairs Lead",
-            "img": "Varun"
-        },
-        {
-            "name": "Vibhuti Arora",
-            "pos": "Marketing Lead",
-            "img": "Vibhuti"
-        },
-        {
-            "name": "Jatin Fulwani",
-            "pos": "Outreach Lead",
-            "img": "Jatin"
-        },
-        {
-            "name": "Aneesh Panda",
-            "pos": "DevRel Lead",
-            "img": "Aneesh"
-        },
-        {
-            "name": "Mayank Sharma",
-            "pos": "Projects Lead",
-            "img": "Mayank"
-        },
-        {
-            "name": "Alok Naushad",
-            "pos": "Open-source Lead",
-            "img": "Alok"
-        }
     ]
 }

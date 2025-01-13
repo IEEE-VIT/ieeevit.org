@@ -1,0 +1,272 @@
+{
+    "2024-25": {
+        "board": [
+            {
+            "name": "Kaviya Kumar",
+            "pos": "Chairperson",
+            "img": "Kaviya"
+            },
+            {
+            "name": "Balaji S",
+            "pos": "Vice Chairperson",
+            "img": "Balaji"
+            },
+            {
+            "name": "Shruthi ",
+            "pos": "Events & Operations Head",
+            "img": "Shruthi"
+            },
+            {
+            "name": "Shantanu Pai",
+            "pos": "Technical Head",
+            "img": "Shantanu"
+            },
+            {
+            "name": "Lakshmi K R",
+            "pos": "Internal Affairs",
+            "img": "Lakshmi"
+            },
+            {
+            "name": "Aaditya V S",
+            "pos": "Finance & Outreach Head",
+            "img": "Aaditya"
+            },
+            {
+            "name": "N Eashwar",
+            "pos": "Design & Marketing Head",
+            "img": "Eashwar"
+            },
+            {
+            "name": "Subham Agarwal",
+            "pos": "DevRel Lead",
+            "img": "Subham"
+            },
+            {
+            "name": "Ved Sorathiya",
+            "pos": "Tech Lead",
+            "img": "Ved"
+            },
+            {
+            "name": "Gopal Yadav",
+            "pos": "Tech Lead",
+            "img": "Gopal"
+            }
+        ]
+    },
+    "2023-24": {
+        "board": [
+            {
+                "name": "Rohith Prathmesh",
+                "pos": "Chairperson",
+                "img": "Rohith"
+            },
+            {
+                "name": "Ishaan Mathur",
+                "pos": "Vice Chairperson",
+                "img": "Ishaan"
+            },
+            {
+                "name": "Brunda Dogiparthy",
+                "pos": "Management Head",
+                "img": "Brunda"
+            },
+            {
+                "name": "Shalini Dasararaju",
+                "pos": "Internal Affairs",
+                "img": "Shalini"
+            },
+            {
+                "name": "Sai Sahith Bonugala",
+                "pos": "Technical Head",
+                "img": "Sahith"
+            },
+            {
+                "name": "Purbashree B",
+                "pos": "Design Head",
+                "img": "Purbashree"
+            },
+            {
+                "name": "Varun Sudhir",
+                "pos": "Community Lead",
+                "img": "Varun"
+            },
+            {
+                "name": "Adi Gulalkari",
+                "pos": "DevRel Lead",
+                "img": "Adi"
+            },
+            {
+                "name": "Hitarth Kotecha",
+                "pos": "Tech Lead",
+                "img": "Hitarth"
+            },
+            {
+                "name": "Sriram S",
+                "pos": "Tech Lead",
+                "img": "Sriram"
+            }
+        ]
+    },
+    "2022-23": {
+        "board": [
+            {
+                "name": "Kavipriya A",
+                "pos": "Chairperson",
+                "img": "Kavipriya"
+            },
+            {
+                "name": "Akshaya chelliah",
+                "pos": "Vice Chairperson",
+                "img": "Akshaya"
+            },
+            {
+                "name": "Anshita Bala",
+                "pos": "Management Head",
+                "img": "Anshita"
+            },
+            {
+                "name": "Harsh Gupta",
+                "pos": "Technical Head",
+                "img": "Harsh"
+            },
+            {
+                "name": "Varun Murpani",
+                "pos": "Internal Affairs Lead",
+                "img": "Varun"
+            },
+            {
+                "name": "Vibhuti Arora",
+                "pos": "Marketing Lead",
+                "img": "Vibhuti"
+            },
+            {
+                "name": "Jatin Fulwani",
+                "pos": "Outreach Lead",
+                "img": "Jatin"
+            },
+            {
+                "name": "Aneesh Panda",
+                "pos": "Devrel Lead",
+                "img": "Aneesh"
+            },
+            {
+                "name": "Mayank Sharma",
+                "pos": "Projects Lead",
+                "img": "Mayank"
+            },
+            {
+                "name": "Alok Naushad",
+                "pos": "Open-Source Lead",
+                "img": "Alok"
+            }
+        ]
+    },
+    "2021-22": {
+        "board": [
+            {
+                "name": "V Kartik",
+                "pos": "Chairperson",
+                "img": "Kartik"
+            },
+            {
+                "name": "Shriyashish Mishra",
+                "pos": "Vice Chairperson",
+                "img": "Shriyashish"
+            },
+            {
+                "name": "Shubham Palriwala",
+                "pos": "Executive Secretary",
+                "img": "Shubham"
+            },
+            {
+                "name": "Aarush Bhat",
+                "pos": "Technical Head",
+                "img": "Aarush"
+            },
+            {
+                "name": "K Shakthi Dhar",
+                "pos": "Operations Head",
+                "img": "Shakthi"
+            },
+            {
+                "name": "Pracheta Mohanty",
+                "pos": "Marketing Head",
+                "img": "Pracheta"
+            },
+            {
+                "name": "Malavika Rajesh",
+                "pos": "Events Head",
+                "img": "Malavika"
+            },
+            {
+                "name": "Aaryan Kothari",
+                "pos": "Tech Lead",
+                "img": "Aaryan"
+            },
+            {
+                "name": "Ishan Khandelwal",
+                "pos": "Tech Lead",
+                "img": "Ishan"
+            },
+            {
+                "name": "Harsh Malani",
+                "pos": "Tech Lead",
+                "img": "Harsh"
+            }
+        ]
+    },
+    "2020-21": {
+        "board": [
+            {
+                "name": "Sundandan Chakrabarti",
+                "pos": "Chairperson",
+                "img": "Sundandan"
+            },
+            {
+                "name": "Madhav Rajesh",
+                "pos": "Vice Chairperson",
+                "img": "Madhav"
+            },
+            {
+                "name": "Ziyan Karmali",
+                "pos": "Executive Secretary",
+                "img": "Ziyan"
+            },
+            {
+                "name": "Sanskar Jaiswal",
+                "pos": "Tech Head",
+                "img": "Sanskar"
+            },
+            {
+                "name": "Priyesh Bhawsar",
+                "pos": "Ops & Finance Head",
+                "img": "Priyesh"
+            },
+            {
+                "name": "Fenil Jain",
+                "pos": "Tech Lead",
+                "img": "Fenil"
+            },
+            {
+                "name": "Sukriti Jaitly",
+                "pos": "Tech Lead",
+                "img": "Sukriti"
+            },
+            {
+                "name": "Harsha Kumar",
+                "pos": "Marketing Head",
+                "img": "Harsha"
+            },
+            {
+                "name": "Tony Jacob",
+                "pos": "Publicity & Outreach Head",
+                "img": "Tony"
+            },
+            {
+                "name": "Gagan Varma",
+                "pos": "Design Head",
+                "img": "Gagan"
+            }
+        ]
+    }
+}
