@@ -19,7 +19,7 @@ function changeImage() {
 
   // Update text container
   var textContainer = document.getElementById("text-container");
-  var text = "Executive board 2021 - 22";
+  var text = "Executive board 2023 - 24"; // Set this to the most recent alumni year when maintaining
   if (selectedValue === "image-grid2") {
     text = "Executive board 2020 - 21";
   } else if (selectedValue === "image-grid3") {

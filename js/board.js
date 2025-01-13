@@ -18,9 +18,12 @@ window.onresize = () => {
   adjustBoardSection();
 };
 
-const makeBoardCard = ({ name, pos, img }) => {
+// Declare `year` as a global variable
+let selectedYear = null;
+
+const makeBoardCard = ({ name, pos, img}) => {
   const img_el = document.createElement("img");
-  img_el.src = `./images/board-images/${img}.jpg`;
+  img_el.src = `./images/alumni-board/${selectedYear}/${img}.jpg`;
   img_el.alt = name;
 
   const position = document.createElement("div");
@@ -54,6 +57,11 @@ const fillBoard = (board_members) => {
 
 const addBoard = async (filePath, year = null) => {
   try {
+    // Assign the passed `year` to the global `selectedYear`
+    if (year) {
+      selectedYear = year;
+    }
+
     const response = await fetch(filePath);
     const data = await response.json();
     
@@ -63,16 +71,17 @@ const addBoard = async (filePath, year = null) => {
     
     if (window.location.pathname.includes("alumni.html")) {
       // For alumni page, use the selected year
-      if (year && data[year]) {
-        fillBoard(data[year].board);
+      if (selectedYear && data[selectedYear]) {
+        fillBoard(data[selectedYear].board);
       } else {
-        // Default to the most recent year if no year specified
-        const mostRecentYear = Object.keys(data).sort().reverse()[0];
+        // Default to the most recent alumni year if no year specified
+        const mostRecentYear = Object.keys(data).sort().reverse()[1];
+        selectedYear = mostRecentYear; // Update the global `selectedYear`
         fillBoard(data[mostRecentYear].board);
       }
     } else {
-      // For home page, always show current year (2023-24)
-      fillBoard(data["2023-24"].board);
+      // For home page, always show current year (2024-25)
+      fillBoard(data["2024-25"].board);
     }
     
     adjustBoardSection();
@@ -86,6 +95,9 @@ if (window.location.pathname.includes("alumni.html")) {
   addBoard("./alumni_board/board.json");
 } else {
   // For home page, use the same board.json but only display current year
+  if (selectedYear == null) {
+    selectedYear = "2024-25";       
+  }
   addBoard("./alumni_board/board.json");
 }
 

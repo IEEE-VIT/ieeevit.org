@@ -5,7 +5,7 @@
 ### Adding/Updating Board Member Images
 
 #### 1. Image Requirements
-- **Location**: `/images/board-images/`
+- **Location**: `/images/alumni-board/`
 - **Format**: JPG
 - **Naming Convention**: `FirstName.jpg` (case-sensitive)
 - **Examples**: `Naruto.jpg`, `Sasuke.jpg`, `Itachi.jpg`
