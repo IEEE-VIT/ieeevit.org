@@ -69,7 +69,7 @@ const addBoard = async (filePath, year = null) => {
     const container = document.querySelector(".board-members");
     container.innerHTML = '';
     
-    if (window.location.pathname.includes("alumni.html")) {
+    if (window.location.pathname.includes("alumni")) {
       // For alumni page, use the selected year
       if (selectedYear && data[selectedYear]) {
         fillBoard(data[selectedYear].board);
@@ -91,7 +91,7 @@ const addBoard = async (filePath, year = null) => {
 };
 
 // Update the path handling logic
-if (window.location.pathname.includes("alumni.html")) {
+if (window.location.pathname.includes("alumni")) {
   addBoard("./alumni_board/board.json");
 } else {
   // For home page, use the same board.json but only display current year
@@ -102,7 +102,7 @@ if (window.location.pathname.includes("alumni.html")) {
 }
 
 // Update the dropdown change handler
-if (window.location.pathname.includes("alumni.html")) {
+if (window.location.pathname.includes("alumni")) {
   document.getElementById("dropdown-container").addEventListener("change", function() {
     const selectedValue = this.value;
     const gridNumber = selectedValue.replace('image-grid', '');
