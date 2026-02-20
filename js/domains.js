@@ -18,6 +18,7 @@ const makeDomain = (domain_name, domain_icon) => {
 
 const fillDomains = (domains) => {
   const container = document.querySelector(".domains");
+  if (!container) return;
 
   domains.forEach((domain) => {
     let { domain_name, domain_icon } = domain;
@@ -27,7 +28,7 @@ const fillDomains = (domains) => {
 };
 
 const addDomains = async () => {
-  const response = await fetch("../data.json");
+  const response = await fetch("/data.json");
   const data = await response.json();
 
   fillDomains(data.domains);

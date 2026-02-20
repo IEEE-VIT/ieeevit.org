@@ -14,7 +14,7 @@
     rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
-  <script src=" ./data.json" defer>  </script>
+  <!-- remove JSON include, only fetch via JS -->
   <script src="./js/app.js" defer></script>
   <script src="js/domains.js" defer></script>
   <script src="./js/carousel.js" defer></script>
@@ -56,23 +56,23 @@
             src="images/instagram_light.svg" alt="Instagram Icon"></a>
         <a href="https://twitter.com/ieeevitvellore" class="social_icons" target="_blank"><img class="icon"
             src="images/twitter_light.svg" alt="Twitter Icon"></a>
-        <a href="https://github.com/ieee-vit" class="social_icons" target="_blank"><img class="icon" src="images/github_light.svg"
-            alt="Github Icon"></a>
-        <a href="https://www.linkedin.com/company/ieee-vit-vellore/" class="social_icons" target="_blank"><img class="icon"
-            src="images/linkedin_light.svg" alt="Linkedin Icon"></a>
-        <a href="mailto:contact@ieeevit.org" class="social_icons" target="_blank"><img class="icon" src="images/email_light.svg"
-            alt="Email Icon"></a>
+        <a href="https://github.com/ieee-vit" class="social_icons" target="_blank"><img class="icon"
+            src="images/github_light.svg" alt="Github Icon"></a>
+        <a href="https://www.linkedin.com/company/ieee-vit-vellore/" class="social_icons" target="_blank"><img
+            class="icon" src="images/linkedin_light.svg" alt="Linkedin Icon"></a>
+        <a href="mailto:contact@ieeevit.org" class="social_icons" target="_blank"><img class="icon"
+            src="images/email_light.svg" alt="Email Icon"></a>
         <li id="change-theme"><img class="icon" src="images/change_theme_light.svg" alt="Change Theme"></li>
 
       </ul>
     </nav>
-  
-  <section id="alumni-board">
-    <div class="year">
+
+    <section id="alumni-board">
+      <div class="year">
         Choose a year
-    </div>
-    
-  
+      </div>
+
+
       <form>
         <label for="dropdown-container"></label>
         <select name="dropdown-container" id="dropdown-container" onchange="changeImage()">
@@ -81,17 +81,17 @@
           <option value="image-grid4">2022 - 23</option>
           <option value="image-grid3">2021 - 22</option>
           <option value="image-grid2">2020 - 21</option>
-      
+
         </select>
       </form>
       <div id="text-container">Executive board 2024 - 25</div> <!-- Write most recent alumni year here for default-->
-      
+
       <section id="board">
         <div class="board-members">
           <!-- Board members will be dynamically added here -->
         </div>
       </section>
-<!--       
+      <!--       
       <div class="image-grid image-grid3">
         <img src="/images/alumni-board/2021-22/3-1.png">
         <img src="/images/alumni-board/2021-22/3-2.png">
@@ -146,8 +146,9 @@
         <img src="/images/alumni-board/2020-21/2-9l.png">
         <img src="/images/alumni-board/2020-21/2-10l.png">
       </div> -->
-    
-  </section>
-</div>
+
+    </section>
+  </div>
 </body>
+
 </html>

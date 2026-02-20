@@ -38,11 +38,13 @@ const makeSlide = (title, desc, img_src, link) => {
 };
 
 const fillCarousel = (data, carousel_name) => {
-  const container = document.querySelector(
-    `#${carousel_name} .carousel .container`
-  );
+  const root = document.getElementById(carousel_name);
+  if (!root) return;
+  const container = root.querySelector(".carousel .container");
+  if (!container) return;
 
   const slides = data[carousel_name];
+  if (!Array.isArray(slides)) return;
 
   slides.forEach((slide) => {
     let { title, desc, image, link } = slide;
@@ -52,7 +54,7 @@ const fillCarousel = (data, carousel_name) => {
 };
 
 const parseData = async () => {
-  const response = await fetch("../data.json");
+  const response = await fetch("/data.json");
   const data = await response.json();
 
   fillCarousel(data, "blogs");
@@ -83,7 +85,9 @@ Array.from(previous).forEach((previous_button) => {
 
 Array.from(document.querySelectorAll("#blogs, #podcast")).forEach((section) => {
   const container = section.querySelector(".carousel .container");
+  if (!container) return; // safety
   const slides = container.querySelectorAll(".slide");
+  if (slides.length === 0) return; // nothing to do until data is fetched
   let currentIndex = 0;
 
   Array.from(slides).forEach((slide, index) => {
@@ -130,7 +134,7 @@ Array.from(document.querySelectorAll("#blogs, #podcast")).forEach((section) => {
   });
 
   previous_button.addEventListener("click", () => {
-    if (currentIndex === 0) {
+    if (slides.length === 0 || currentIndex === 0) {
       return;
     }
 
@@ -147,7 +151,7 @@ Array.from(document.querySelectorAll("#blogs, #podcast")).forEach((section) => {
   });
 
   next_button.addEventListener("click", () => {
-    if (currentIndex === slides.length - 1) {
+    if (slides.length === 0 || currentIndex === slides.length - 1) {
       return;
     }
 
