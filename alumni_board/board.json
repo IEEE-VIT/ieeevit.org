@@ -1,55 +1,109 @@
 {
+    "2025-26": {
+        "board": [
+            {
+                "name": "Ravi Teja",
+                "pos": "Chairperson",
+                "img": "RaviTeja"
+            },
+            {
+                "name": "Siya Aggarwal",
+                "pos": "Management Head",
+                "img": "SiyaAggarwal"
+            },
+            {
+                "name": "Aswinkarthick K T",
+                "pos": "Events & Operations Head",
+                "img": "AswinkarthickKT"
+            },
+            {
+                "name": "Shaurya Saini",
+                "pos": "Technical Head",
+                "img": "ShauryaSaini"
+            },
+            {
+                "name": "Anannya Paliwal",
+                "pos": "Internal Affairs",
+                "img": "AnannyaPaliwal"
+            },
+            {
+                "name": "Yuval Gupta",
+                "pos": "Community Head",
+                "img": "YuvalGupta"
+            },
+            {
+                "name": "Avni Jain",
+                "pos": "Design Head",
+                "img": "AvniJain"
+            },
+            {
+                "name": "Keertika",
+                "pos": "Creative Head",
+                "img": "Keertika"
+            },
+            {
+                "name": "Vamsi Krishna",
+                "pos": "Projects Head",
+                "img": "Vamsi"
+            },
+            {
+                "name": "Chinmay Agarwal",
+                "pos": "Research & Development Head",
+                "img": "ChinmayAgarwal"
+            }
+        ]
+    },
     "2024-25": {
         "board": [
             {
-            "name": "Kaviya Kumar",
-            "pos": "Chairperson",
-            "img": "Kaviya"
+                "name": "Kaviya Kumar",
+                "pos": "Chairperson",
+                "img": "Kaviya"
             },
             {
-            "name": "Balaji S",
-            "pos": "Vice Chairperson",
-            "img": "Balaji"
+                "name": "Balaji S",
+                "pos": "Vice Chairperson",
+                "img": "Balaji"
             },
             {
-            "name": "Shruthi ",
-            "pos": "Events & Operations Head",
-            "img": "Shruthi"
+                "name": "Shruthi ",
+                "pos": "Events & Operations Head",
+                "img": "Shruthi"
             },
             {
-            "name": "Shantanu Pai",
-            "pos": "Technical Head",
-            "img": "Shantanu"
+                "name": "Shantanu Pai",
+                "pos": "Technical Head",
+                "img": "Shantanu"
             },
             {
-            "name": "Lakshmi K R",
-            "pos": "Internal Affairs",
-            "img": "Lakshmi"
+                "name": "Lakshmi K R",
+                "pos": "Internal Affairs",
+                "img": "Lakshmi"
             },
             {
-            "name": "Aaditya V S",
-            "pos": "Finance & Outreach Head",
-            "img": "Aaditya"
+                "name": "Aaditya V S",
+                "pos": "Finance & Outreach Head",
+                "img": "Aaditya"
             },
             {
-            "name": "N Eashwar",
-            "pos": "Design & Marketing Head",
-            "img": "Eashwar"
+                "name": "N Eashwar",
+                "pos": "Design & Marketing Head",
+                "img": "Eashwar"
             },
             {
-            "name": "Subham Agarwal",
-            "pos": "DevRel Lead",
-            "img": "Subham"
+                "name": "Subham Agarwal",
+                "pos": "DevRel Lead",
+                "img": "Subham"
             },
             {
-            "name": "Ved Sorathiya",
-            "pos": "Tech Lead",
-            "img": "Ved"
+                "name": "Ved Sorathiya",
+                "pos": "Tech Lead",
+                "img": "Ved"
             },
             {
-            "name": "Gopal Yadav",
-            "pos": "Tech Lead",
-            "img": "Gopal"
+                "name": "Gopal Yadav",
+                "pos": "Tech Lead",
+                "img": "Gopal"
             }
         ]
     },

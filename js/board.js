@@ -7,9 +7,8 @@ const adjustBoardSection = () => {
       board_members.childElementCount % (count - 1) === 0 ? count - 1 : count;
   }
   count = parseInt(Math.max(1, count));
-  if(count>5)
-  {
-    count=5;
+  if (count > 5) {
+    count = 5;
   }
   board_members.style.gridTemplateColumns = `repeat(${count}, 185px)`;
 };
@@ -21,7 +20,7 @@ window.onresize = () => {
 // Declare `year` as a global variable
 let selectedYear = null;
 
-const makeBoardCard = ({ name, pos, img}) => {
+const makeBoardCard = ({ name, pos, img }) => {
   const img_el = document.createElement("img");
   img_el.src = `./images/alumni-board/${selectedYear}/${img}.jpg`;
   img_el.alt = name;
@@ -64,11 +63,11 @@ const addBoard = async (filePath, year = null) => {
 
     const response = await fetch(filePath);
     const data = await response.json();
-    
+
     // Clear existing board members
     const container = document.querySelector(".board-members");
     container.innerHTML = '';
-    
+
     if (window.location.pathname.includes("alumni")) {
       // For alumni page, use the selected year
       if (selectedYear && data[selectedYear]) {
@@ -80,10 +79,10 @@ const addBoard = async (filePath, year = null) => {
         fillBoard(data[mostRecentYear].board);
       }
     } else {
-      // For home page, always show current year (2024-25)
-      fillBoard(data["2024-25"].board);
+      // For home page, always show current year (2025-26)
+      fillBoard(data["2025-26"].board);
     }
-    
+
     adjustBoardSection();
   } catch (error) {
     console.error('Error loading board data:', error);
@@ -96,25 +95,26 @@ if (window.location.pathname.includes("alumni")) {
 } else {
   // For home page, use the same board.json but only display current year
   if (selectedYear == null) {
-    selectedYear = "2024-25";       
+    selectedYear = "2025-26";
   }
   addBoard("./alumni_board/board.json");
 }
 
 // Update the dropdown change handler
 if (window.location.pathname.includes("alumni")) {
-  document.getElementById("dropdown-container").addEventListener("change", function() {
+  document.getElementById("dropdown-container").addEventListener("change", function () {
     const selectedValue = this.value;
     const gridNumber = selectedValue.replace('image-grid', '');
-    
+
     // Map the image-grid values to academic years
     const yearMap = {
+      "6": '2024-25',
       '5': '2023-24',
       '4': '2022-23',
       '3': '2021-22',
       '2': '2020-21'
     };
-    
+
     addBoard("./alumni_board/board.json", yearMap[gridNumber]);
   });
 }
