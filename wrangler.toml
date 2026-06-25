@@ -1,0 +1,14 @@
+# wrangler.toml
+# Cloudflare Pages configuration
+# Replace <ACCOUNT_ID> with your Cloudflare account ID
+# Replace <PROJECT_NAME> with your desired project name
+
+name = "<PROJECT_NAME>"
+account_id = "<ACCOUNT_ID>"
+compatibility_date = "2024-01-01"
+
+# Use the built dist folder as the site output
+type = "javascript"
+
+[site]
+bucket = "./out"
