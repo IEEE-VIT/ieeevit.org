@@ -1,82 +1,16 @@
-# IEEE-VIT Official Website
+# React + Vite
 
-## Alumni Board Section - Image Management Guide
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-### Adding/Updating Board Member Images
+Currently, two official plugins are available:
 
-#### 1. Image Requirements
-- **Location**: `/images/alumni-board/`
-- **Format**: JPG
-- **Naming Convention**: `FirstName.jpg` (case-sensitive)
-- **Examples**: `Naruto.jpg`, `Sasuke.jpg`, `Itachi.jpg`
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-#### 2. Update JSON Data
-1. Open `/alumni_board/board.json`
-2. Locate the relevant academic year section
-3. Update the `img` field to match your image filename (without .jpg)
+## React Compiler
 
-Example JSON structure:
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-```json
-{
-  "2023-24": {
-    "board": [
-      {
-        "name": "Naruto Uzumaki",
-        "pos": "Technical Head",
-        "img": "Naruto"
-      },
-      {
-        "name": "Sasuke Uchiha",
-        "pos": "Chairperson",
-        "img": "Sasuke"
-      },
-      {
-        "name": "Sakura Haruno",
-        "pos": "Secretary",
-        "img": "Sakura"
-      },
-      {
-        "name": "Kakashi Hatake",
-        "pos": "Treasurer",
-        "img": "Kakashi"
-      }
-    ]
-  },
-  "2022-23": {
-    "board": [
-      {
-        "name": "Itachi Uchiha",
-        "pos": "Technical Head",
-        "img": "Itachi"
-      },
-      {
-        "name": "Minato Namikaze",
-        "pos": "Chairperson",
-        "img": "Minato"
-      },
-      {
-        "name": "Hinata Hyuga",
-        "pos": "Secretary",
-        "img": "Hinata"
-      },
-      {
-        "name": "Obito Uchiha",
-        "pos": "Treasurer",
-        "img": "Obito"
-      }
-    ]
-  }
-}
-```
+## Expanding the ESLint configuration
 
-### Important Notes
-- Image filenames are case-sensitive.
-- Ensure the `img` value in `board.json` exactly matches the image filename.
-- The system will automatically use the new images once both:
-  1. The image file is added to the correct directory.
-  2. The JSON file is updated with the correct filename.
-
----
-
-© IEEE-VIT Student Branch
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
