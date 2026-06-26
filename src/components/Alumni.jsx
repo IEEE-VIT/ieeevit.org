@@ -79,6 +79,7 @@ export default function Alumni({ theme }) {
 
         <section id="board" className="board-section">
           <div
+            key={selectedYearKey}
             className="board-members"
             style={{ gridTemplateColumns: `repeat(${boardColumns}, 185px)` }}
           >
