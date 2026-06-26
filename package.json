@@ -1,12 +1,12 @@
 {
-  "name": "website-refactor",
+  "name": "IEEE VIT ",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "wrangler pages publish ./out",
+    "deploy": "vite build && wrangler pages publish ./out",
     "lint": "eslint .",
     "preview": "vite preview"
   },
